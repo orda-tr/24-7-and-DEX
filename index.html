@@ -618,5 +618,6 @@ for(var i=0;i<total;i++){var d=document.createElement("div");d.className="dot"+(
 function goTo(n){document.getElementById(slides[cur]).classList.remove("active");cur=n;document.getElementById(slides[cur]).classList.add("active");document.getElementById("prev").disabled=cur===0;document.getElementById("next").disabled=cur===total-1;var dd=dots.children;for(var i=0;i<dd.length;i++)dd[i].className="dot"+(i===cur?" active":"")}
 function go(d){var n=cur+d;if(n>=0&&n<total)goTo(n)}
 document.addEventListener("keydown",function(e){if(e.key==="ArrowRight"||e.key===" ")go(1);if(e.key==="ArrowLeft")go(-1)});
+document.addEventListener("click",function(e){if(e.target.closest(".nav")||e.target.closest("button"))return;e.clientX>window.innerWidth/2?go(1):go(-1)});
 goTo(0);
 </script>
