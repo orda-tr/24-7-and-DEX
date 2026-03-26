@@ -619,18 +619,4 @@ function goTo(n){document.getElementById(slides[cur]).classList.remove("active")
 function go(d){var n=cur+d;if(n>=0&&n<total)goTo(n)}
 document.addEventListener("keydown",function(e){if(e.key==="ArrowRight"||e.key===" ")go(1);if(e.key==="ArrowLeft")go(-1)});
 goTo(0);
-
-// Download button
-var dlBtn=document.createElement("button");
-dlBtn.textContent="⬇ Download HTML";
-dlBtn.style.cssText="position:fixed;top:1.2vh;right:1vw;background:#10b981;color:#fff;border:none;padding:0.5vh 1.2vw;border-radius:0.5vh;cursor:pointer;font-weight:700;font-size:1.4vh;z-index:9999";
-dlBtn.onclick=function(){
-  var html=document.documentElement.outerHTML;
-  var blob=new Blob([html],{type:"text/html"});
-  var a=document.createElement("a");
-  a.href=URL.createObjectURL(blob);
-  a.download="eToro_Risk_Management_Deck.html";
-  a.click();
-};
-document.body.appendChild(dlBtn);
 </script>
