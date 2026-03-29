@@ -1,3 +1,4 @@
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#060e1a;color:#f1f5f9;font-family:'Segoe UI',system-ui,sans-serif;overflow:hidden;width:100vw;height:100vh}
@@ -23,7 +24,10 @@ tr:nth-child(even) td{background:#0f1f38}
 .nav button:disabled{background:#1e293b;color:#475569;cursor:default}
 .dots{display:flex;gap:0.8vw}
 .dot{width:1.1vh;height:1.1vh;border-radius:50%;background:#334155;cursor:pointer}.dot.active{background:#60a5fa}
-#s0 .ta h1{font-size:3.8vh}#s0 .ta p{font-size:2vh}#s0 .body{padding:1.5vh 3vw}
+#s0 .ta h1{font-size:3.2vh}#s0 .ta p{font-size:1.7vh}#s0 .body{padding:0.8vh 3vw;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}
+#s0 .box{padding:0.7vh 1.5vw;margin-bottom:0}
+#s0 .box-l{font-size:1.35vh;margin-bottom:0.3vh}
+#s0 .box ul{font-size:1.5vh;line-height:1.6}
 .box{background:#0a1628;border:1px solid #1e3a5f;border-radius:1vh;padding:2vh 2.5vw;margin-bottom:1.5vh}
 .box-l{color:#60a5fa;font-weight:700;font-size:1.7vh;text-transform:uppercase;letter-spacing:1px;margin-bottom:1vh}
 .box ul{padding-left:2vw;color:#cbd5e1;font-size:2.1vh;line-height:2}
@@ -44,6 +48,53 @@ tr:nth-child(even) td{background:#0f1f38}
 <!-- S0: Executive Summary -->
 <div class="slide active" id="s0">
 <div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">1 / 12</span></div>
+<div class="ta" style="padding:0.6vh 3vw 0.3vh"><h1 style="font-size:3vh">Executive Summary</h1><p style="font-size:1.6vh">24/7 Traditional Asset Trading — Hedged via DEX Perpetuals</p></div>
+<div class="body" style="padding:0.5vh 3vw;display:flex;flex-direction:column;gap:0.55vh;overflow:hidden">
+
+  <div style="background:#0a1628;border:1px solid #1e3a5f;border-radius:0.8vh;padding:0.7vh 1.5vw;flex:3">
+    <div style="color:#60a5fa;font-weight:700;font-size:1.65vh;text-transform:uppercase;letter-spacing:1px;margin-bottom:0.3vh">Product Overview</div>
+    <ul style="padding-left:2vw;color:#cbd5e1;font-size:1.95vh;line-height:1.7">
+      <li>Launch <span style="color:#f1f5f9;font-weight:600">24/7 trading</span> in traditional assets: <span style="color:#fbbf24">Oil, Gold, Silver, NASDAQ, S&P 500, major equities</span></li>
+      <li>Hedge ~100% of client exposure using <span style="color:#f1f5f9;font-weight:600">perpetual futures on DEX</span></li>
+      <li>Hedging logic: Client goes long → we hedge long on DEX (same direction). Net cost ≈ 0</li>
+      <li>Risk materializes when DEX execution diverges (slippage, ADL, oracle failures)</li>
+    </ul>
+  </div>
+
+  <div style="background:#0a1628;border:1px solid #1e3a5f;border-radius:0.8vh;padding:0.7vh 1.5vw;flex:3">
+    <div style="color:#60a5fa;font-weight:700;font-size:1.65vh;text-transform:uppercase;letter-spacing:1px;margin-bottom:0.3vh">Key Risk Considerations</div>
+    <ul style="padding-left:2vw;color:#cbd5e1;font-size:1.95vh;line-height:1.7">
+      <li><span style="color:#f87171;font-weight:600">Slippage on Massive Closures:</span> Large simultaneous client exits force hedge closure at unfavorable prices — cost scales non-linearly with NOP size</li>
+      <li><span style="color:#f87171;font-weight:600">Fast Market / Leverage Mismatch:</span> If hedge leverage exceeds client avg leverage, hedge liquidates first → unhedged window until client SL fires</li>
+      <li><span style="color:#f87171;font-weight:600">ADL Risk:</span> Insurance fund depletes → hedge forcibly closed — fully unhedged</li>
+      <li><span style="color:#f87171;font-weight:600">Oracle / Smart Contract Risk:</span> $3.1B lost in DeFi H1 2025 alone</li>
+    </ul>
+  </div>
+
+  <div style="background:#0a1628;border:1px solid #1e3a5f;border-radius:0.8vh;padding:0.7vh 1.5vw;flex:3">
+    <div style="color:#60a5fa;font-weight:700;font-size:1.65vh;text-transform:uppercase;letter-spacing:1px;margin-bottom:0.3vh">Scenario Analysis Summary</div>
+    <ul style="padding-left:2vw;color:#cbd5e1;font-size:1.95vh;line-height:1.7">
+      <li><span style="color:#fbbf24">Scenario 1 — Slippage on Mass Closures:</span> 20% NOP closure → <span style="color:#f1f5f9;font-weight:600">$2K (NASDAQ normal)</span> to <span style="color:#f87171">$675K (Silver stress)</span></li>
+      <li><span style="color:#fbbf24">Scenario 2 — Fast Market Weekend:</span> HC = NOP × diff between client SL and hedge liq thresholds. Client leverage &gt; hedge leverage → HC down by <span style="color:#34d399;font-weight:600">~95%</span></li>
+      <li><span style="color:#f87171">Scenario 3 — ADL:</span> Insurance fund depletion → forced hedge closure → cost up to <span style="color:#f87171">$6.5M on $50M NOP</span></li>
+      <li><span style="color:#f87171">Scenario 4 — Oracle Failure:</span> Wrongful liquidation → margin loss 50–100% → cost up to <span style="color:#f87171">$10M on $50M NOP</span></li>
+    </ul>
+  </div>
+
+  <div style="background:#0a1628;border:1px solid #1e3a5f;border-radius:0.8vh;padding:0.7vh 1.5vw;flex:4.5">
+    <div style="color:#60a5fa;font-weight:700;font-size:1.65vh;text-transform:uppercase;letter-spacing:1px;margin-bottom:0.3vh">Recommendation</div>
+    <ul style="padding-left:2vw;color:#cbd5e1;font-size:1.95vh;line-height:1.7">
+      <li>Start with <span style="color:#34d399;font-weight:600">conservative exposure caps</span> and phased rollout</li>
+      <li>Keep hedge leverage <span style="color:#34d399;font-weight:600">below client average leverage</span> to ensure client SL fires first</li>
+      <li>Balance hedge leverage: too high → liquidation risk in fast markets; too low → excess capital exposed to counterparty risk</li>
+      <li>Cap NOP per asset by liquidity — <span style="color:#34d399;font-weight:600">stricter limits</span> for Silver &amp; Gold</li>
+      <li>Real-time monitoring of insurance fund health, oracle integrity, slippage thresholds</li>
+      <li>Pre-defined circuit breakers and manual intervention protocols</li>
+    </ul>
+  </div>
+
+</div></div>
+<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">1 / 12</span></div>
 <div class="ta"><h1>Executive Summary</h1><p>24/7 Traditional Asset Trading — Hedged via DEX Perpetuals</p></div>
 <div class="body">
 <div class="box"><div class="box-l">Product Overview</div><ul>
@@ -58,7 +109,12 @@ tr:nth-child(even) td{background:#0f1f38}
 <li><b>ADL Risk:</b> Insurance fund depletes → hedge forcibly closed — fully unhedged</li>
 <li><b>Oracle / Smart Contract Risk:</b> $3.1B lost in DeFi H1 2025 alone</li>
 </ul></div>
-<div class="box"><div class="box-l">Recommendation</div><ul>
+<div class="box"><div class="box-l">Scenario Analysis Summary</div><ul>
+<li><span class="y">Scenario 1 — Slippage on Mass Closures:</span> 20% of client NOP closed simultaneously forces hedge closure at unfavorable prices. Cost ranges from <span class="w">~$2K (NASDAQ, normal)</span> to <span class="b" style="color:#f87171">$675K (Silver, stress)</span> per event — Silver at $50M NOP is the key risk threshold</li>
+<li><span class="y">Scenario 2 — Fast Market Weekend:</span> If hedge leverage exceeds client avg leverage, hedge liquidates first → unhedged window until client SL fires. HC = NOP × diff between the two thresholds. Keeping client leverage above hedge leverage reduces HC by <span class="g">~95%</span> to slippage-only cost</li>
+<li><span class="b" style="color:#f87171">Scenario 3 — ADL (Forced Hedge Closure):</span> Extreme rally depletes DEX insurance fund → hedge forcibly closed while clients remain open → eToro fully unhedged. Cost to eToro up to <span class="b" style="color:#f87171">$6.5M on $50M NOP</span></li>
+<li><span class="b" style="color:#f87171">Scenario 4 — Oracle Failure:</span> Faulty price feed triggers wrongful hedge liquidation. Margin loss of 50–100% on hedge with no client P&L offset → cost up to <span class="b" style="color:#f87171">$10M on $50M NOP</span></li>
+</ul></div><ul>
 <li>Start with <span class="g">conservative exposure caps</span> and phased rollout</li>
 <li>Keep hedge leverage <span class="g">below client average leverage</span> to ensure client SL fires first</li>
 <li>Hedge leverage must be <span class="g">carefully balanced</span>: too high → liquidation risk in fast markets; too low → excess capital locked on Hyperliquid exposed to counterparty risk</li>
