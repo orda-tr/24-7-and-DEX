@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,7 +68,7 @@ tr:nth-child(even) td{background:#0f1f38}
     <div style="color:#60a5fa;font-weight:700;font-size:1.65vh;text-transform:uppercase;letter-spacing:1px;margin-bottom:0.3vh">Scenario Analysis Summary</div>
     <ul style="padding-left:2vw;color:#cbd5e1;font-size:1.95vh;line-height:1.7">
       <li><span style="color:#fbbf24">Scenario 1 — Slippage on Mass Closures:</span> 20% NOP closure → <b style="color:#f1f5f9">$2K (NASDAQ normal)</b> to <span style="color:#f87171">$675K (Silver stress)</span></li>
-      <li><span style="color:#fbbf24">Scenario 2 — Fast Market Weekend:</span> HC = NOP × diff between client SL and hedge liq thresholds. Client leverage &gt; hedge leverage → HC down by <span style="color:#34d399;font-weight:600">~95%</span></li>
+      <li><span style="color:#fbbf24">Scenario 2 — Fast Market Weekend:</span> Client leverage &gt; hedge leverage → HC lower by <span style="color:#34d399;font-weight:600">~95%</span> vs. client leverage ≤ hedge leverage <span style="color:#94a3b8">(depends on the asset and the size of the client NOP)</span></li>
       <li><span style="color:#f87171">Scenario 3 — ADL:</span> Insurance fund depletion → forced hedge closure → cost up to <span style="color:#f87171">$6.5M on $50M NOP</span></li>
       <li><span style="color:#f87171">Scenario 4 — Oracle Failure:</span> Wrongful liquidation → margin loss 50–100% → cost up to <span style="color:#f87171">$10M on $50M NOP</span></li>
     </ul>
