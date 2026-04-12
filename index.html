@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,8 +40,8 @@ tr:nth-child(even) td{background:#0f1f38}
 </style>
 </head>
 <body>
-
-<!-- S0: Executive Summary — 1/13 -->
+ 
+<!-- S0: Executive Summary — 1/14 -->
 <div class="slide active" id="s0">
 <div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">1 / 14</span></div>
 <div class="ta" style="padding:0.6vh 3vw 0.3vh"><h1 style="font-size:3vh">Executive Summary</h1><p style="font-size:1.6vh">24/7 Traditional Asset Trading — Hedged via DEX Perpetuals</p></div>
@@ -52,43 +51,41 @@ tr:nth-child(even) td{background:#0f1f38}
     <ul style="padding-left:2vw;color:#cbd5e1;font-size:1.95vh;line-height:1.7">
       <li>Launch <b style="color:#f1f5f9">24/7 trading</b> in traditional assets: <span style="color:#fbbf24">Oil, Gold, Silver, NASDAQ, S&amp;P 500, major equities</span></li>
       <li>Hedge ~100% of client exposure using <b style="color:#f1f5f9">perpetual futures on DEX</b></li>
-      <li>Hedging logic: Client goes long → we hedge long on DEX (same direction). Net cost ≈ 0</li>
-      <li>Risk materializes when DEX execution diverges (slippage, ADL, oracle failures)</li>
+      <li><span style="color:#fbbf24">Gold alternative:</span> hedge via <b style="color:#f1f5f9">PAXG</b> — a gold-backed crypto token — instead of DEX perpetuals, eliminating DEX-specific risks (slippage, ADL, oracle) for this asset</li>
     </ul>
   </div>
   <div style="background:#0a1628;border:1px solid #1e3a5f;border-radius:0.8vh;padding:0.7vh 1.5vw;flex:3">
     <div style="color:#60a5fa;font-weight:700;font-size:1.65vh;text-transform:uppercase;letter-spacing:1px;margin-bottom:0.3vh">Key Risk Considerations</div>
     <ul style="padding-left:2vw;color:#cbd5e1;font-size:1.95vh;line-height:1.7">
-      <li><b style="color:#f87171">Slippage on Massive Closures:</b> Large simultaneous client exits force hedge closure at unfavorable prices — cost scales non-linearly with NOP size</li>
-      <li><b style="color:#f87171">Fast Market / Leverage Mismatch:</b> If hedge leverage exceeds client avg leverage, hedge liquidates first → unhedged window until client SL fires</li>
-      <li><b style="color:#f87171">ADL Risk:</b> Insurance fund depletes → hedge forcibly closed — fully unhedged</li>
-      <li><b style="color:#f87171">Oracle / Smart Contract Risk:</b> $3.1B lost in DeFi H1 2025 alone</li>
+      <li>Primary DEX risks: <span style="color:#f87171">slippage on large closures, hedge liquidation from leverage mismatch, ADL-forced closure, oracle/smart contract failure</span> — each capable of total hedge margin loss</li>
+      <li><span style="color:#f87171;font-weight:600">Client slippage exposure:</span> DEX immaturity → significant slippage on closures is a <b style="color:#f87171">frequent, expected occurrence</b> — not a tail event — raising best execution compliance concerns</li>
+      <li><span style="color:#f87171;font-weight:600">High probability of total margin loss:</span> In extreme events (e.g. Oct 2025), order book depth collapsed 98%, ADL triggered at scale — full margin loss is a <b style="color:#f87171">likely outcome</b>, not a tail risk</li>
     </ul>
   </div>
   <div style="background:#0a1628;border:1px solid #1e3a5f;border-radius:0.8vh;padding:0.7vh 1.5vw;flex:3">
     <div style="color:#60a5fa;font-weight:700;font-size:1.65vh;text-transform:uppercase;letter-spacing:1px;margin-bottom:0.3vh">Scenario Analysis Summary</div>
     <ul style="padding-left:2vw;color:#cbd5e1;font-size:1.95vh;line-height:1.7">
-      <li><span style="color:#fbbf24">Scenario 1 — Slippage on Mass Closures:</span> 20% NOP closure → <b style="color:#f1f5f9">~$5.6K (NASDAQ normal)</b> to <span style="color:#f87171">$1.65M (Gold stress ×5)</span></li>
-      <li><span style="color:#fbbf24">Scenario 2 — Fast Market Weekend:</span> Client leverage &gt; hedge leverage → HC lower by <span style="color:#34d399;font-weight:600">~95%</span> vs. client leverage ≤ hedge leverage <span style="color:#94a3b8">| Stress (×5): Gold/Oil/Silver $25M–$50M NOP → <span style="color:#f87171">full margin wipeout ($5M–$10M)</span></span></li>
-      <li><span style="color:#f87171">Scenario 3 — ADL:</span> Insurance fund depletion → forced hedge closure → cost up to <span style="color:#f87171">$6.5M on $50M NOP</span></li>
-      <li><span style="color:#f87171">Scenario 4 — Oracle Failure:</span> Wrongful liquidation → margin loss 50–100% → cost up to <span style="color:#f87171">$10M on $50M NOP</span></li>
+      <li><span style="color:#f1f5f9;font-weight:600">Scenarios analyzed:</span> <span style="color:#fbbf24">Slippage on massive client position closures</span> &nbsp;|&nbsp; <span style="color:#fbbf24">Extreme fast market weekend</span> &nbsp;|&nbsp; <span style="color:#f87171">ADL — forced hedge closure</span> &nbsp;|&nbsp; <span style="color:#a78bfa">Oracle failure / manipulation</span></li>
+      <li><span style="color:#f1f5f9;font-weight:600">Maximum potential loss per NOP size:</span>
+        &nbsp; <span style="color:#94a3b8">$10M NOP →</span> <span style="color:#fbbf24;font-weight:600">$2M</span> <span style="color:#64748b;font-size:1.6vh">(full margin, hedge 5×)</span>
+        &nbsp;|&nbsp; <span style="color:#94a3b8">$25M NOP →</span> <span style="color:#f87171;font-weight:600">$5M</span> <span style="color:#64748b;font-size:1.6vh">(full margin, hedge 5×)</span>
+        &nbsp;|&nbsp; <span style="color:#94a3b8">$50M NOP →</span> <span style="color:#f87171;font-weight:600">$10M</span> <span style="color:#64748b;font-size:1.6vh">(full margin, hedge 5×)</span>
+      </li>
     </ul>
   </div>
   <div style="background:#0a1628;border:1px solid #1e3a5f;border-radius:0.8vh;padding:0.7vh 1.5vw;flex:4.5">
     <div style="color:#60a5fa;font-weight:700;font-size:1.65vh;text-transform:uppercase;letter-spacing:1px;margin-bottom:0.3vh">Recommendation</div>
     <ul style="padding-left:2vw;color:#cbd5e1;font-size:1.95vh;line-height:1.7">
-      <li>Start with <span style="color:#34d399;font-weight:600">conservative exposure caps</span> and phased rollout</li>
-      <li>Keep hedge leverage <span style="color:#34d399;font-weight:600">below client average leverage</span> to ensure client SL fires first</li>
+      <li><span style="color:#34d399;font-weight:600">Recommended thresholds:</span> Hedge side invested amount up to <b style="color:#f1f5f9">$10M</b> &nbsp;|&nbsp; Gold &amp; Oil client NOP up to <b style="color:#f1f5f9">$20M</b> &nbsp;|&nbsp; All other assets client NOP up to <b style="color:#f1f5f9">$5M</b> &nbsp;|&nbsp; Hedge leverage up to <b style="color:#f1f5f9">10×</b> and never exceeding clients' effective average leverage</li>
       <li>Hedge leverage must be <span style="color:#34d399;font-weight:600">carefully balanced</span>: too high → liquidation risk in fast markets; too low → excess capital locked on Hyperliquid exposed to counterparty risk</li>
-      <li>Cap total client NOP per asset based on DEX liquidity profile — illiquid assets (Silver, Gold) require <span style="color:#34d399;font-weight:600">stricter NOP limits</span></li>
-      <li>Real-time monitoring of insurance fund health, oracle integrity, slippage thresholds</li>
-      <li>Pre-defined circuit breakers and manual intervention protocols</li>
+      <li>Real-time monitoring of insurance fund health, oracle integrity, slippage thresholds — with pre-defined circuit breakers and manual intervention protocols</li>
+      <li>Client disclosure on potential for elevated slippage during weekends and off-market hours</li>
     </ul>
   </div>
 </div>
 </div>
-
-<!-- S4: Risk Map — 2/13 -->
+ 
+<!-- S4: Risk Map — 2/14 -->
 <div class="slide" id="s4">
 <div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">2 / 14</span></div>
 <div class="ta"><h1 style="font-size:3.4vh">Risk Map — eToro as Broker</h1><p style="font-size:1.9vh">Key risk categories when hedging client exposure via DEX perpetuals</p></div>
@@ -104,8 +101,8 @@ tr:nth-child(even) td{background:#0f1f38}
 <tr><td style="color:#fb923c;font-weight:700;padding:1.2vh 1.4vw">Regulatory / Legal</td><td style="text-align:center;padding:1.2vh 1.4vw"><span class="bg bh" style="font-size:1.6vh;padding:0.3vh 1vw">High</span></td><td class="vg" style="text-align:center;padding:1.2vh 1.4vw">Medium</td><td class="vg" style="padding:1.2vh 1.4vw">Unregulated DEX may conflict with eToro regulatory obligations.</td></tr>
 </table>
 </div></div>
-
-<!-- S_SUMMARY: Scenario Summary — 3/13 -->
+ 
+<!-- S_SUMMARY: Scenario Summary — 3/14 -->
 <div class="slide" id="s_summary">
 <div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">3 / 14</span></div>
 <div class="ta" style="padding:0.8vh 3vw 0.4vh">
@@ -208,7 +205,7 @@ tr:nth-child(even) td{background:#0f1f38}
   </div>
 </div>
 </div>
-
+ 
 <!-- S1: Instrument Comparison — 4/14 -->
 <div class="slide" id="s1">
 <div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">4 / 14</span></div>
@@ -231,8 +228,8 @@ tr:nth-child(even) td{background:#0f1f38}
 <tr><td class="f" style="padding:0.9vh 1.2vw">KYC / AML</td><td style="padding:0.9vh 1.2vw">Full compliance</td><td style="padding:0.9vh 1.2vw">Varies</td><td style="padding:0.9vh 1.2vw">None (permissionless)</td></tr>
 </table></div>
 </div>
-
-<!-- S2: Volume & OI — 4/13 -->
+ 
+<!-- S2: Volume & OI — 5/14 -->
 <div class="slide" id="s2">
 <div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">5 / 14</span></div>
 <div class="ta" style="padding:1.2vh 3vw 0.4vh"><h1 style="font-size:3.2vh">Liquidity Comparison — Volume &amp; Open Interest</h1><p style="font-size:1.8vh">CME Futures vs. CEX Perps vs. DEX Perps (March 2026)</p></div>
@@ -252,8 +249,8 @@ tr:nth-child(even) td{background:#0f1f38}
 </div>
 <div style="font-size:1.5vh;color:#64748b;margin-top:1vh">Sources: CoinDesk, JPMorgan Research, Coin Metrics, CoinGecko (Mar 2026). CME = notional estimates.</div>
 </div></div>
-
-<!-- S3: TOB Spread — 5/13 -->
+ 
+<!-- S3: TOB Spread — 6/14 -->
 <div class="slide" id="s3">
 <div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">6 / 14</span></div>
 <div class="ta" style="padding:0.6vh 3vw 0.2vh">
@@ -317,8 +314,8 @@ render();
 })();
 </script>
 </div>
-
-<!-- S4b: Slippage $5M — 6/13 -->
+ 
+<!-- S4b: Slippage $5M — 7/14 -->
 <div class="slide" id="s4b">
 <div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">7 / 14</span></div>
 <div class="ta" style="padding:0.6vh 3vw 0.2vh">
@@ -376,8 +373,8 @@ render();
 })();
 </script>
 </div>
-
-<!-- S_SC1: Scenario 1 — 7/13 -->
+ 
+<!-- S_SC1: Scenario 1 — 8/14 -->
 <div class="slide" id="s_sc1">
 <div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">8 / 14</span></div>
 <div class="ta" style="padding:0.7vh 3vw 0.3vh"><h1 style="font-size:2.8vh">Scenario 1: Slippage Cost on Massive Client Position Closures</h1><p style="font-size:1.5vh">Assumption: total client NOP = $10M / $25M / $50M | Massive closure event = 20% of NOP | Hedge leverage 5× (margin = 20% of closure NOP) | Hedge closes same size on Hyperliquid</p></div>
@@ -388,7 +385,6 @@ render();
     <div style="flex:0.7;background:#1a1000;border:1px solid #854d0e;border-radius:0.4vh;padding:0.55vh 1vw;text-align:center"><span style="color:#fbbf24;font-weight:700;font-size:1.3vh">Margin cap = 20% of closure NOP</span><div style="color:#78716c;font-size:1vh">Hedge 5× | $2M close→$400K | $5M→$1M | $10M→$2M</div></div>
   </div>
   <div style="display:flex;gap:1.2vw;flex:1;min-height:0">
-    <!-- Normal -->
     <div style="flex:1;background:#0a1628;border:1px solid #1e3a5f;border-radius:0.6vh;padding:0.6vh 1.2vw;display:flex;flex-direction:column;gap:0.4vh">
       <div style="color:#60a5fa;font-weight:700;font-size:1.55vh">📊 Normal Market</div>
       <div style="color:#94a3b8;font-size:1.1vh">HC = slippage% × closure NOP &nbsp;|&nbsp; Slippage % sourced from Hyperliquid Est. Slippage, weekend conditions</div>
@@ -401,7 +397,6 @@ render();
         <tr><td class="f" style="padding:0.45vh 0.5vw">Silver</td><td style="text-align:center;background:#0a1f14;padding:0.35vh"><div style="color:#34d399;font-weight:700;font-size:1.4vh">$9,000</div><div style="color:#6ee7b7;font-size:1vh">0.45% × $2M</div></td><td style="text-align:center;background:#0a1f14;padding:0.35vh"><div style="color:#34d399;font-weight:700;font-size:1.4vh">$46,500</div><div style="color:#6ee7b7;font-size:1vh">0.93% × $5M</div></td><td style="text-align:center;background:#fbbf2415;padding:0.35vh"><div style="color:#fbbf24;font-weight:700;font-size:1.4vh">$184,000</div><div style="color:#fde68a;font-size:1vh">1.84% × $10M</div></td></tr>
       </table>
     </div>
-    <!-- Stress x5 -->
     <div style="flex:1;background:#1a0a0a;border:1px solid #7f1d1d;border-radius:0.6vh;padding:0.6vh 1.2vw;display:flex;flex-direction:column;gap:0.4vh">
       <div style="color:#f87171;font-weight:700;font-size:1.55vh">⚠️ Stress Market (×5)</div>
       <div style="color:#fca5a5;font-size:1.1vh">HC = slippage% × 5 × closure NOP &nbsp;|&nbsp; <span style="color:#78716c">Basis: Oct 2025 peak ×7.5</span></div>
@@ -414,7 +409,6 @@ render();
         <tr><td class="f" style="padding:0.45vh 0.5vw">Silver</td><td style="text-align:center;background:#fbbf2415;padding:0.35vh"><div style="color:#fbbf24;font-weight:700;font-size:1.4vh">$45,000</div><div style="color:#fde68a;font-size:1vh">0.45%×5×$2M</div></td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#f87171;font-weight:700;font-size:1.4vh">$232,500</div><div style="color:#ff9999;font-size:1vh">0.93%×5×$5M</div></td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#f87171;font-weight:700;font-size:1.4vh">$920,000</div><div style="color:#ff9999;font-size:1vh">1.84%×5×$10M</div></td></tr>
       </table>
     </div>
-    <!-- Extreme x100 -->
     <div style="flex:1;background:#1a0010;border:1px solid #9f1239;border-radius:0.6vh;padding:0.6vh 1.2vw;display:flex;flex-direction:column;gap:0.4vh">
       <div style="color:#fb7185;font-weight:700;font-size:1.55vh">💀 Extreme Liquidity Crisis (×100)</div>
       <div style="color:#fda4af;font-size:1.1vh">Basis: Oct 2025 — 98% order book collapse &nbsp;|&nbsp; All cases exceed margin → <b>full margin wipeout</b></div>
@@ -433,8 +427,8 @@ render();
     <div><span style="color:#34d399;font-weight:700;font-size:1.45vh">Key Insight: </span><span style="color:#86efac;font-size:1.4vh">Normal: slippage manageable. Stress ×5: material cost, Gold/Oil/Silver $50M reach $1–1.65M. <b>Extreme ×100 (Oct 2025-style)</b>: full margin wipeout on every asset at every NOP size — max loss = <b>20% of closure NOP</b>. TWAP execution and circuit breakers are critical mitigants.</span></div>
   </div>
 </div></div>
-
-<!-- S5: Scenario 2 — 8/13 -->
+ 
+<!-- S5: Scenario 2 — 9/14 -->
 <div class="slide" id="s5">
 <div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">9 / 14</span></div>
 <div class="ta" style="padding:0.7vh 3vw 0.3vh"><h1 style="font-size:2.8vh">Scenario 2: Fast Market Weekend — Client vs. Hedging Leverage Risk and Slippage Risk</h1><p style="font-size:1.5vh">SL active both sides | Client SL = 50% of investment (= 50% ÷ L_client of NOP) | HC = Client P&amp;L − Hedge P&amp;L | Risk = close-timing diff when hedge liquidates before client SL fires</p></div>
@@ -508,8 +502,8 @@ render();
     <span style="color:#64748b;font-size:1.25vh">Leverage limited to <b style="color:#cbd5e1">10× only</b> &nbsp;|&nbsp; SL/TP active &amp; may trigger on weekends/holidays &nbsp;|&nbsp; Stop Loss fixed at <b style="color:#cbd5e1">75%</b> of investment (= 7.5% price drop at 10×) &nbsp;|&nbsp; Stop Loss <b style="color:#cbd5e1">cannot be edited</b> during weekends</span>
   </div>
 </div></div>
-
-<!-- S6: Scenarios 3 & 4 — 9/13 -->
+ 
+<!-- S6: Scenarios 3 & 4 — 10/14 -->
 <div class="slide" id="s6">
 <div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">10 / 14</span></div>
 <div class="ta"><h1>Scenarios 3 &amp; 4: ADL and Oracle Failure</h1><p>Client long → we hedge long on DEX. These risks apply at any time, not just weekends.</p></div>
@@ -549,8 +543,8 @@ render();
 <tr><td style="color:#f1f5f9;font-weight:600;padding:0.65vh 1.2vw">$50M</td><td style="padding:0.65vh 1.2vw">$10M</td><td class="vr" style="padding:0.65vh 1.2vw">50–100%</td><td style="padding:0.65vh 1.2vw">~$0</td><td class="vy" style="padding:0.65vh 1.2vw">−$5M to −$10M</td></tr>
 </table></div>
 </div></div>
-
-<!-- S7: History — 10/13 -->
+ 
+<!-- S7: History — 11/14 -->
 <div class="slide" id="s7">
 <div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">11 / 14</span></div>
 <div class="ta"><h1>Historical DEX Failures &amp; Incidents</h1><p>Selected incidents relevant to perpetual DEX hedging risk</p></div>
@@ -569,8 +563,8 @@ render();
 <div style="color:#f87171;font-weight:700;font-size:2vh;margin-bottom:0.4vh">⚠️ Key Takeaway</div>
 <div style="color:#fca5a5;font-size:1.85vh;line-height:1.6">DEX perp platforms remain immature. Oct 2025: even Hyperliquid (80% market share) had catastrophic ADL. Oracle exploits are recurring. eToro must treat DEX collateral as at-risk capital and size positions accordingly.</div>
 </div></div></div>
-
-<!-- S_REG — 11/13 -->
+ 
+<!-- S_REG — 12/14 -->
 <div class="slide" id="s_reg">
 <div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">12 / 14</span></div>
 <div class="ta"><h1>Regulatory Risk</h1><p>Risk of regulators classifying the DEX protocol as an unlicensed financial service</p></div>
@@ -595,8 +589,8 @@ render();
 <span style="color:#f87171;font-weight:700;font-size:1.7vh">Risk Level:</span><span class="bg bh" style="font-size:1.7vh;padding:0.3vh 1.2vw">High</span>
 <span style="color:#94a3b8;font-size:1.6vh;margin-left:1vw">Regulatory classification risk is material. Requires ongoing legal oversight.</span>
 </div></div></div>
-
-<!-- S_AML — 12/13 -->
+ 
+<!-- S_AML — 13/14 -->
 <div class="slide" id="s_aml">
 <div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">13 / 14</span></div>
 <div class="ta"><h1>AML Risk</h1><p>Anti-Money Laundering exposure from permissionless, pseudonymous DEX activity</p></div>
@@ -619,8 +613,8 @@ render();
 <span style="color:#f87171;font-weight:700;font-size:1.7vh">AML Risk Level:</span><span class="bg bc" style="font-size:1.7vh;padding:0.3vh 1.2vw">High — Inherent</span>
 <span style="color:#94a3b8;font-size:1.6vh;margin-left:1vw">DEX trading cannot be fully de-risked from AML perspective. Must be accepted at senior level.</span>
 </div></div></div>
-
-<!-- S_MANIP — 13/13 -->
+ 
+<!-- S_MANIP — 14/14 -->
 <div class="slide" id="s_manip">
 <div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">14 / 14</span></div>
 <div class="ta"><h1>Market Manipulation Risk</h1><p>Potential for traders to manipulate asset prices or trading activity on the DEX</p></div>
@@ -643,14 +637,14 @@ render();
 <span style="color:#f87171;font-weight:700;font-size:1.7vh">Risk Level:</span><span class="bg bh" style="font-size:1.7vh;padding:0.3vh 1.2vw">High</span>
 <span style="color:#94a3b8;font-size:1.6vh;margin-left:1vw">eToro's large hedge sizes relative to DEX OI make it a prime target for manipulation. Execution strategy is critical.</span>
 </div></div></div>
-
+ 
 <!-- NAV -->
 <div class="nav" id="nav">
   <button id="btnPrev" onclick="go(-1)">← Prev</button>
   <div class="dots" id="dots"></div>
   <button id="btnNext" onclick="go(1)">Next →</button>
 </div>
-
+ 
 <script>
 var cur=0;
 var slides=['s0','s4','s_summary','s1','s2','s3','s4b','s_sc1','s5','s6','s7','s_reg','s_aml','s_manip'];
