@@ -17,199 +17,133 @@ body{background:#060e1a;color:#f1f5f9;font-family:'Segoe UI',system-ui,sans-seri
 .ta p{font-size:1.7vh;color:#60a5fa;margin-top:0.3vh}
 .body{flex:1;overflow:hidden;padding:1vh 3vw 0.5vh}
 table{width:100%;border-collapse:collapse}
-th{background:#1e3a5f;color:#f1f5f9;text-align:left;font-weight:700;white-space:nowrap}
-td{border-bottom:1px solid #1e3a5f;color:#cbd5e1}
+th{background:#334155;color:#f1f5f9;text-align:left;font-weight:700;white-space:nowrap}
+td{border-bottom:1px solid #334155;color:#334155}
 tr:nth-child(odd) td{background:#0a1628}
-tr:nth-child(even) td{background:#0f1f38}
+tr:nth-child(even) td{background:#0a1628}
 .f{color:#60a5fa;font-weight:600}
 .vr{color:#f87171}
 .vy{color:#fbbf24;font-weight:600}
-.vg{color:#94a3b8}
+.vg{color:#64748b}
 .bg{font-weight:600;border-radius:1.2vh;display:inline-block}
-.bc{color:#f87171;background:#451a1a}
-.bh{color:#fb923c;background:#451a2a}
-.bm{color:#fbbf24;background:#3a2a0a}
+.bc{color:#dc2626;background:#451a1a}
+.bh{color:#ea580c;background:#fbbf2415}
+.bm{color:#fbbf24;background:#422006}
 .nav{position:fixed;bottom:0;left:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:0.6vh 3vw;border-top:1px solid #1e3a5f;background:#0a1628;height:4.2vh;z-index:100}
-.nav button{background:#1e3a5f;color:#f1f5f9;border:none;padding:0.6vh 2vw;border-radius:0.5vh;cursor:pointer;font-weight:600;font-size:1.5vh}
-.nav button:disabled{background:#1e293b;color:#475569;cursor:default}
+.nav button{background:#334155;color:#f1f5f9;border:none;padding:0.6vh 2vw;border-radius:0.5vh;cursor:pointer;font-weight:600;font-size:1.5vh}
+.nav button:disabled{background:#0f1f38;color:#cbd5e1;cursor:default}
 .dots{display:flex;gap:0.8vw}
-.dot{width:1.1vh;height:1.1vh;border-radius:50%;background:#334155;cursor:pointer}
+.dot{width:1.1vh;height:1.1vh;border-radius:50%;background:#1e3a5f;cursor:pointer}
 .dot.active{background:#60a5fa}
 .safe{color:#34d399;font-weight:700}
 .liq{color:#f87171;font-weight:700}
+.white-cells td{color:#fff !important}
+.white-cells td.f{color:#60a5fa !important}
 </style>
 </head>
 <body>
  
 <!-- S0: Executive Summary — 1/14 -->
 <div class="slide active" id="s0">
-<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">1 / 14</span></div>
-<div class="ta" style="padding:0.6vh 3vw 0.3vh"><h1 style="font-size:3vh">Executive Summary</h1><p style="font-size:1.6vh">24/7 Traditional Asset Trading — Hedged via DEX Perpetuals</p></div>
-<div class="body" style="padding:0.5vh 3vw;display:flex;flex-direction:column;gap:0.55vh;overflow:hidden">
-  <div style="background:#0a1628;border:1px solid #1e3a5f;border-radius:0.8vh;padding:0.7vh 1.5vw;flex:2.5">
+<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">1 / 13</span></div>
+<div class="ta" style="padding:0.5vh 3vw 0.25vh"><h1 style="font-size:3vh">Executive Summary</h1><p style="font-size:1.6vh">24/7 Traditional Asset Trading — Hedged via DEX Perpetuals</p></div>
+<div class="body" style="padding:0.5vh 3vw;display:flex;flex-direction:column;gap:0.45vh;overflow:hidden">
+  <div style="background:#0a1628;border:1px solid #334155;border-radius:0.8vh;padding:0.5vh 1.5vw;flex:2.5">
     <div style="color:#60a5fa;font-weight:700;font-size:1.65vh;text-transform:uppercase;letter-spacing:1px;margin-bottom:0.3vh">Product Overview</div>
-    <ul style="padding-left:2vw;color:#cbd5e1;font-size:1.95vh;line-height:1.7">
+    <ul style="padding-left:2vw;color:#94a3b8;font-size:1.95vh;line-height:1.6">
       <li>Launch <b style="color:#f1f5f9">24/7 trading</b> in traditional assets: <span style="color:#fbbf24">Oil, Gold, Silver, NASDAQ, S&amp;P 500, major equities</span></li>
       <li>Hedge ~100% of client exposure using <b style="color:#f1f5f9">perpetual futures on DEX</b></li>
       <li><span style="color:#fbbf24">Gold alternative:</span> hedge via <b style="color:#f1f5f9">PAXG</b> — a gold-backed crypto token — instead of DEX perpetuals, eliminating DEX-specific risks (slippage, ADL, oracle) for this asset</li>
     </ul>
   </div>
-  <div style="background:#0a1628;border:1px solid #1e3a5f;border-radius:0.8vh;padding:0.7vh 1.5vw;flex:2.5">
+  <div style="background:#0a1628;border:1px solid #334155;border-radius:0.8vh;padding:0.5vh 1.5vw;flex:2.5">
     <div style="color:#60a5fa;font-weight:700;font-size:1.65vh;text-transform:uppercase;letter-spacing:1px;margin-bottom:0.3vh">Key Risk Considerations</div>
-    <ul style="padding-left:2vw;color:#cbd5e1;font-size:1.95vh;line-height:1.7">
+    <ul style="padding-left:2vw;color:#94a3b8;font-size:1.95vh;line-height:1.6">
       <li>Primary DEX risks: <span style="color:#f87171">slippage on large closures, hedge liquidation from leverage mismatch, ADL-forced closure, oracle/smart contract failure</span> — each capable of total hedge margin loss</li>
       <li><span style="color:#f87171;font-weight:600">Client slippage exposure:</span> DEX immaturity → significant slippage on closures is a <b style="color:#f87171">frequent, expected occurrence</b> — not a tail event — raising best execution compliance concerns</li>
       <li><span style="color:#f87171;font-weight:600">High probability of total margin loss:</span> In extreme events (e.g. Oct 2025), order book depth collapsed 98%, ADL triggered at scale — full margin loss is a <b style="color:#f87171">likely outcome</b>, not a tail risk</li>
       <li><span style="color:#fb923c;font-weight:600">Regulatory &amp; structural risks:</span> legal classification uncertainty, AML exposure from permissionless activity, and susceptibility to market manipulation — requiring ongoing legal oversight and <b style="color:#fb923c">senior-level risk acceptance</b></li>
     </ul>
   </div>
-  <div style="background:#0a1628;border:1px solid #1e3a5f;border-radius:0.8vh;padding:0.7vh 1.5vw;flex:2.5">
+  <div style="background:#0a1628;border:1px solid #334155;border-radius:0.8vh;padding:0.5vh 1.5vw;flex:2.5">
     <div style="color:#60a5fa;font-weight:700;font-size:1.65vh;text-transform:uppercase;letter-spacing:1px;margin-bottom:0.3vh">Scenario Analysis Summary</div>
-    <ul style="padding-left:2vw;color:#cbd5e1;font-size:1.95vh;line-height:1.7">
+    <ul style="padding-left:2vw;color:#94a3b8;font-size:1.95vh;line-height:1.6">
       <li><span style="color:#f1f5f9;font-weight:600">Scenarios analyzed:</span> <span style="color:#fbbf24">Slippage on massive client position closures</span> &nbsp;|&nbsp; <span style="color:#fbbf24">Extreme fast market weekend</span> &nbsp;|&nbsp; <span style="color:#f87171">ADL — forced hedge closure</span> &nbsp;|&nbsp; <span style="color:#a78bfa">Oracle failure / manipulation</span></li>
       <li><span style="color:#f1f5f9;font-weight:600">Maximum potential loss per NOP size:</span>
-        &nbsp; <span style="color:#94a3b8">$10M NOP →</span> <span style="color:#fbbf24;font-weight:600">$2M</span> <span style="color:#64748b;font-size:1.6vh">(full margin, hedge 5×)</span>
-        &nbsp;|&nbsp; <span style="color:#94a3b8">$25M NOP →</span> <span style="color:#f87171;font-weight:600">$5M</span> <span style="color:#64748b;font-size:1.6vh">(full margin, hedge 5×)</span>
-        &nbsp;|&nbsp; <span style="color:#94a3b8">$50M NOP →</span> <span style="color:#f87171;font-weight:600">$10M</span> <span style="color:#64748b;font-size:1.6vh">(full margin, hedge 5×)</span>
+        &nbsp; <span style="color:#94a3b8">$10M NOP →</span> <span style="color:#fbbf24;font-weight:600">$2M</span> <span style="color:#94a3b8;font-size:1.6vh">(full margin, hedge 5×)</span>
+        &nbsp;|&nbsp; <span style="color:#94a3b8">$25M NOP →</span> <span style="color:#f87171;font-weight:600">$5M</span> <span style="color:#94a3b8;font-size:1.6vh">(full margin, hedge 5×)</span>
+        &nbsp;|&nbsp; <span style="color:#94a3b8">$50M NOP →</span> <span style="color:#f87171;font-weight:600">$10M</span> <span style="color:#94a3b8;font-size:1.6vh">(full margin, hedge 5×)</span>
       </li>
     </ul>
   </div>
-  <div style="background:#0a1628;border:1px solid #1e3a5f;border-radius:0.8vh;padding:0.7vh 1.5vw;flex:5.5">
+  <div style="background:#0a1628;border:1px solid #334155;border-radius:0.8vh;padding:0.5vh 1.5vw;flex:5.5">
     <div style="color:#60a5fa;font-weight:700;font-size:1.65vh;text-transform:uppercase;letter-spacing:1px;margin-bottom:0.3vh">Recommendation</div>
-    <ul style="padding-left:2vw;color:#cbd5e1;font-size:1.85vh;line-height:1.7;margin-bottom:0.4vh"><li><span style="color:#34d399;font-weight:600;font-size:1.7vh">Recommended Thresholds:</span></li></ul>
-    <div style="display:flex;gap:0.8vw;margin-bottom:0.5vh">
-      <div style="flex:1;background:#0f1f10;border:1px solid #166534;border-radius:0.5vh;padding:0.5vh 0.8vw;text-align:center">
+    <ul style="padding-left:2vw;color:#94a3b8;font-size:1.75vh;line-height:1.6;margin-bottom:0.3vh"><li><span style="color:#34d399;font-weight:600;font-size:1.7vh">Recommended Thresholds:</span></li></ul>
+    <div style="display:flex;gap:0.8vw;margin-bottom:0.35vh">
+      <div style="flex:1;background:#0a1f14;border:1px solid #166534;border-radius:0.5vh;padding:0.35vh 0.8vw;text-align:center">
         <div style="color:#34d399;font-weight:800;font-size:2.4vh">$10M</div>
-        <div style="color:#86efac;font-size:1.3vh">Hedge side invested</div>
-        <div style="color:#64748b;font-size:1.5vh">maximum</div>
+        <div style="color:#047857;font-size:1.3vh">Hedge side invested</div>
+        <div style="color:#94a3b8;font-size:1.5vh">maximum</div>
       </div>
-      <div style="flex:1;background:#0f1f10;border:1px solid #166534;border-radius:0.5vh;padding:0.5vh 0.8vw;text-align:center">
+      <div style="flex:1;background:#0a1f14;border:1px solid #166534;border-radius:0.5vh;padding:0.35vh 0.8vw;text-align:center">
         <div style="color:#34d399;font-weight:800;font-size:2.4vh">$20M</div>
-        <div style="color:#86efac;font-size:1.3vh">Gold & Oil client NOP</div>
-        <div style="color:#64748b;font-size:1.5vh">maximum</div>
+        <div style="color:#047857;font-size:1.3vh">Gold & Oil client NOP</div>
+        <div style="color:#94a3b8;font-size:1.5vh">maximum</div>
       </div>
-      <div style="flex:1;background:#0f1f10;border:1px solid #166534;border-radius:0.5vh;padding:0.5vh 0.8vw;text-align:center">
+      <div style="flex:1;background:#0a1f14;border:1px solid #166534;border-radius:0.5vh;padding:0.35vh 0.8vw;text-align:center">
         <div style="color:#34d399;font-weight:800;font-size:2.4vh">$5M</div>
-        <div style="color:#86efac;font-size:1.3vh">All other assets NOP</div>
-        <div style="color:#64748b;font-size:1.5vh">maximum</div>
+        <div style="color:#047857;font-size:1.3vh">All other assets NOP</div>
+        <div style="color:#94a3b8;font-size:1.5vh">maximum</div>
       </div>
-      <div style="flex:1;background:#0f1f10;border:1px solid #166534;border-radius:0.5vh;padding:0.5vh 0.8vw;text-align:center">
+      <div style="flex:1;background:#0a1f14;border:1px solid #166534;border-radius:0.5vh;padding:0.35vh 0.8vw;text-align:center">
         <div style="color:#34d399;font-weight:800;font-size:2.4vh">10×</div>
-        <div style="color:#86efac;font-size:1.3vh">Hedge leverage cap</div>
-        <div style="color:#64748b;font-size:1.5vh">never &gt; client avg leverage</div>
+        <div style="color:#047857;font-size:1.3vh">Hedge leverage cap</div>
+        <div style="color:#94a3b8;font-size:1.5vh">never &gt; client avg leverage</div>
       </div>
     </div>
-    <ul style="padding-left:2vw;color:#cbd5e1;font-size:1.85vh;line-height:1.7">
+    <ul style="padding-left:2vw;color:#94a3b8;font-size:1.75vh;line-height:1.6">
       <li>Hedge leverage must be <span style="color:#34d399;font-weight:600">carefully balanced</span>: too high → liquidation risk in fast markets; too low → excess capital locked on Hyperliquid exposed to counterparty risk</li>
       <li>Real-time monitoring of insurance fund health, oracle integrity, slippage thresholds — with pre-defined circuit breakers and manual intervention protocols</li>
       <li>Client disclosure on potential for elevated slippage during weekends and off-market hours</li>
+      <li>The Risk team will work together with the LP management team to onboard and promote additional liquidity sources, including <b style="color:#f1f5f9">TradeFlow, Binance, and others</b>, within the next two months</li>
     </ul>
   </div>
 </div>
 </div>
  
 <!-- S4: Risk Map — 2/14 -->
+<!-- 4/13: Risk Map (scatter matrix) -->
 <div class="slide" id="s4">
-<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">2 / 14</span></div>
+<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">4 / 13</span></div>
 <div class="ta" style="padding:0.6vh 3vw 0.3vh"><h1 style="font-size:3.2vh">Risk Map — eToro as Broker</h1><p style="font-size:1.7vh">Key risk categories when hedging client exposure via DEX perpetuals</p></div>
 <div class="body" style="padding:0.3vh 2.5vw 0.3vh;display:flex;gap:1.2vw;overflow:hidden">
-  <!-- Matrix area -->
-  <div style="flex:2.5;display:flex;flex-direction:column">
-    <div style="flex:1;display:flex">
-      <!-- Y axis labels -->
-      <div style="width:3.8vw;display:flex;flex-direction:column;padding-right:0.4vw;position:relative">
-        <div style="position:absolute;left:-1vw;top:50%;transform:rotate(-90deg) translateX(-50%);transform-origin:0 0;color:#64748b;font-weight:700;font-size:1.5vh;letter-spacing:2px;text-transform:uppercase">Impact</div>
-        <div style="flex:1;display:flex;align-items:center;justify-content:flex-end"><span style="color:#f87171;font-weight:700;font-size:1.7vh">Critical</span></div>
-        <div style="flex:1;display:flex;align-items:center;justify-content:flex-end"><span style="color:#fb923c;font-weight:700;font-size:1.7vh">High</span></div>
-        <div style="flex:1;display:flex;align-items:center;justify-content:flex-end"><span style="color:#fbbf24;font-weight:700;font-size:1.7vh">Medium</span></div>
-      </div>
-      <!-- Grid with free-positioned boxes -->
-      <div style="flex:1;position:relative;border-left:2px solid #334155;border-bottom:2px solid #334155">
-        <!-- Grid lines -->
-        <div style="position:absolute;top:33.33%;left:0;right:0;border-top:1px solid #1e3a5f"></div>
-        <div style="position:absolute;top:66.66%;left:0;right:0;border-top:1px solid #1e3a5f"></div>
-        <div style="position:absolute;left:33.33%;top:0;bottom:0;border-left:1px solid #1e3a5f"></div>
-        <div style="position:absolute;left:66.66%;top:0;bottom:0;border-left:1px solid #1e3a5f"></div>
-        <!-- Danger zone hint -->
-        <div style="position:absolute;top:0;right:0;width:34%;height:34%;background:rgba(248,113,113,0.06)"></div>
- 
-        <!-- ADL: Critical / Low -->
-        <div style="position:absolute;top:1%;left:1%;width:42%;background:#451a1a;border:1.5px solid #f87171;border-radius:0.5vh;padding:1.2vh 1.1vw">
-          <div style="color:#f87171;font-weight:700;font-size:2.2vh">⚠️ ADL</div>
-          <div style="color:#94a3b8;font-size:1.7vh;line-height:1.5">Insurance fund depletes → DEX forcibly closes hedge</div>
-        </div>
- 
-        <!-- Oracle: Critical / Low-Medium -->
-        <div style="position:absolute;top:16%;left:16%;width:42%;background:#451a1a;border:1.5px solid #fb923c;border-radius:0.5vh;padding:1.2vh 1.1vw">
-          <div style="color:#fb923c;font-weight:700;font-size:2.2vh">🔮 Oracle / Price Feed</div>
-          <div style="color:#94a3b8;font-size:1.7vh;line-height:1.5">Faulty oracle → wrongful liquidation or exploit</div>
-        </div>
- 
-        <!-- Hedge Liquidation: Critical / Medium-High -->
-        <div style="position:absolute;top:1%;left:48%;width:42%;background:#451a1a;border:1.5px solid #f87171;border-radius:0.5vh;padding:1.2vh 1.1vw">
-          <div style="color:#f87171;font-weight:700;font-size:2.2vh">🔴 Hedge Liquidation</div>
-          <div style="color:#94a3b8;font-size:1.7vh;line-height:1.5">Fast market: hedge liq before client SL → unhedged window</div>
-        </div>
- 
-        <!-- Smart Contract: High / Low -->
-        <div style="position:absolute;top:36%;left:1%;width:42%;background:#2a1a0a;border:1.5px solid #f87171;border-radius:0.5vh;padding:1.2vh 1.1vw">
-          <div style="color:#f87171;font-weight:700;font-size:2.2vh">🛡️ Smart Contract</div>
-          <div style="color:#94a3b8;font-size:1.7vh;line-height:1.5">Code exploits drain funds. $3.1B lost H1 2025</div>
-        </div>
- 
-        <!-- Regulatory: High / Medium-High -->
-        <div style="position:absolute;top:38%;left:40%;width:42%;background:#2a1a0a;border:1.5px solid #fb923c;border-radius:0.5vh;padding:1.2vh 1.1vw">
-          <div style="color:#fb923c;font-weight:700;font-size:2.2vh">⚖️ Regulatory / Legal</div>
-          <div style="color:#94a3b8;font-size:1.7vh;line-height:1.5">Unregulated DEX conflicts with eToro obligations</div>
-        </div>
- 
-        <!-- Slippage: Medium-High / High -->
-        <div style="position:absolute;top:54%;left:55%;width:42%;background:#3a2a0a;border:1.5px solid #fbbf24;border-radius:0.5vh;padding:1.2vh 1.1vw">
-          <div style="color:#fbbf24;font-weight:700;font-size:2.2vh">📉 Slippage — Mass Closure</div>
-          <div style="color:#94a3b8;font-size:1.7vh;line-height:1.5">Large client exits → hedge at unfavorable price</div>
-        </div>
- 
-        <!-- Funding Rate: Medium / Medium-High -->
-        <div style="position:absolute;top:73%;left:42%;width:42%;background:#3a2a0a;border:1.5px solid #fbbf24;border-radius:0.5vh;padding:1.2vh 1.1vw">
-          <div style="color:#fbbf24;font-weight:700;font-size:2.2vh">💰 Funding Rate</div>
-          <div style="color:#94a3b8;font-size:1.7vh;line-height:1.5">&gt;0.1%/8h (&gt;10% annual) ongoing carry cost</div>
-        </div>
-      </div>
-    </div>
-    <!-- X axis labels -->
-    <div style="display:flex;margin-left:3.8vw;margin-top:0.3vh">
-      <div style="flex:1;text-align:center"><span style="color:#34d399;font-weight:700;font-size:1.7vh">Low</span></div>
-      <div style="flex:1;text-align:center"><span style="color:#fbbf24;font-weight:700;font-size:1.7vh">Medium</span></div>
-      <div style="flex:1;text-align:center"><span style="color:#f87171;font-weight:700;font-size:1.7vh">High</span></div>
-    </div>
+  <div style="flex:2.5;display:flex;flex-direction:column"><div style="flex:1;display:flex"><div style="width:3.8vw;display:flex;flex-direction:column;padding-right:0.4vw;position:relative"><div style="position:absolute;left:-1vw;top:50%;transform:rotate(-90deg) translateX(-50%);transform-origin:0 0;color:#64748b;font-weight:700;font-size:1.5vh;letter-spacing:2px;text-transform:uppercase">Impact</div><div style="flex:1;display:flex;align-items:center;justify-content:flex-end"><span style="color:#f87171;font-weight:700;font-size:1.7vh">Critical</span></div><div style="flex:1;display:flex;align-items:center;justify-content:flex-end"><span style="color:#fb923c;font-weight:700;font-size:1.7vh">High</span></div><div style="flex:1;display:flex;align-items:center;justify-content:flex-end"><span style="color:#fbbf24;font-weight:700;font-size:1.7vh">Medium</span></div></div>
+    <div style="flex:1;position:relative;border-left:2px solid #334155;border-bottom:2px solid #334155;overflow:hidden">
+      <div style="position:absolute;top:33.33%;left:0;right:0;border-top:1px solid #1e3a5f"></div><div style="position:absolute;top:66.66%;left:0;right:0;border-top:1px solid #1e3a5f"></div><div style="position:absolute;left:33.33%;top:0;bottom:0;border-left:1px solid #1e3a5f"></div><div style="position:absolute;left:66.66%;top:0;bottom:0;border-left:1px solid #1e3a5f"></div>
+      <div style="position:absolute;top:0;right:0;width:34%;height:34%;background:rgba(248,113,113,0.06)"></div>
+      <div style="position:absolute;top:1%;left:1%;width:42%;background:#451a1a;border:1.5px solid #f87171;border-radius:0.5vh;padding:1.2vh 1.1vw"><div style="color:#f87171;font-weight:700;font-size:2.2vh">⚠️ ADL</div><div style="color:#94a3b8;font-size:1.7vh;line-height:1.5">Insurance fund depletes → DEX forcibly closes hedge</div></div>
+      <div style="position:absolute;top:16%;left:16%;width:42%;background:#451a1a;border:1.5px solid #fb923c;border-radius:0.5vh;padding:1.2vh 1.1vw"><div style="color:#fb923c;font-weight:700;font-size:2.2vh">🔮 Oracle / Price Feed</div><div style="color:#94a3b8;font-size:1.7vh;line-height:1.5">Faulty oracle → wrongful liquidation or exploit</div></div>
+      <div style="position:absolute;top:1%;left:48%;width:42%;background:#451a1a;border:1.5px solid #f87171;border-radius:0.5vh;padding:1.2vh 1.1vw"><div style="color:#f87171;font-weight:700;font-size:2.2vh">🔴 Hedge Liquidation</div><div style="color:#94a3b8;font-size:1.7vh;line-height:1.5">Fast market: hedge liq before client SL → unhedged window</div></div>
+      <div style="position:absolute;top:36%;left:1%;width:42%;background:#2a1a0a;border:1.5px solid #f87171;border-radius:0.5vh;padding:1.2vh 1.1vw"><div style="color:#f87171;font-weight:700;font-size:2.2vh">🛡️ Smart Contract</div><div style="color:#94a3b8;font-size:1.7vh;line-height:1.5">Code exploits drain funds. $3.1B lost H1 2025</div></div>
+      <div style="position:absolute;top:38%;left:40%;width:42%;background:#2a1a0a;border:1.5px solid #fb923c;border-radius:0.5vh;padding:1.2vh 1.1vw"><div style="color:#fb923c;font-weight:700;font-size:2.2vh">⚖️ Regulatory / Legal</div><div style="color:#94a3b8;font-size:1.7vh;line-height:1.5">Unregulated DEX conflicts with eToro obligations</div></div>
+      <div style="position:absolute;top:54%;left:55%;width:42%;background:#3a2a0a;border:1.5px solid #fbbf24;border-radius:0.5vh;padding:1.2vh 1.1vw"><div style="color:#fbbf24;font-weight:700;font-size:2.2vh">📉 Slippage — Mass Closure</div><div style="color:#94a3b8;font-size:1.7vh;line-height:1.5">Large client exits → hedge at unfavorable price</div></div>
+      <div style="position:absolute;top:73%;left:42%;width:42%;background:#3a2a0a;border:1.5px solid #fbbf24;border-radius:0.5vh;padding:1.2vh 1.1vw"><div style="color:#fbbf24;font-weight:700;font-size:2.2vh">💰 Funding Rate</div><div style="color:#94a3b8;font-size:1.7vh;line-height:1.5">&gt;0.1%/8h (&gt;10% annual) ongoing carry cost</div></div>
+    </div></div>
+    <div style="display:flex;margin-left:3.8vw;margin-top:0.3vh"><div style="flex:1;text-align:center"><span style="color:#34d399;font-weight:700;font-size:1.7vh">Low</span></div><div style="flex:1;text-align:center"><span style="color:#fbbf24;font-weight:700;font-size:1.7vh">Medium</span></div><div style="flex:1;text-align:center"><span style="color:#f87171;font-weight:700;font-size:1.7vh">High</span></div></div>
     <div style="text-align:center;margin-left:3.8vw;margin-top:0.1vh"><span style="color:#64748b;font-weight:700;font-size:1.5vh;letter-spacing:2px;text-transform:uppercase">Likelihood</span></div>
   </div>
-  <!-- Right panel: Historical Incidents -->
   <div style="flex:1;display:flex;flex-direction:column;gap:0.7vh">
     <div style="color:#60a5fa;font-weight:700;font-size:1.9vh;text-transform:uppercase;letter-spacing:1px;flex-shrink:0">Historical Incidents</div>
-    <div style="background:#451a1a;border:1px solid #7f1d1d;border-radius:0.5vh;padding:0.7vh 1vw;flex:1;display:flex;flex-direction:column;justify-content:center">
-      <div style="color:#f87171;font-weight:700;font-size:2vh">🔴 ADL — Oct 2025</div>
-      <div style="color:#fca5a5;font-size:1.65vh;line-height:1.6;margin-top:0.3vh">35,000 ADL events on Hyperliquid.<br>20K users affected, 161 tokens.<br>~50% of OI wiped. $10.3B liquidated.</div>
-    </div>
-    <div style="background:#2a1a0a;border:1px solid #854d0e;border-radius:0.5vh;padding:0.7vh 1vw;flex:1;display:flex;flex-direction:column;justify-content:center">
-      <div style="color:#fb923c;font-weight:700;font-size:2vh">🔮 Oracle Failures</div>
-      <div style="color:#fdba74;font-size:1.65vh;line-height:1.6;margin-top:0.3vh">Apr 2025: KiloEx — $7.4M wrongful liq.<br>May 2025: Cetus — $223M drained in 15 min.<br>Largest single DeFi exploit of 2025.</div>
-    </div>
-    <div style="background:#1a0a2a;border:1px solid #5b21b6;border-radius:0.5vh;padding:0.7vh 1vw;flex:1;display:flex;flex-direction:column;justify-content:center">
-      <div style="color:#a78bfa;font-weight:700;font-size:2vh">🛡️ Smart Contract</div>
-      <div style="color:#c4b5fd;font-size:1.65vh;line-height:1.6;margin-top:0.3vh">$3.1B total lost across DeFi<br>protocols in H1 2025.<br>Immutable contracts = no rollback.</div>
-    </div>
-    <div style="background:#0a1628;border:1px solid #1e3a5f;border-radius:0.5vh;padding:0.7vh 1vw;flex:0.6;display:flex;align-items:center">
-      <div style="color:#64748b;font-size:1.7vh;line-height:1.5">DEX perps remain immature — eToro must treat all DEX collateral as <b style="color:#f87171">at-risk capital</b>.</div>
-    </div>
+    <div style="background:#451a1a;border:1px solid #7f1d1d;border-radius:0.5vh;padding:0.7vh 1vw;flex:1;display:flex;flex-direction:column;justify-content:center"><div style="color:#f87171;font-weight:700;font-size:2vh">🔴 ADL — Oct 2025</div><div style="color:#fca5a5;font-size:1.65vh;line-height:1.6;margin-top:0.3vh">35,000 ADL events on Hyperliquid.<br>20K users affected, 161 tokens.<br>~50% of OI wiped. $10.3B liquidated.</div></div>
+    <div style="background:#2a1a0a;border:1px solid #854d0e;border-radius:0.5vh;padding:0.7vh 1vw;flex:1;display:flex;flex-direction:column;justify-content:center"><div style="color:#fb923c;font-weight:700;font-size:2vh">🔮 Oracle Failures</div><div style="color:#fdba74;font-size:1.65vh;line-height:1.6;margin-top:0.3vh">Apr 2025: KiloEx — $7.4M wrongful liq.<br>May 2025: Cetus — $223M drained in 15 min.<br>Largest single DeFi exploit of 2025.</div></div>
+    <div style="background:#1a0a2a;border:1px solid #5b21b6;border-radius:0.5vh;padding:0.7vh 1vw;flex:1;display:flex;flex-direction:column;justify-content:center"><div style="color:#a78bfa;font-weight:700;font-size:2vh">🛡️ Smart Contract</div><div style="color:#c4b5fd;font-size:1.65vh;line-height:1.6;margin-top:0.3vh">$3.1B total lost across DeFi<br>protocols in H1 2025.<br>Immutable contracts = no rollback.</div></div>
+    <div style="background:#0a1628;border:1px solid #1e3a5f;border-radius:0.5vh;padding:0.7vh 1vw;flex:0.6;display:flex;align-items:center"><div style="color:#64748b;font-size:1.7vh;line-height:1.5">DEX perps remain immature — eToro must treat all DEX collateral as <b style="color:#f87171">at-risk capital</b>.</div></div>
   </div>
 </div>
 </div>
  
- 
-<!-- S_SUMMARY: Scenario Summary — 3/14 -->
 <div class="slide" id="s_summary">
-<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">3 / 14</span></div>
+<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">5 / 13</span></div>
 <div class="ta" style="padding:0.8vh 3vw 0.4vh">
   <h1 style="font-size:3vh">Scenario Loss Summary</h1>
   <p style="font-size:1.7vh">Loss range per scenario across client NOP sizes &nbsp;|&nbsp; Min = best-case asset/structure &nbsp;|&nbsp; Max = worst-case or full margin wipeout</p>
@@ -218,89 +152,89 @@ tr:nth-child(even) td{background:#0f1f38}
   <table style="font-size:2.2vh;border-collapse:collapse;width:100%">
     <tr>
       <th style="padding:1.3vh 1.4vw;width:32%">Scenario</th>
-      <th style="text-align:center;padding:1.3vh 1.4vw;background:#1a1a2e;color:#c4b5fd;width:22%">$10M NOP</th>
-      <th style="text-align:center;padding:1.3vh 1.4vw;background:#1f1510;color:#fdba74;width:22%">$25M NOP</th>
-      <th style="text-align:center;padding:1.3vh 1.4vw;background:#1f0a0a;color:#fca5a5;width:22%">$50M NOP</th>
+      <th style="text-align:center;padding:1.3vh 1.4vw;background:#1e1b4b;color:#6d28d9;width:22%">$10M NOP</th>
+      <th style="text-align:center;padding:1.3vh 1.4vw;background:#fbbf2415;color:#c2410c;width:22%">$25M NOP</th>
+      <th style="text-align:center;padding:1.3vh 1.4vw;background:#451a1a;color:#dc2626;width:22%">$50M NOP</th>
     </tr>
     <tr>
       <td style="padding:1.4vh 1.4vw;border-bottom:1px solid #1e3a5f">
         <div style="color:#fbbf24;font-weight:700;font-size:2.2vh">Scenario 1</div>
         <div style="color:#94a3b8;font-size:1.7vh">Slippage on Mass Closures</div>
-        <div style="color:#64748b;font-size:1.4vh">Normal → Extreme (×100) | 20% NOP closed</div>
+        <div style="color:#94a3b8;font-size:1.4vh">Normal → Extreme (×100) | 20% NOP closed</div>
       </td>
       <td style="text-align:center;padding:1.4vh 1.4vw;border-bottom:1px solid #1e3a5f;background:#0a1f14">
         <div style="color:#34d399;font-weight:700;font-size:2.2vh">$5.6K – $400K</div>
-        <div style="color:#64748b;font-size:1.4vh">NASDAQ normal → full margin</div>
+        <div style="color:#94a3b8;font-size:1.4vh">Normal market → extreme: full margin loss</div>
       </td>
       <td style="text-align:center;padding:1.4vh 1.4vw;border-bottom:1px solid #1e3a5f;background:#fbbf2415">
         <div style="color:#fbbf24;font-weight:700;font-size:2.2vh">$22.5K – $1M</div>
-        <div style="color:#64748b;font-size:1.4vh">NASDAQ normal → full margin</div>
+        <div style="color:#94a3b8;font-size:1.4vh">Normal market → extreme: full margin loss</div>
       </td>
       <td style="text-align:center;padding:1.4vh 1.4vw;border-bottom:1px solid #1e3a5f;background:#fbbf2415">
         <div style="color:#fbbf24;font-weight:700;font-size:2.2vh">$93K – $2M</div>
-        <div style="color:#64748b;font-size:1.4vh">NASDAQ normal → full margin</div>
+        <div style="color:#94a3b8;font-size:1.4vh">Normal market → extreme: full margin loss</div>
       </td>
     </tr>
     <tr>
       <td style="padding:1.4vh 1.4vw;border-bottom:1px solid #1e3a5f">
         <div style="color:#fb923c;font-weight:700;font-size:2.2vh">Scenario 2</div>
         <div style="color:#94a3b8;font-size:1.7vh">Fast Market Weekend</div>
-        <div style="color:#64748b;font-size:1.4vh">Leverage mismatch + slippage stress</div>
+        <div style="color:#94a3b8;font-size:1.4vh">Leverage mismatch + slippage stress</div>
       </td>
       <td style="text-align:center;padding:1.4vh 1.4vw;border-bottom:1px solid #1e3a5f;background:#fbbf2415">
         <div style="color:#fbbf24;font-weight:700;font-size:2.2vh">$250K – $1.65M</div>
-        <div style="color:#64748b;font-size:1.4vh">Case 1 Hedge 10× → Case 2 Gold</div>
+        <div style="color:#94a3b8;font-size:1.4vh">Case 1 Hedge 10× → Case 2 Gold</div>
       </td>
       <td style="text-align:center;padding:1.4vh 1.4vw;border-bottom:1px solid #1e3a5f;background:#2a0e0e">
         <div style="color:#f87171;font-weight:700;font-size:2.2vh">$625K – $5M</div>
-        <div style="color:#64748b;font-size:1.4vh">Case 1 Hedge 10× → full margin</div>
+        <div style="color:#94a3b8;font-size:1.4vh">Case 1 Hedge 10× → full margin</div>
       </td>
       <td style="text-align:center;padding:1.4vh 1.4vw;border-bottom:1px solid #1e3a5f;background:#2a0e0e">
         <div style="color:#f87171;font-weight:700;font-size:2.2vh">$1.25M – $10M</div>
-        <div style="color:#64748b;font-size:1.4vh">Case 1 Hedge 10× → full margin</div>
+        <div style="color:#94a3b8;font-size:1.4vh">Case 1 Hedge 10× → full margin</div>
       </td>
     </tr>
     <tr>
       <td style="padding:1.4vh 1.4vw;border-bottom:1px solid #1e3a5f">
         <div style="color:#f87171;font-weight:700;font-size:2.2vh">Scenario 3</div>
         <div style="color:#94a3b8;font-size:1.7vh">ADL — Forced Hedge Closure</div>
-        <div style="color:#64748b;font-size:1.4vh">Insurance fund depletion</div>
+        <div style="color:#94a3b8;font-size:1.4vh">Insurance fund depletion</div>
       </td>
       <td style="text-align:center;padding:1.4vh 1.4vw;border-bottom:1px solid #1e3a5f;background:#2a0e0e">
         <div style="color:#f87171;font-weight:700;font-size:2.2vh">$1.3M</div>
-        <div style="color:#64748b;font-size:1.4vh">Fixed — ADL at +17%</div>
+        <div style="color:#94a3b8;font-size:1.4vh">Fixed — ADL at +17%</div>
       </td>
       <td style="text-align:center;padding:1.4vh 1.4vw;border-bottom:1px solid #1e3a5f;background:#2a0e0e">
         <div style="color:#f87171;font-weight:700;font-size:2.2vh">$3.25M</div>
-        <div style="color:#64748b;font-size:1.4vh">Fixed — ADL at +17%</div>
+        <div style="color:#94a3b8;font-size:1.4vh">Fixed — ADL at +17%</div>
       </td>
       <td style="text-align:center;padding:1.4vh 1.4vw;border-bottom:1px solid #1e3a5f;background:#2a0e0e">
         <div style="color:#f87171;font-weight:700;font-size:2.2vh">$6.5M</div>
-        <div style="color:#64748b;font-size:1.4vh">Fixed — ADL at +17%</div>
+        <div style="color:#94a3b8;font-size:1.4vh">Fixed — ADL at +17%</div>
       </td>
     </tr>
     <tr>
       <td style="padding:1.4vh 1.4vw">
-        <div style="color:#a78bfa;font-weight:700;font-size:2.2vh">Scenario 4</div>
+        <div style="color:#7c3aed;font-weight:700;font-size:2.2vh">Scenario 4</div>
         <div style="color:#94a3b8;font-size:1.7vh">Oracle Failure / Manipulation</div>
-        <div style="color:#64748b;font-size:1.4vh">50%–100% margin loss</div>
+        <div style="color:#94a3b8;font-size:1.4vh">50%–100% margin loss</div>
       </td>
       <td style="text-align:center;padding:1.4vh 1.4vw;background:#2a0e0e">
         <div style="color:#f87171;font-weight:700;font-size:2.2vh">$1M – $2M</div>
-        <div style="color:#64748b;font-size:1.4vh">50%–100% of $2M margin</div>
+        <div style="color:#94a3b8;font-size:1.4vh">50%–100% of $2M margin</div>
       </td>
       <td style="text-align:center;padding:1.4vh 1.4vw;background:#2a0e0e">
         <div style="color:#f87171;font-weight:700;font-size:2.2vh">$2.5M – $5M</div>
-        <div style="color:#64748b;font-size:1.4vh">50%–100% of $5M margin</div>
+        <div style="color:#94a3b8;font-size:1.4vh">50%–100% of $5M margin</div>
       </td>
       <td style="text-align:center;padding:1.4vh 1.4vw;background:#2a0e0e">
         <div style="color:#f87171;font-weight:700;font-size:2.2vh">$5M – $10M</div>
-        <div style="color:#64748b;font-size:1.4vh">50%–100% of $10M margin</div>
+        <div style="color:#94a3b8;font-size:1.4vh">50%–100% of $10M margin</div>
       </td>
     </tr>
   </table>
   <div style="background:#0a1628;border:1px solid #334155;border-radius:0.6vh;padding:1.1vh 1.5vw;display:flex;gap:3vw;align-items:center">
-    <div style="color:#64748b;font-size:1.6vh;flex-shrink:0">Key:</div>
+    <div style="color:#94a3b8;font-size:1.6vh;flex-shrink:0">Key:</div>
     <div style="display:flex;gap:3vw;font-size:1.6vh">
       <span><span style="color:#34d399;font-weight:700">Green</span> = manageable (&lt;$500K)</span>
       <span><span style="color:#fbbf24;font-weight:700">Yellow</span> = elevated ($500K–$3M)</span>
@@ -313,9 +247,9 @@ tr:nth-child(even) td{background:#0f1f38}
  
 <!-- S1: Instrument Comparison — 4/14 -->
 <div class="slide" id="s1">
-<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">4 / 14</span></div>
+<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">2 / 13</span></div>
 <div class="ta"><h1>Instrument Comparison</h1><p>Traditional Futures (CME) vs. CEX Perpetuals vs. DEX Perpetuals</p></div>
-<div class="body"><table style="font-size:1.7vh">
+<div class="body"><table style="font-size:1.7vh" class="white-cells">
 <tr><th style="padding:0.9vh 1.2vw">Feature</th><th style="padding:0.9vh 1.2vw">CME Futures</th><th style="padding:0.9vh 1.2vw">CEX Perpetuals</th><th style="padding:0.9vh 1.2vw">DEX Perpetuals</th></tr>
 <tr><td class="f" style="padding:0.9vh 1.2vw">Trading Hours</td><td style="padding:0.9vh 1.2vw">~23h/5d (Sun–Fri)</td><td style="padding:0.9vh 1.2vw">24/7</td><td style="padding:0.9vh 1.2vw">24/7</td></tr>
 <tr><td class="f" style="padding:0.9vh 1.2vw">Expiry</td><td style="padding:0.9vh 1.2vw">Quarterly / Monthly</td><td style="padding:0.9vh 1.2vw">No expiry (perpetual)</td><td style="padding:0.9vh 1.2vw">No expiry (perpetual)</td></tr>
@@ -336,198 +270,122 @@ tr:nth-child(even) td{background:#0f1f38}
  
 <!-- S2: Volume & OI — 5/14 -->
 <div class="slide" id="s2">
-<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">5 / 14</span></div>
+<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">3 / 13</span></div>
 <div class="ta" style="padding:1.2vh 3vw 0.4vh"><h1 style="font-size:3.2vh">Liquidity Comparison — Volume &amp; Open Interest</h1><p style="font-size:1.8vh">CME Futures vs. CEX Perps vs. DEX Perps (March 2026)</p></div>
 <div class="body" style="padding:1vh 2.5vw 0.5vh">
 <table style="font-size:1.85vh">
-<tr><th rowspan="2" style="vertical-align:middle;padding:0.95vh 1vw">Asset</th><th colspan="2" style="text-align:center;background:#14532d;color:#86efac;padding:0.95vh 1vw">CME Futures</th><th colspan="2" style="text-align:center;background:#422006;color:#fbbf24;padding:0.95vh 1vw">CEX Perps (Binance/Bybit)</th><th colspan="2" style="text-align:center;background:#1e1b4b;color:#a78bfa;padding:0.95vh 1vw">DEX Perps (Hyperliquid)</th></tr>
-<tr><th style="text-align:center;background:#14532d;color:#86efac;padding:0.95vh 1vw">Daily Vol</th><th style="text-align:center;background:#14532d;color:#86efac;padding:0.95vh 1vw">OI</th><th style="text-align:center;background:#422006;color:#fbbf24;padding:0.95vh 1vw">Daily Vol</th><th style="text-align:center;background:#422006;color:#fbbf24;padding:0.95vh 1vw">OI</th><th style="text-align:center;background:#1e1b4b;color:#a78bfa;padding:0.95vh 1vw">Daily Vol</th><th style="text-align:center;background:#1e1b4b;color:#a78bfa;padding:0.95vh 1vw">OI</th></tr>
-<tr><td class="f" style="padding:0.85vh 1vw">Oil (WTI)</td><td style="text-align:center;color:#34d399;font-weight:600;padding:0.85vh 1vw">~$150B+</td><td style="text-align:center;padding:0.85vh 1vw">~$90B</td><td style="text-align:center;color:#fbbf24;padding:0.85vh 1vw">~$0.5–2B</td><td style="text-align:center;padding:0.85vh 1vw">~$50–200M</td><td style="text-align:center;color:#a78bfa;padding:0.85vh 1vw">$0.7–1.7B</td><td style="text-align:center;padding:0.85vh 1vw">$170–300M</td></tr>
-<tr><td class="f" style="padding:0.85vh 1vw">Gold</td><td style="text-align:center;color:#34d399;font-weight:600;padding:0.85vh 1vw">~$80B+</td><td style="text-align:center;padding:0.85vh 1vw">~$120B</td><td style="text-align:center;color:#fbbf24;padding:0.85vh 1vw">~$0.2–1B</td><td style="text-align:center;padding:0.85vh 1vw">~$9–50M</td><td style="text-align:center;color:#a78bfa;padding:0.85vh 1vw">~$80–200M</td><td style="text-align:center;padding:0.85vh 1vw">~$30–60M</td></tr>
-<tr><td class="f" style="padding:0.85vh 1vw">Silver</td><td style="text-align:center;color:#34d399;font-weight:600;padding:0.85vh 1vw">~$20B+</td><td style="text-align:center;padding:0.85vh 1vw">~$25B</td><td style="text-align:center;color:#fbbf24;padding:0.85vh 1vw">~$50–200M</td><td style="text-align:center;padding:0.85vh 1vw">~$5–20M</td><td style="text-align:center;color:#a78bfa;padding:0.85vh 1vw">~$50–120M</td><td style="text-align:center;padding:0.85vh 1vw">~$20–40M</td></tr>
-<tr><td class="f" style="padding:0.85vh 1vw">NASDAQ 100</td><td style="text-align:center;color:#34d399;font-weight:600;padding:0.85vh 1vw">~$100B+</td><td style="text-align:center;padding:0.85vh 1vw">~$70B</td><td style="text-align:center;color:#fbbf24;padding:0.85vh 1vw">~$0.1–0.5B</td><td style="text-align:center;padding:0.85vh 1vw">~$20–80M</td><td style="text-align:center;color:#a78bfa;padding:0.85vh 1vw">~$100–300M</td><td style="text-align:center;padding:0.85vh 1vw">~$213M peak</td></tr>
-<tr><td class="f" style="padding:0.85vh 1vw">S&amp;P 500</td><td style="text-align:center;color:#34d399;font-weight:600;padding:0.85vh 1vw">~$200B+</td><td style="text-align:center;padding:0.85vh 1vw">~$150B</td><td style="text-align:center;color:#fbbf24;padding:0.85vh 1vw">~$0.1–0.5B</td><td style="text-align:center;padding:0.85vh 1vw">~$20–80M</td><td style="text-align:center;color:#a78bfa;padding:0.85vh 1vw">~$50–150M</td><td style="text-align:center;padding:0.85vh 1vw">~$30–80M</td></tr>
+<tr><th rowspan="2" style="vertical-align:middle;padding:0.95vh 1vw">Asset</th><th colspan="2" style="text-align:center;background:#14532d;color:#86efac;padding:0.95vh 1vw">CME Futures</th><th colspan="2" style="text-align:center;background:#422006;color:#92400e;padding:0.95vh 1vw">CEX Perps (Binance/Bybit)</th><th colspan="2" style="text-align:center;background:#1e1b4b;color:#a78bfa;padding:0.95vh 1vw">DEX Perps (Hyperliquid)</th></tr>
+<tr><th style="text-align:center;background:#14532d;color:#86efac;padding:0.95vh 1vw">Daily Vol</th><th style="text-align:center;background:#14532d;color:#86efac;padding:0.95vh 1vw">OI</th><th style="text-align:center;background:#422006;color:#92400e;padding:0.95vh 1vw">Daily Vol</th><th style="text-align:center;background:#422006;color:#92400e;padding:0.95vh 1vw">OI</th><th style="text-align:center;background:#1e1b4b;color:#a78bfa;padding:0.95vh 1vw">Daily Vol</th><th style="text-align:center;background:#1e1b4b;color:#a78bfa;padding:0.95vh 1vw">OI</th></tr>
+<tr><td class="f" style="padding:0.85vh 1vw">Oil (WTI)</td><td style="text-align:center;color:#34d399;font-weight:600;padding:0.85vh 1vw">~$150B+</td><td style="text-align:center;padding:0.85vh 1vw;color:#fff">~$90B</td><td style="text-align:center;color:#fbbf24;padding:0.85vh 1vw">~$0.5–2B</td><td style="text-align:center;padding:0.85vh 1vw;color:#fff">~$50–200M</td><td style="text-align:center;color:#a78bfa;padding:0.85vh 1vw">$0.7–1.7B</td><td style="text-align:center;padding:0.85vh 1vw;color:#fff">$170–300M</td></tr>
+<tr><td class="f" style="padding:0.85vh 1vw">Gold</td><td style="text-align:center;color:#34d399;font-weight:600;padding:0.85vh 1vw">~$80B+</td><td style="text-align:center;padding:0.85vh 1vw;color:#fff">~$120B</td><td style="text-align:center;color:#fbbf24;padding:0.85vh 1vw">~$0.2–1B</td><td style="text-align:center;padding:0.85vh 1vw;color:#fff">~$9–50M</td><td style="text-align:center;color:#a78bfa;padding:0.85vh 1vw">~$80–200M</td><td style="text-align:center;padding:0.85vh 1vw;color:#fff">~$30–60M</td></tr>
+<tr><td class="f" style="padding:0.85vh 1vw">Silver</td><td style="text-align:center;color:#34d399;font-weight:600;padding:0.85vh 1vw">~$20B+</td><td style="text-align:center;padding:0.85vh 1vw;color:#fff">~$25B</td><td style="text-align:center;color:#fbbf24;padding:0.85vh 1vw">~$50–200M</td><td style="text-align:center;padding:0.85vh 1vw;color:#fff">~$5–20M</td><td style="text-align:center;color:#a78bfa;padding:0.85vh 1vw">~$50–120M</td><td style="text-align:center;padding:0.85vh 1vw;color:#fff">~$20–40M</td></tr>
+<tr><td class="f" style="padding:0.85vh 1vw">NASDAQ 100</td><td style="text-align:center;color:#34d399;font-weight:600;padding:0.85vh 1vw">~$100B+</td><td style="text-align:center;padding:0.85vh 1vw;color:#fff">~$70B</td><td style="text-align:center;color:#fbbf24;padding:0.85vh 1vw">~$0.1–0.5B</td><td style="text-align:center;padding:0.85vh 1vw;color:#fff">~$20–80M</td><td style="text-align:center;color:#a78bfa;padding:0.85vh 1vw">~$100–300M</td><td style="text-align:center;padding:0.85vh 1vw;color:#fff">~$213M peak</td></tr>
+<tr><td class="f" style="padding:0.85vh 1vw">S&amp;P 500</td><td style="text-align:center;color:#34d399;font-weight:600;padding:0.85vh 1vw">~$200B+</td><td style="text-align:center;padding:0.85vh 1vw;color:#fff">~$150B</td><td style="text-align:center;color:#fbbf24;padding:0.85vh 1vw">~$0.1–0.5B</td><td style="text-align:center;padding:0.85vh 1vw;color:#fff">~$20–80M</td><td style="text-align:center;color:#a78bfa;padding:0.85vh 1vw">~$50–150M</td><td style="text-align:center;padding:0.85vh 1vw;color:#fff">~$30–80M</td></tr>
 </table>
 <div style="display:flex;gap:2vw;margin-top:2vh">
-<div style="flex:1;background:#0a1628;border:1px solid #1e3a5f;border-radius:0.6vh;padding:1.5vh 1.5vw"><div style="color:#60a5fa;font-weight:700;font-size:1.9vh;margin-bottom:0.5vh">Key Observations</div><div style="color:#cbd5e1;font-size:1.8vh;line-height:1.8">• DEX oil volumes surged to rival CEX during Iran crisis (Feb–Mar 2026)<br>• CEX commodity perps very new — Binance launched gold/silver Jan 2026<br>• DEX OI is <b style="color:#f87171">100–1000× smaller</b> than CME<br>• Avg DEX trade size: $1.1K–$3.4K — retail-dominated</div></div>
-<div style="flex:1;background:#1a0a0a;border:1px solid #7f1d1d;border-radius:0.6vh;padding:1.5vh 1.5vw"><div style="color:#f87171;font-weight:700;font-size:1.9vh;margin-bottom:0.5vh">⚠️ Implication for eToro</div><div style="color:#fca5a5;font-size:1.8vh;line-height:1.8">• A $50M hedge = <b>17–30%</b> of total DEX OI for oil<br>• Our position would dominate the order book<br>• During off-hours (weekends) liquidity drops further<br>• Slippage of 3–5% may be <b>conservative</b></div></div>
+<div style="flex:1;background:#0a1628;border:1px solid #334155;border-radius:0.6vh;padding:1.5vh 1.5vw"><div style="color:#60a5fa;font-weight:700;font-size:1.9vh;margin-bottom:0.5vh">Key Observations</div><div style="color:#94a3b8;font-size:1.8vh;line-height:1.8">• DEX oil volumes surged to rival CEX during Iran crisis (Feb–Mar 2026)<br>• CEX commodity perps very new — Binance launched gold/silver Jan 2026<br>• DEX OI is <b style="color:#f87171">100–1000× smaller</b> than CME<br>• Avg DEX trade size: $1.1K–$3.4K — retail-dominated</div></div>
+<div style="flex:1;background:#1a0a0a;border:1px solid #7f1d1d;border-radius:0.6vh;padding:1.5vh 1.5vw"><div style="color:#f87171;font-weight:700;font-size:1.9vh;margin-bottom:0.5vh">⚠️ Implication for eToro</div><div style="color:#dc2626;font-size:1.8vh;line-height:1.8">• A $50M hedge = <b>17–30%</b> of total DEX OI for oil<br>• Our position would dominate the order book<br>• During off-hours (weekends) liquidity drops further<br>• Slippage of 3–5% may be <b>conservative</b></div></div>
 </div>
 <div style="font-size:1.5vh;color:#64748b;margin-top:1vh">Sources: CoinDesk, JPMorgan Research, Coin Metrics, CoinGecko (Mar 2026). CME = notional estimates.</div>
 </div></div>
  
-<!-- S3: TOB Spread — 6/14 -->
+<!-- S3: Crypto Microstructure (merged TOB + Slippage, crypto only) — 6/13 -->
 <div class="slide" id="s3">
-<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">6 / 14</span></div>
+<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">10 / 13</span></div>
 <div class="ta" style="padding:0.6vh 3vw 0.2vh">
-  <h1 style="font-size:2.8vh">TOB Spread — All Assets × All Crises</h1>
-  <p style="font-size:1.5vh">Top-of-Book bid-ask spread (bps) &nbsp;|&nbsp; <span style="color:#a78bfa">DEX (Hyperliquid)</span> / <span style="color:#60a5fa">CEX (Binance, Bybit, OKX)</span> &nbsp;|&nbsp; Sources: Amberdata, TokenInsight, Coin Metrics ⚠️ Estimates</p>
+  <h1 style="font-size:2.8vh">Crypto Microstructure — TOB Spread &amp; Estimated Slippage ($5M)</h1>
+  <p style="font-size:1.5vh"><span style="color:#a78bfa">DEX (Hyperliquid)</span> / <span style="color:#60a5fa">CEX (Binance, Bybit, OKX)</span> &nbsp;|&nbsp; Sources: Amberdata, TokenInsight, Coin Metrics &nbsp;|&nbsp; bps = basis points (0.01%)</p>
 </div>
-<div class="body" style="padding:0.4vh 2.5vw 0.4vh;display:flex;flex-direction:column;gap:0.5vh;overflow:hidden">
-  <div style="flex:1;overflow:hidden">
-  <table id="tobTable" style="width:100%;border-collapse:collapse;font-size:2.3vh;height:100%"></table>
+<div class="body" style="padding:0.4vh 2.5vw 0.4vh;display:flex;flex-direction:column;gap:1vh;overflow:hidden">
+  <div style="flex:1;display:flex;flex-direction:column;gap:0.3vh">
+    <div style="color:#60a5fa;font-weight:700;font-size:1.8vh">TOB Spread (bid-ask, bps)</div>
+    <div style="flex:1;overflow:hidden">
+    <table id="tobTable" style="width:100%;border-collapse:collapse;font-size:2.3vh;height:100%"></table>
+    </div>
   </div>
-  <div id="tobDetail" style="display:none;background:#1a1400;border:1px solid #fbbf24;border-radius:0.5vh;padding:0.5vh 1.2vw;font-size:1.6vh;color:#fde68a;flex-shrink:0"></div>
+  <div style="flex:1;display:flex;flex-direction:column;gap:0.3vh">
+    <div style="color:#f87171;font-weight:700;font-size:1.8vh">Estimated Slippage on $5M Market Sell</div>
+    <div style="flex:1;overflow:hidden">
+    <table id="slipTable" style="width:100%;border-collapse:collapse;font-size:2.3vh;height:100%"></table>
+    </div>
+  </div>
   <div style="display:flex;gap:1.5vw;flex-shrink:0">
-    <div style="flex:1;background:#0a1628;border:1px solid #1e3a5f;border-radius:0.5vh;padding:0.55vh 1vw"><span style="color:#60a5fa;font-weight:700;font-size:1.6vh">📏 Benchmarks: </span><span style="color:#cbd5e1;font-size:1.55vh">BTC TOB Hyperliquid normal: ~0.8 bps. Binance: ~0.5 bps. CEX is 1.5–2× tighter under normal conditions.</span></div>
-    <div style="flex:1;background:#1a0a0a;border:1px solid #7f1d1d;border-radius:0.5vh;padding:0.55vh 1vw"><span style="color:#f87171;font-weight:700;font-size:1.6vh">🔴 Oct 2025 Peak: </span><span style="color:#fca5a5;font-size:1.55vh">BTC TOB hit 26.4 bps (×33 normal). Order book depth collapsed 98% — from $103.6M to $170K.</span></div>
-    <div style="flex:1;background:#0a1f14;border:1px solid #166534;border-radius:0.5vh;padding:0.55vh 1vw"><span style="color:#34d399;font-weight:700;font-size:1.6vh">🏛 RWA Inverse Pattern: </span><span style="color:#86efac;font-size:1.55vh">Oil TOB dropped 80→15 bps during Iran crisis. Geopolitical events <em>improve</em> RWA DEX liquidity as traders migrate from closed CME.</span></div>
+    <div style="flex:1;background:#0a1628;border:1px solid #1e3a5f;border-radius:0.5vh;padding:0.55vh 1vw"><span style="color:#60a5fa;font-weight:700;font-size:1.6vh">Benchmarks: </span><span style="color:#cbd5e1;font-size:1.55vh">BTC TOB Hyperliquid normal: ~0.8 bps. Binance: ~0.5 bps. CEX is 1.5-2x tighter.</span></div>
+    <div style="flex:1;background:#1a0a0a;border:1px solid #7f1d1d;border-radius:0.5vh;padding:0.55vh 1vw"><span style="color:#f87171;font-weight:700;font-size:1.6vh">Oct 2025 Peak: </span><span style="color:#fca5a5;font-size:1.55vh">BTC TOB hit 26.4 bps (x33). Depth collapsed 98%. $5M slippage est. 10-20%.</span></div>
+    <div style="flex:1;background:#0a1628;border:1px solid #1e3a5f;border-radius:0.5vh;padding:0.55vh 1vw"><span style="color:#60a5fa;font-weight:700;font-size:1.6vh">Reference: </span><span style="color:#cbd5e1;font-size:1.55vh">TokenInsight Mar 2026: best CEX $1M BTC = 0.014%. $5M scales non-linearly (~3-5x).</span></div>
   </div>
-  <p style="font-size:1.3vh;color:#475569;flex-shrink:0">💡 Click any row for details &nbsp;|&nbsp; bps = basis points (0.01%)</p>
 </div>
 <script>
 (function(){
-const crashes=[{id:"apr25",label:"Apr 2025",name:"Liberation Day",liq:"$1.6B",color:"#c084fc"},{id:"oct25",label:"Oct 2025",name:"Flash Crash",liq:"$19B",color:"#f87171"},{id:"feb26",label:"Feb 2026",name:"Iran Risk-Off",liq:"$2.4B",color:"#fb923c"},{id:"mar26",label:"Mar 2026",name:"Options+Iran",liq:"$0.45B",color:"#fbbf24"}];
-const data=[
-  {s:"crypto",asset:"BTC",cat:"Large Cap",nDex:0.8,nCex:0.5,apr25:{dex:4,cex:1.5},oct25:{dex:6,cex:2.5},feb26:{dex:3,cex:1.2},mar26:{dex:1.5,cex:0.8},note:"Normal: ~$1 spread (0.1 bps). Oct 2025 peak: 26.43 bps (×1,321). Binance held 2.5 bps vs market avg 5.92 bps."},
-  {s:"crypto",asset:"ETH",cat:"Large Cap",nDex:1.5,nCex:0.8,apr25:{dex:8,cex:3},oct25:{dex:12,cex:5},feb26:{dex:6,cex:2.5},mar26:{dex:3,cex:1.2},note:"Oct 2025: $300 price gap across venues. $204M single liquidation on Hyperliquid. Bybit ETH ADL: $4.44B."},
-  {s:"rwa",asset:"Oil (WTI)",cat:"HIP-3 Perp",nDex:30,nCex:null,apr25:{na:true},oct25:{na:true},feb26:{dex:80,cex:null},mar26:{dex:15,cex:null},note:"Launched Jan 2026. Feb: thin market ($20M OI). Mar: $1.77B peak daily vol, OI $400M. JPMorgan highlighted as top venue."},
-  {s:"rwa",asset:"Gold (XAU)",cat:"HIP-3 Perp",nDex:50,nCex:null,apr25:{na:true},oct25:{na:true},feb26:{dex:120,cex:null},mar26:{dex:30,cex:null},note:"Reacted before COMEX (closed weekends). Depth $230K vs $13M COMEX. Crisis demand improved spreads."},
-  {s:"rwa",asset:"Silver (XAG)",cat:"HIP-3 Perp",nDex:80,nCex:null,apr25:{na:true},oct25:{na:true},feb26:{dex:200,cex:null},mar26:{dex:60,cex:null},note:"Thinnest RWA on Hyperliquid. $230K depth vs $13M COMEX. Mar vol $412M/day but still wide vs CME (~0.5 bps)."},
-  {s:"rwa",asset:"NASDAQ 100",cat:"HIP-3 Perp",nDex:120,nCex:null,apr25:{na:true},oct25:{na:true},feb26:{dex:300,cex:null},mar26:{dex:100,cex:null},note:"Thinnest of all assets. Avg trade size $1,100. Extremely wide vs CME NQ (~0.2 bps)."},
-  {s:"rwa",asset:"S&P 500",cat:"HIP-3 Perp",nDex:100,nCex:null,apr25:{na:true},oct25:{na:true},feb26:{na:true,reason:"Licensed Mar 2026 only"},mar26:{dex:80,cex:null},note:"Launched with S&P Dow Jones license Mar 18 2026. Brand new — liquidity still building."},
+const crashes=[{id:"apr25",label:"Apr 2025",name:"Liberation Day",color:"#c084fc"},{id:"oct25",label:"Oct 2025",name:"Flash Crash",color:"#f87171"},{id:"feb26",label:"Feb 2026",name:"Iran Risk-Off",color:"#fb923c"},{id:"mar26",label:"Mar 2026",name:"Options+Iran",color:"#fbbf24"}];
+const tobData=[
+  {asset:"BTC",cat:"Large Cap",nDex:0.8,nCex:0.5,apr25:{dex:4,cex:1.5},oct25:{dex:6,cex:2.5},feb26:{dex:3,cex:1.2},mar26:{dex:1.5,cex:0.8}},
+  {asset:"ETH",cat:"Large Cap",nDex:1.5,nCex:0.8,apr25:{dex:8,cex:3},oct25:{dex:12,cex:5},feb26:{dex:6,cex:2.5},mar26:{dex:3,cex:1.2}},
 ];
-function fmt(v){if(v==null)return"—";return v>=100?(v/100).toFixed(v>=1000?0:1)+"%":v+" bps";}
+const slipData=[
+  {asset:"BTC",cat:"Large Cap",nDex:4,nCex:2,apr25:{dex:20,cex:8},oct25:{dex:1200,cex:350},feb26:{dex:15,cex:6},mar26:{dex:8,cex:3.5}},
+  {asset:"ETH",cat:"Large Cap",nDex:10,nCex:5,apr25:{dex:50,cex:18},oct25:{dex:2000,cex:600},feb26:{dex:35,cex:15},mar26:{dex:18,cex:7}},
+];
+function fmt(v){if(v==null)return"-";return v>=100?(v/100).toFixed(v>=1000?0:1)+"%":v+" bps";}
 function col(v){if(v==null)return"#64748b";if(v<=2)return"#34d399";if(v<=5)return"#86efac";if(v<=15)return"#fbbf24";if(v<=50)return"#fb923c";if(v<=200)return"#f87171";return"#fca5a5";}
+function colSlip(v){if(v==null)return"#64748b";if(v<=5)return"#34d399";if(v<=15)return"#86efac";if(v<=50)return"#fbbf24";if(v<=200)return"#fb923c";if(v<=1000)return"#f87171";return"#fca5a5";}
 function bgcol(v){if(v==null)return"";if(v<=2)return"rgba(52,211,153,0.09)";if(v<=5)return"rgba(134,239,172,0.07)";if(v<=15)return"rgba(251,191,36,0.09)";if(v<=50)return"rgba(251,146,60,0.09)";return"rgba(248,113,113,0.1)";}
-function multHtml(n,c){if(!n||!c)return"";const raw=c/n,r=Math.round(raw);const lbl=Math.abs(raw-r)<0.3?r:raw.toFixed(1);const cc=r<=5?"#fbbf24":r<=15?"#fb923c":r<=30?"#f87171":"#fca5a5";const bc=r<=5?"rgba(251,191,36,0.18)":r<=15?"rgba(251,146,60,0.18)":r<=30?"rgba(248,113,113,0.18)":"rgba(252,165,165,0.18)";return`<span style="display:inline-block;padding:1px 5px;border-radius:8px;font-weight:800;font-size:1.3vh;color:${cc};background:${bc}">×${lbl}</span>`;}
-let exp=-1;
-function render(){
-  const tbl=document.getElementById("tobTable");
-  let h="<thead><tr style='background:#0d1f38'>";
-  h+=`<th rowspan="2" style="text-align:left;padding:0.8vh 0.8vw;border-bottom:1px solid #1e3a5f;color:#94a3b8;font-size:2vh;min-width:10vw">Asset</th>`;
-  h+=`<th rowspan="2" style="text-align:center;padding:0.8vh 0.5vw;border-bottom:1px solid #1e3a5f;color:#34d399;font-size:2vh;min-width:5.5vw">Normal</th>`;
-  for(const c of crashes){h+=`<th colspan="2" style="text-align:center;padding:0.6vh 0.3vw;border-bottom:1px solid #1e3a5f;border-left:1px solid #1e3a5f"><div style="color:${c.color};font-weight:700;font-size:2vh">${c.label}</div><div style="font-size:1.5vh;color:#64748b">${c.name} · Liq: ${c.liq}</div></th>`;}
-  h+=`</tr><tr style="background:#0a1628">`;
-  for(const c of crashes){h+=`<th style="border-bottom:2px solid #1e3a5f;border-left:1px solid #1e3a5f;text-align:center;padding:0.4vh 0.4vw;color:#a78bfa;font-size:1.7vh">DEX</th><th style="border-bottom:2px solid #1e3a5f;text-align:center;padding:0.4vh 0.4vw;color:#60a5fa;font-size:1.7vh">CEX</th>`;}
-  h+=`</tr></thead><tbody>`;
-  let prevS="";
-  data.forEach((r,i)=>{
-    if(r.s!==prevS){prevS=r.s;const lbl=r.s==="crypto"?"🔮 Crypto Perps":"🏛️ Traditional Assets (HIP-3 Perps)";const c=r.s==="crypto"?"#a78bfa":"#34d399";h+=`<tr><td colspan="${2+crashes.length*2}" style="padding:0.6vh 0.8vw;font-weight:700;font-size:1.6vh;color:${c};background:rgba(${r.s==="crypto"?"124,58,237":"13,148,136"},0.08);border-bottom:1px solid #1e3a5f">${lbl}</td></tr>`;}
-    const isExp=exp===i;
-    h+=`<tr style="cursor:pointer;background:${isExp?"#1a1400":""}" onmouseover="if(!${isExp})this.style.background='#0f1f38'" onmouseout="this.style.background='${isExp?"#1a1400":""}'" onclick="window._tobToggle(${i})">`;
-    h+=`<td style="padding:0.7vh 0.8vw;border-bottom:1px solid #1e3a5f"><div style="color:#f1f5f9;font-weight:600;font-size:1.9vh">${r.asset}</div><div style="color:#475569;font-size:1.3vh">${r.cat}</div></td>`;
-    h+=`<td style="text-align:center;padding:0.7vh 0.5vw;border-bottom:1px solid #1e3a5f"><div style="color:${col(r.nDex)};font-weight:700;font-size:1.9vh">${fmt(r.nDex)}</div>${r.nCex!=null?`<div style="color:#475569;font-size:1.3vh">${fmt(r.nCex)}</div>`:""}</td>`;
-    for(const c of crashes){const p=r[c.id];if(p&&p.na){h+=`<td colspan="2" style="text-align:center;padding:0.7vh 0.4vw;border-bottom:1px solid #1e3a5f;border-left:1px solid #1e3a5f"><span style="font-size:1.3vh;color:#475569;background:#0d1f38;padding:2px 6px;border-radius:4px">❌ ${p.reason||"Not launched"}</span></td>`;}else if(p){h+=`<td style="text-align:center;padding:0.7vh 0.4vw;border-bottom:1px solid #1e3a5f;border-left:1px solid #1e3a5f;${bgcol(p.dex)?'background:'+bgcol(p.dex):''}"><div style="color:${col(p.dex)};font-weight:700;font-size:1.9vh">${fmt(p.dex)}</div><div>${multHtml(r.nDex,p.dex)}</div></td>`;h+=`<td style="text-align:center;padding:0.7vh 0.4vw;border-bottom:1px solid #1e3a5f">${r.nCex!=null&&p.cex!=null?`<div style="color:${col(p.cex)};font-weight:600;font-size:1.9vh">${fmt(p.cex)}</div><div>${multHtml(r.nCex,p.cex)}</div>`:`<span style="color:#334155;font-size:1.3vh">DEX only</span>`}</td>`;}else{h+=`<td colspan="2" style="text-align:center;color:#334155;border-bottom:1px solid #1e3a5f;border-left:1px solid #1e3a5f">—</td>`;}}
-    h+=`</tr>`;
-  });
-  h+=`</tbody>`;tbl.innerHTML=h;
-  const box=document.getElementById("tobDetail");
-  if(exp>=0&&exp<data.length){box.innerHTML=`<strong style="color:#fbbf24">${data[exp].asset}:</strong> ${data[exp].note}`;box.style.display="block";}else{box.style.display="none";}
-}
-window._tobToggle=function(i){exp=exp===i?-1:i;render();};
-render();
-})();
-</script>
-</div>
- 
-<!-- S4b: Slippage $5M — 7/14 -->
-<div class="slide" id="s4b">
-<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">7 / 14</span></div>
-<div class="ta" style="padding:0.6vh 3vw 0.2vh">
-  <h1 style="font-size:2.8vh">Estimated Slippage — $5M Market Order × All Crises</h1>
-  <p style="font-size:1.5vh">Estimated total slippage cost on a $5M market sell &nbsp;|&nbsp; <span style="color:#a78bfa">DEX (Hyperliquid)</span> / <span style="color:#60a5fa">CEX (Binance, Bybit, Bitget)</span> &nbsp;|&nbsp; ⚠️ Extrapolated from TokenInsight, Amberdata depth data</p>
-</div>
-<div class="body" style="padding:0.4vh 2.5vw 0.4vh;display:flex;flex-direction:column;gap:0.5vh;overflow:hidden">
-  <div style="flex:1;overflow:hidden">
-  <table id="slipTable" style="width:100%;border-collapse:collapse;font-size:2.3vh;height:100%"></table>
-  </div>
-  <div style="display:flex;gap:1.5vw;flex-shrink:0">
-    <div style="flex:1;background:#0a1628;border:1px solid #1e3a5f;border-radius:0.5vh;padding:0.55vh 1vw"><span style="color:#60a5fa;font-weight:700;font-size:1.6vh">📏 Reference: </span><span style="color:#cbd5e1;font-size:1.55vh">TokenInsight Mar 2026: best CEX $1M BTC = 0.014%. $5M scales non-linearly (~3–5× the $1M figure).</span></div>
-    <div style="flex:1;background:#1a0a0a;border:1px solid #7f1d1d;border-radius:0.5vh;padding:0.55vh 1vw"><span style="color:#f87171;font-weight:700;font-size:1.6vh">🔴 Oct 2025 Peak: </span><span style="color:#fca5a5;font-size:1.55vh">5%+ slippage on $1M on Hyperliquid. At $5M with 98% depth collapse → est. 10–20% DEX.</span></div>
-    <div style="flex:1;background:#0a1f14;border:1px solid #166534;border-radius:0.5vh;padding:0.55vh 1vw"><span style="color:#34d399;font-weight:700;font-size:1.6vh">🏛 RWA Reality: </span><span style="color:#86efac;font-size:1.55vh">Silver/Gold depth ~$230K — $5M = 22× the visible book. Only Oil in Mar had enough depth for $5M.</span></div>
-  </div>
-  <p style="font-size:1.3vh;color:#475569;flex-shrink:0">⚠️ Extrapolated estimates — no public source measures slippage at $5M across crisis events &nbsp;|&nbsp; bps = basis points (0.01%)</p>
-</div>
-<script>
-(function(){
-const crashes=[{id:"apr25",label:"Apr 2025",name:"Liberation Day",liq:"$1.6B",color:"#c084fc"},{id:"oct25",label:"Oct 2025",name:"Flash Crash",liq:"$19B",color:"#f87171"},{id:"feb26",label:"Feb 2026",name:"Iran Risk-Off",liq:"$2.4B",color:"#fb923c"},{id:"mar26",label:"Mar 2026",name:"Options+Iran",liq:"$0.45B",color:"#fbbf24"}];
-const data=[
-  {s:"crypto",asset:"BTC",cat:"Large Cap",nDex:4,nCex:2,apr25:{dex:20,cex:8},oct25:{dex:1200,cex:350},feb26:{dex:15,cex:6},mar26:{dex:8,cex:3.5}},
-  {s:"crypto",asset:"ETH",cat:"Large Cap",nDex:10,nCex:5,apr25:{dex:50,cex:18},oct25:{dex:2000,cex:600},feb26:{dex:35,cex:15},mar26:{dex:18,cex:7}},
-  {s:"rwa",asset:"Oil (WTI)",cat:"HIP-3 Perp",nDex:200,nCex:null,apr25:{na:true},oct25:{na:true},feb26:{dex:600,cex:null},mar26:{dex:80,cex:null}},
-  {s:"rwa",asset:"Gold (XAU)",cat:"HIP-3 Perp",nDex:350,nCex:null,apr25:{na:true},oct25:{na:true},feb26:{dex:800,cex:null},mar26:{dex:150,cex:null}},
-  {s:"rwa",asset:"Silver (XAG)",cat:"HIP-3 Perp",nDex:600,nCex:null,apr25:{na:true},oct25:{na:true},feb26:{dex:1500,cex:null},mar26:{dex:350,cex:null}},
-  {s:"rwa",asset:"NASDAQ 100",cat:"HIP-3 Perp",nDex:900,nCex:null,apr25:{na:true},oct25:{na:true},feb26:{dex:2500,cex:null},mar26:{dex:600,cex:null}},
-  {s:"rwa",asset:"S&P 500",cat:"HIP-3 Perp",nDex:700,nCex:null,apr25:{na:true},oct25:{na:true},feb26:{na:true,reason:"Licensed Mar 2026 only"},mar26:{dex:500,cex:null}},
-];
-function fmt(v){if(v==null)return"—";return v>=100?(v/100).toFixed(v>=1000?0:1)+"%":v+" bps";}
-function col(v){if(v==null)return"#64748b";if(v<=5)return"#34d399";if(v<=15)return"#86efac";if(v<=50)return"#fbbf24";if(v<=200)return"#fb923c";if(v<=1000)return"#f87171";return"#fca5a5";}
-function bgcol(v){if(v==null)return"";if(v<=5)return"rgba(52,211,153,0.09)";if(v<=15)return"rgba(134,239,172,0.07)";if(v<=50)return"rgba(251,191,36,0.09)";if(v<=200)return"rgba(251,146,60,0.09)";return"rgba(248,113,113,0.1)";}
-function multHtml(n,c){if(!n||!c)return"";const raw=c/n,r=Math.round(raw);const lbl=Math.abs(raw-r)<0.3?r:raw.toFixed(1);const cc=r<=5?"#fbbf24":r<=15?"#fb923c":r<=30?"#f87171":"#fca5a5";const bc=r<=5?"rgba(251,191,36,0.18)":r<=15?"rgba(251,146,60,0.18)":r<=30?"rgba(248,113,113,0.18)":"rgba(252,165,165,0.18)";return`<span style="display:inline-block;padding:1px 5px;border-radius:8px;font-weight:800;font-size:1.3vh;color:${cc};background:${bc}">×${lbl}</span>`;}
-function render(){
-  const tbl=document.getElementById("slipTable");
-  let h="<thead><tr style='background:#0d1f38'>";
-  h+=`<th rowspan="2" style="text-align:left;padding:0.8vh 0.8vw;border-bottom:1px solid #1e3a5f;color:#94a3b8;font-size:2vh;min-width:10vw">Asset</th>`;
-  h+=`<th rowspan="2" style="text-align:center;padding:0.8vh 0.5vw;border-bottom:1px solid #1e3a5f;color:#34d399;font-size:2vh;min-width:5.5vw">Normal</th>`;
-  for(const c of crashes){h+=`<th colspan="2" style="text-align:center;padding:0.6vh 0.3vw;border-bottom:1px solid #1e3a5f;border-left:1px solid #1e3a5f"><div style="color:${c.color};font-weight:700;font-size:2vh">${c.label}</div><div style="font-size:1.5vh;color:#64748b">${c.name} · Liq: ${c.liq}</div></th>`;}
-  h+=`</tr><tr style="background:#0a1628">`;
-  for(const c of crashes){h+=`<th style="border-bottom:2px solid #1e3a5f;border-left:1px solid #1e3a5f;text-align:center;padding:0.4vh 0.4vw;color:#a78bfa;font-size:1.7vh">DEX</th><th style="border-bottom:2px solid #1e3a5f;text-align:center;padding:0.4vh 0.4vw;color:#60a5fa;font-size:1.7vh">CEX</th>`;}
-  h+=`</tr></thead><tbody>`;
-  let prevS="";
-  data.forEach((r)=>{
-    if(r.s!==prevS){prevS=r.s;const lbl=r.s==="crypto"?"🔮 Crypto Perps":"🏛️ Traditional Assets (HIP-3 Perps)";const c=r.s==="crypto"?"#a78bfa":"#34d399";h+=`<tr><td colspan="${2+crashes.length*2}" style="padding:0.6vh 0.8vw;font-weight:700;font-size:1.6vh;color:${c};background:rgba(${r.s==="crypto"?"124,58,237":"13,148,136"},0.08);border-bottom:1px solid #1e3a5f">${lbl}</td></tr>`;}
-    h+=`<tr style="background:transparent" onmouseover="this.style.background='#0f1f38'" onmouseout="this.style.background='transparent'">`;
-    h+=`<td style="padding:0.7vh 0.8vw;border-bottom:1px solid #1e3a5f"><div style="color:#f1f5f9;font-weight:600;font-size:1.9vh">${r.asset}</div><div style="color:#475569;font-size:1.3vh">${r.cat}</div></td>`;
-    h+=`<td style="text-align:center;padding:0.7vh 0.5vw;border-bottom:1px solid #1e3a5f"><div style="color:${col(r.nDex)};font-weight:700;font-size:1.9vh">${fmt(r.nDex)}</div>${r.nCex!=null?`<div style="color:#475569;font-size:1.3vh">${fmt(r.nCex)}</div>`:""}</td>`;
-    for(const c of crashes){const p=r[c.id];if(p&&p.na){h+=`<td colspan="2" style="text-align:center;padding:0.7vh 0.4vw;border-bottom:1px solid #1e3a5f;border-left:1px solid #1e3a5f"><span style="font-size:1.3vh;color:#475569;background:#0d1f38;padding:2px 6px;border-radius:4px">❌ ${p.reason||"Not launched"}</span></td>`;}else if(p){h+=`<td style="text-align:center;padding:0.7vh 0.4vw;border-bottom:1px solid #1e3a5f;border-left:1px solid #1e3a5f;${bgcol(p.dex)?'background:'+bgcol(p.dex):''}"><div style="color:${col(p.dex)};font-weight:700;font-size:1.9vh">${fmt(p.dex)}</div><div>${multHtml(r.nDex,p.dex)}</div></td>`;h+=`<td style="text-align:center;padding:0.7vh 0.4vw;border-bottom:1px solid #1e3a5f">${r.nCex!=null&&p.cex!=null?`<div style="color:${col(p.cex)};font-weight:600;font-size:1.9vh">${fmt(p.cex)}</div><div>${multHtml(r.nCex,p.cex)}</div>`:`<span style="color:#334155;font-size:1.3vh">DEX only</span>`}</td>`;}else{h+=`<td colspan="2" style="text-align:center;color:#334155;border-bottom:1px solid #1e3a5f;border-left:1px solid #1e3a5f">—</td>`;}}
-    h+=`</tr>`;
-  });
-  h+=`</tbody>`;tbl.innerHTML=h;
-}
-render();
+function multHtml(n,c){if(!n||!c)return"";const raw=c/n,r=Math.round(raw);const lbl=Math.abs(raw-r)<0.3?r:raw.toFixed(1);const cc=r<=5?"#fbbf24":r<=15?"#fb923c":r<=30?"#f87171":"#fca5a5";const bc=r<=5?"rgba(251,191,36,0.18)":r<=15?"rgba(251,146,60,0.18)":r<=30?"rgba(248,113,113,0.18)":"rgba(252,165,165,0.18)";return`<span style="display:inline-block;padding:1px 5px;border-radius:8px;font-weight:800;font-size:1.3vh;color:${cc};background:${bc}">x${lbl}</span>`;}
+function renderTable(tblId,data,colFn){const tbl=document.getElementById(tblId);let h="<thead><tr style='background:#0d1f38'>";h+=`<th rowspan="2" style="text-align:left;padding:0.8vh 0.8vw;border-bottom:1px solid #1e3a5f;color:#94a3b8;font-size:2vh;min-width:10vw">Asset</th>`;h+=`<th rowspan="2" style="text-align:center;padding:0.8vh 0.5vw;border-bottom:1px solid #1e3a5f;color:#34d399;font-size:2vh;min-width:5.5vw">Normal</th>`;for(const c of crashes){h+=`<th colspan="2" style="text-align:center;padding:0.6vh 0.3vw;border-bottom:1px solid #1e3a5f;border-left:1px solid #1e3a5f"><div style="color:${c.color};font-weight:700;font-size:2vh">${c.label}</div><div style="font-size:1.5vh;color:#64748b">${c.name}</div></th>`;}h+=`</tr><tr style="background:#0a1628">`;for(const c of crashes){h+=`<th style="border-bottom:2px solid #1e3a5f;border-left:1px solid #1e3a5f;text-align:center;padding:0.4vh 0.4vw;color:#a78bfa;font-size:1.7vh">DEX</th><th style="border-bottom:2px solid #1e3a5f;text-align:center;padding:0.4vh 0.4vw;color:#60a5fa;font-size:1.7vh">CEX</th>`;}h+=`</tr></thead><tbody>`;data.forEach((r)=>{h+=`<tr style="background:transparent" onmouseover="this.style.background='#0f1f38'" onmouseout="this.style.background='transparent'">`;h+=`<td style="padding:0.7vh 0.8vw;border-bottom:1px solid #1e3a5f"><div style="color:#f1f5f9;font-weight:600;font-size:1.9vh">${r.asset}</div><div style="color:#475569;font-size:1.3vh">${r.cat}</div></td>`;h+=`<td style="text-align:center;padding:0.7vh 0.5vw;border-bottom:1px solid #1e3a5f"><div style="color:${colFn(r.nDex)};font-weight:700;font-size:1.9vh">${fmt(r.nDex)}</div>${r.nCex!=null?`<div style="color:#475569;font-size:1.3vh">${fmt(r.nCex)}</div>`:""}</td>`;for(const c of crashes){const p=r[c.id];if(p){h+=`<td style="text-align:center;padding:0.7vh 0.4vw;border-bottom:1px solid #1e3a5f;border-left:1px solid #1e3a5f;${bgcol(p.dex)?'background:'+bgcol(p.dex):''}"><div style="color:${colFn(p.dex)};font-weight:700;font-size:1.9vh">${fmt(p.dex)}</div><div>${multHtml(r.nDex,p.dex)}</div></td>`;h+=`<td style="text-align:center;padding:0.7vh 0.4vw;border-bottom:1px solid #1e3a5f">${r.nCex!=null&&p.cex!=null?`<div style="color:${colFn(p.cex)};font-weight:600;font-size:1.9vh">${fmt(p.cex)}</div><div>${multHtml(r.nCex,p.cex)}</div>`:`<span style="color:#334155;font-size:1.3vh">DEX only</span>`}</td>`;}else{h+=`<td colspan="2" style="text-align:center;color:#334155;border-bottom:1px solid #1e3a5f;border-left:1px solid #1e3a5f">-</td>`;}}h+=`</tr>`;});h+=`</tbody>`;tbl.innerHTML=h;}
+renderTable("tobTable",tobData,col);renderTable("slipTable",slipData,colSlip);
 })();
 </script>
 </div>
  
 <!-- S_SC1: Scenario 1 — 8/14 -->
 <div class="slide" id="s_sc1">
-<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">8 / 14</span></div>
+<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">11 / 13</span></div>
 <div class="ta" style="padding:0.7vh 3vw 0.3vh"><h1 style="font-size:2.8vh">Scenario 1: Slippage Cost on Massive Client Position Closures</h1><p style="font-size:1.5vh">Assumption: total client NOP = $10M / $25M / $50M | Massive closure event = 20% of NOP | Hedge leverage 5× (margin = 20% of closure NOP) | Hedge closes same size on Hyperliquid</p></div>
 <div class="body" style="display:flex;flex-direction:column;justify-content:space-between;padding:0.5vh 2.5vw 0.5vh">
   <div style="display:flex;gap:1vw;flex-shrink:0">
-    <div style="flex:1.2;background:#0a1628;border:1px solid #1e3a5f;border-radius:0.4vh;padding:0.55vh 1.2vw"><span style="color:#60a5fa;font-weight:700;font-size:1.45vh">Closure size: 20% of total NOP &nbsp;→&nbsp; </span><span style="color:#a78bfa;font-size:1.4vh">Total $10M → close <b>$2M</b> &nbsp;|&nbsp; Total $25M → close <b>$5M</b> &nbsp;|&nbsp; Total $50M → close <b>$10M</b></span></div>
-    <div style="flex:0.8;background:#0a1628;border:1px solid #1e3a5f;border-radius:0.4vh;padding:0.55vh 1vw;text-align:center"><span style="color:#60a5fa;font-weight:700;font-size:1.4vh">HC Formula: &nbsp;</span><span style="color:#f1f5f9;font-size:1.4vh;font-weight:600">Slippage% × Closure NOP</span></div>
+    <div style="flex:1.2;background:#0a1628;border:1px solid #334155;border-radius:0.4vh;padding:0.55vh 1.2vw"><span style="color:#60a5fa;font-weight:700;font-size:1.45vh">Closure size: 20% of total NOP &nbsp;→&nbsp; </span><span style="color:#a78bfa;font-size:1.4vh">Total $10M → close <b>$2M</b> &nbsp;|&nbsp; Total $25M → close <b>$5M</b> &nbsp;|&nbsp; Total $50M → close <b>$10M</b></span></div>
+    <div style="flex:0.8;background:#0a1628;border:1px solid #334155;border-radius:0.4vh;padding:0.55vh 1vw;text-align:center"><span style="color:#60a5fa;font-weight:700;font-size:1.4vh">HC Formula: &nbsp;</span><span style="color:#f1f5f9;font-size:1.4vh;font-weight:600">Slippage% × Closure NOP</span></div>
     <div style="flex:0.7;background:#1a1000;border:1px solid #854d0e;border-radius:0.4vh;padding:0.55vh 1vw;text-align:center"><span style="color:#fbbf24;font-weight:700;font-size:1.3vh">Margin cap = 20% of closure NOP</span><div style="color:#78716c;font-size:1vh">Hedge 5× | $2M close→$400K | $5M→$1M | $10M→$2M</div></div>
   </div>
   <div style="display:flex;gap:1.2vw;flex:1;min-height:0">
-    <div style="flex:1;background:#0a1628;border:1px solid #1e3a5f;border-radius:0.6vh;padding:0.6vh 1.2vw;display:flex;flex-direction:column;gap:0.4vh">
+    <div style="flex:1;background:#0a1628;border:1px solid #334155;border-radius:0.6vh;padding:0.6vh 1.2vw;display:flex;flex-direction:column;gap:0.4vh">
       <div style="color:#60a5fa;font-weight:700;font-size:1.55vh">📊 Normal Market</div>
       <div style="color:#94a3b8;font-size:1.1vh">HC = slippage% × closure NOP &nbsp;|&nbsp; Slippage % sourced from Hyperliquid Est. Slippage, weekend conditions</div>
       <table style="font-size:1.45vh;width:100%;border-collapse:collapse;flex:1">
-        <tr><th style="padding:0.4vh 0.5vw">Asset</th><th style="text-align:center;padding:0.4vh;background:#1a1a2e;color:#c4b5fd">$10M NOP<br><span style="font-weight:400;font-size:1vh">close $2M · cap $400K</span></th><th style="text-align:center;padding:0.4vh;background:#1f1510;color:#fdba74">$25M NOP<br><span style="font-weight:400;font-size:1vh">close $5M · cap $1M</span></th><th style="text-align:center;padding:0.4vh;background:#1f0a0a;color:#fca5a5">$50M NOP<br><span style="font-weight:400;font-size:1vh">close $10M · cap $2M</span></th></tr>
-        <tr><td class="f" style="padding:0.45vh 0.5vw">NASDAQ</td><td style="text-align:center;background:#0a1f14;padding:0.35vh"><div style="color:#34d399;font-weight:700;font-size:1.4vh">$5,600</div><div style="color:#6ee7b7;font-size:1vh">0.28% × $2M</div></td><td style="text-align:center;background:#0a1f14;padding:0.35vh"><div style="color:#34d399;font-weight:700;font-size:1.4vh">$22,500</div><div style="color:#6ee7b7;font-size:1vh">0.45% × $5M</div></td><td style="text-align:center;background:#0a1f14;padding:0.35vh"><div style="color:#34d399;font-weight:700;font-size:1.4vh">$93,000</div><div style="color:#6ee7b7;font-size:1vh">0.93% × $10M</div></td></tr>
-        <tr><td class="f" style="padding:0.45vh 0.5vw">S&amp;P 500</td><td style="text-align:center;background:#0a1f14;padding:0.35vh"><div style="color:#34d399;font-weight:700;font-size:1.4vh">$6,000</div><div style="color:#6ee7b7;font-size:1vh">0.30% × $2M</div></td><td style="text-align:center;background:#0a1f14;padding:0.35vh"><div style="color:#34d399;font-weight:700;font-size:1.4vh">$35,000</div><div style="color:#6ee7b7;font-size:1vh">0.70% × $5M</div></td><td style="text-align:center;background:#fbbf2415;padding:0.35vh"><div style="color:#fbbf24;font-weight:700;font-size:1.4vh">$160,000</div><div style="color:#fde68a;font-size:1vh">1.60% × $10M</div></td></tr>
-        <tr><td class="f" style="padding:0.45vh 0.5vw">Oil</td><td style="text-align:center;background:#0a1f14;padding:0.35vh"><div style="color:#34d399;font-weight:700;font-size:1.4vh">$10,000</div><div style="color:#6ee7b7;font-size:1vh">0.50% × $2M</div></td><td style="text-align:center;background:#fbbf2415;padding:0.35vh"><div style="color:#fbbf24;font-weight:700;font-size:1.4vh">$56,500</div><div style="color:#fde68a;font-size:1vh">1.13% × $5M</div></td><td style="text-align:center;background:#fbbf2415;padding:0.35vh"><div style="color:#fbbf24;font-weight:700;font-size:1.4vh">$230,000</div><div style="color:#fde68a;font-size:1vh">2.30% × $10M</div></td></tr>
-        <tr><td class="f" style="padding:0.45vh 0.5vw">Gold</td><td style="text-align:center;background:#0a1f14;padding:0.35vh"><div style="color:#34d399;font-weight:700;font-size:1.4vh">$14,000</div><div style="color:#6ee7b7;font-size:1vh">0.70% × $2M</div></td><td style="text-align:center;background:#fbbf2415;padding:0.35vh"><div style="color:#fbbf24;font-weight:700;font-size:1.4vh">$70,000</div><div style="color:#fde68a;font-size:1vh">1.40% × $5M</div></td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#f87171;font-weight:700;font-size:1.4vh">$330,000</div><div style="color:#ff9999;font-size:1vh">3.30% × $10M</div></td></tr>
-        <tr><td class="f" style="padding:0.45vh 0.5vw">Silver</td><td style="text-align:center;background:#0a1f14;padding:0.35vh"><div style="color:#34d399;font-weight:700;font-size:1.4vh">$9,000</div><div style="color:#6ee7b7;font-size:1vh">0.45% × $2M</div></td><td style="text-align:center;background:#0a1f14;padding:0.35vh"><div style="color:#34d399;font-weight:700;font-size:1.4vh">$46,500</div><div style="color:#6ee7b7;font-size:1vh">0.93% × $5M</div></td><td style="text-align:center;background:#fbbf2415;padding:0.35vh"><div style="color:#fbbf24;font-weight:700;font-size:1.4vh">$184,000</div><div style="color:#fde68a;font-size:1vh">1.84% × $10M</div></td></tr>
+        <tr><th style="padding:0.4vh 0.5vw">Asset</th><th style="text-align:center;padding:0.4vh;background:#1e1b4b;color:#6d28d9">$10M NOP<br><span style="font-weight:400;font-size:1vh">close $2M · cap $400K</span></th><th style="text-align:center;padding:0.4vh;background:#fbbf2415;color:#c2410c">$25M NOP<br><span style="font-weight:400;font-size:1vh">close $5M · cap $1M</span></th><th style="text-align:center;padding:0.4vh;background:#451a1a;color:#dc2626">$50M NOP<br><span style="font-weight:400;font-size:1vh">close $10M · cap $2M</span></th></tr>
+        <tr><td class="f" style="padding:0.45vh 0.5vw">NASDAQ</td><td style="text-align:center;background:#0a1f14;padding:0.35vh"><div style="color:#34d399;font-weight:700;font-size:1.4vh">$5,600</div><div style="color:#059669;font-size:1vh">0.28% × $2M</div></td><td style="text-align:center;background:#0a1f14;padding:0.35vh"><div style="color:#34d399;font-weight:700;font-size:1.4vh">$22,500</div><div style="color:#059669;font-size:1vh">0.45% × $5M</div></td><td style="text-align:center;background:#0a1f14;padding:0.35vh"><div style="color:#34d399;font-weight:700;font-size:1.4vh">$93,000</div><div style="color:#059669;font-size:1vh">0.93% × $10M</div></td></tr>
+        <tr><td class="f" style="padding:0.45vh 0.5vw">S&amp;P 500</td><td style="text-align:center;background:#0a1f14;padding:0.35vh"><div style="color:#34d399;font-weight:700;font-size:1.4vh">$6,000</div><div style="color:#059669;font-size:1vh">0.30% × $2M</div></td><td style="text-align:center;background:#0a1f14;padding:0.35vh"><div style="color:#34d399;font-weight:700;font-size:1.4vh">$35,000</div><div style="color:#059669;font-size:1vh">0.70% × $5M</div></td><td style="text-align:center;background:#fbbf2415;padding:0.35vh"><div style="color:#fbbf24;font-weight:700;font-size:1.4vh">$160,000</div><div style="color:#a16207;font-size:1vh">1.60% × $10M</div></td></tr>
+        <tr><td class="f" style="padding:0.45vh 0.5vw">Oil</td><td style="text-align:center;background:#0a1f14;padding:0.35vh"><div style="color:#34d399;font-weight:700;font-size:1.4vh">$10,000</div><div style="color:#059669;font-size:1vh">0.50% × $2M</div></td><td style="text-align:center;background:#fbbf2415;padding:0.35vh"><div style="color:#fbbf24;font-weight:700;font-size:1.4vh">$56,500</div><div style="color:#a16207;font-size:1vh">1.13% × $5M</div></td><td style="text-align:center;background:#fbbf2415;padding:0.35vh"><div style="color:#fbbf24;font-weight:700;font-size:1.4vh">$230,000</div><div style="color:#a16207;font-size:1vh">2.30% × $10M</div></td></tr>
+        <tr><td class="f" style="padding:0.45vh 0.5vw">Gold</td><td style="text-align:center;background:#0a1f14;padding:0.35vh"><div style="color:#34d399;font-weight:700;font-size:1.4vh">$14,000</div><div style="color:#059669;font-size:1vh">0.70% × $2M</div></td><td style="text-align:center;background:#fbbf2415;padding:0.35vh"><div style="color:#fbbf24;font-weight:700;font-size:1.4vh">$70,000</div><div style="color:#a16207;font-size:1vh">1.40% × $5M</div></td><td style="text-align:center;background:#1a0a0a;padding:0.35vh"><div style="color:#f87171;font-weight:700;font-size:1.4vh">$330,000</div><div style="color:#dc2626;font-size:1vh">3.30% × $10M</div></td></tr>
+        <tr><td class="f" style="padding:0.45vh 0.5vw">Silver</td><td style="text-align:center;background:#0a1f14;padding:0.35vh"><div style="color:#34d399;font-weight:700;font-size:1.4vh">$9,000</div><div style="color:#059669;font-size:1vh">0.45% × $2M</div></td><td style="text-align:center;background:#0a1f14;padding:0.35vh"><div style="color:#34d399;font-weight:700;font-size:1.4vh">$46,500</div><div style="color:#059669;font-size:1vh">0.93% × $5M</div></td><td style="text-align:center;background:#fbbf2415;padding:0.35vh"><div style="color:#fbbf24;font-weight:700;font-size:1.4vh">$184,000</div><div style="color:#a16207;font-size:1vh">1.84% × $10M</div></td></tr>
       </table>
     </div>
     <div style="flex:1;background:#1a0a0a;border:1px solid #7f1d1d;border-radius:0.6vh;padding:0.6vh 1.2vw;display:flex;flex-direction:column;gap:0.4vh">
       <div style="color:#f87171;font-weight:700;font-size:1.55vh">⚠️ Stress Market (×5)</div>
-      <div style="color:#fca5a5;font-size:1.1vh">HC = slippage% × 5 × closure NOP &nbsp;|&nbsp; <span style="color:#78716c">Basis: Oct 2025 peak ×7.5</span></div>
+      <div style="color:#dc2626;font-size:1.1vh">HC = slippage% × 5 × closure NOP &nbsp;|&nbsp; <span style="color:#78716c">Basis: Oct 2025 peak ×7.5</span></div>
       <table style="font-size:1.45vh;width:100%;border-collapse:collapse;flex:1">
-        <tr><th style="padding:0.4vh 0.5vw">Asset</th><th style="text-align:center;padding:0.4vh;background:#1a1a2e;color:#c4b5fd">$10M NOP<br><span style="font-weight:400;font-size:1vh">close $2M · cap $400K</span></th><th style="text-align:center;padding:0.4vh;background:#1f1510;color:#fdba74">$25M NOP<br><span style="font-weight:400;font-size:1vh">close $5M · cap $1M</span></th><th style="text-align:center;padding:0.4vh;background:#1f0a0a;color:#fca5a5">$50M NOP<br><span style="font-weight:400;font-size:1vh">close $10M · cap $2M</span></th></tr>
-        <tr><td class="f" style="padding:0.45vh 0.5vw">NASDAQ</td><td style="text-align:center;background:#0a1f14;padding:0.35vh"><div style="color:#34d399;font-weight:700;font-size:1.4vh">$28,000</div><div style="color:#6ee7b7;font-size:1vh">0.28%×5×$2M</div></td><td style="text-align:center;background:#fbbf2415;padding:0.35vh"><div style="color:#fbbf24;font-weight:700;font-size:1.4vh">$112,500</div><div style="color:#fde68a;font-size:1vh">0.45%×5×$5M</div></td><td style="text-align:center;background:#fbbf2415;padding:0.35vh"><div style="color:#fbbf24;font-weight:700;font-size:1.4vh">$465,000</div><div style="color:#fde68a;font-size:1vh">0.93%×5×$10M</div></td></tr>
-        <tr><td class="f" style="padding:0.45vh 0.5vw">S&amp;P 500</td><td style="text-align:center;background:#0a1f14;padding:0.35vh"><div style="color:#34d399;font-weight:700;font-size:1.4vh">$30,000</div><div style="color:#6ee7b7;font-size:1vh">0.30%×5×$2M</div></td><td style="text-align:center;background:#fbbf2415;padding:0.35vh"><div style="color:#fbbf24;font-weight:700;font-size:1.4vh">$175,000</div><div style="color:#fde68a;font-size:1vh">0.70%×5×$5M</div></td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#f87171;font-weight:700;font-size:1.4vh">$800,000</div><div style="color:#ff9999;font-size:1vh">1.60%×5×$10M</div></td></tr>
-        <tr><td class="f" style="padding:0.45vh 0.5vw">Oil</td><td style="text-align:center;background:#fbbf2415;padding:0.35vh"><div style="color:#fbbf24;font-weight:700;font-size:1.4vh">$50,000</div><div style="color:#fde68a;font-size:1vh">0.50%×5×$2M</div></td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#f87171;font-weight:700;font-size:1.4vh">$282,500</div><div style="color:#ff9999;font-size:1vh">1.13%×5×$5M</div></td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#f87171;font-weight:700;font-size:1.4vh">$1,150,000</div><div style="color:#ff9999;font-size:1vh">2.30%×5×$10M</div></td></tr>
-        <tr><td class="f" style="padding:0.45vh 0.5vw">Gold</td><td style="text-align:center;background:#fbbf2415;padding:0.35vh"><div style="color:#fbbf24;font-weight:700;font-size:1.4vh">$70,000</div><div style="color:#fde68a;font-size:1vh">0.70%×5×$2M</div></td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#f87171;font-weight:700;font-size:1.4vh">$350,000</div><div style="color:#ff9999;font-size:1vh">1.40%×5×$5M</div></td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#f87171;font-weight:700;font-size:1.4vh">$1,650,000</div><div style="color:#ff9999;font-size:1vh">3.30%×5×$10M</div></td></tr>
-        <tr><td class="f" style="padding:0.45vh 0.5vw">Silver</td><td style="text-align:center;background:#fbbf2415;padding:0.35vh"><div style="color:#fbbf24;font-weight:700;font-size:1.4vh">$45,000</div><div style="color:#fde68a;font-size:1vh">0.45%×5×$2M</div></td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#f87171;font-weight:700;font-size:1.4vh">$232,500</div><div style="color:#ff9999;font-size:1vh">0.93%×5×$5M</div></td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#f87171;font-weight:700;font-size:1.4vh">$920,000</div><div style="color:#ff9999;font-size:1vh">1.84%×5×$10M</div></td></tr>
+        <tr><th style="padding:0.4vh 0.5vw">Asset</th><th style="text-align:center;padding:0.4vh;background:#1e1b4b;color:#6d28d9">$10M NOP<br><span style="font-weight:400;font-size:1vh">close $2M · cap $400K</span></th><th style="text-align:center;padding:0.4vh;background:#fbbf2415;color:#c2410c">$25M NOP<br><span style="font-weight:400;font-size:1vh">close $5M · cap $1M</span></th><th style="text-align:center;padding:0.4vh;background:#451a1a;color:#dc2626">$50M NOP<br><span style="font-weight:400;font-size:1vh">close $10M · cap $2M</span></th></tr>
+        <tr><td class="f" style="padding:0.45vh 0.5vw">NASDAQ</td><td style="text-align:center;background:#0a1f14;padding:0.35vh"><div style="color:#34d399;font-weight:700;font-size:1.4vh">$28,000</div><div style="color:#059669;font-size:1vh">0.28%×5×$2M</div></td><td style="text-align:center;background:#fbbf2415;padding:0.35vh"><div style="color:#fbbf24;font-weight:700;font-size:1.4vh">$112,500</div><div style="color:#a16207;font-size:1vh">0.45%×5×$5M</div></td><td style="text-align:center;background:#fbbf2415;padding:0.35vh"><div style="color:#fbbf24;font-weight:700;font-size:1.4vh">$465,000</div><div style="color:#a16207;font-size:1vh">0.93%×5×$10M</div></td></tr>
+        <tr><td class="f" style="padding:0.45vh 0.5vw">S&amp;P 500</td><td style="text-align:center;background:#0a1f14;padding:0.35vh"><div style="color:#34d399;font-weight:700;font-size:1.4vh">$30,000</div><div style="color:#059669;font-size:1vh">0.30%×5×$2M</div></td><td style="text-align:center;background:#fbbf2415;padding:0.35vh"><div style="color:#fbbf24;font-weight:700;font-size:1.4vh">$175,000</div><div style="color:#a16207;font-size:1vh">0.70%×5×$5M</div></td><td style="text-align:center;background:#1a0a0a;padding:0.35vh"><div style="color:#f87171;font-weight:700;font-size:1.4vh">$800,000</div><div style="color:#dc2626;font-size:1vh">1.60%×5×$10M</div></td></tr>
+        <tr><td class="f" style="padding:0.45vh 0.5vw">Oil</td><td style="text-align:center;background:#fbbf2415;padding:0.35vh"><div style="color:#fbbf24;font-weight:700;font-size:1.4vh">$50,000</div><div style="color:#a16207;font-size:1vh">0.50%×5×$2M</div></td><td style="text-align:center;background:#1a0a0a;padding:0.35vh"><div style="color:#f87171;font-weight:700;font-size:1.4vh">$282,500</div><div style="color:#dc2626;font-size:1vh">1.13%×5×$5M</div></td><td style="text-align:center;background:#1a0a0a;padding:0.35vh"><div style="color:#f87171;font-weight:700;font-size:1.4vh">$1,150,000</div><div style="color:#dc2626;font-size:1vh">2.30%×5×$10M</div></td></tr>
+        <tr><td class="f" style="padding:0.45vh 0.5vw">Gold</td><td style="text-align:center;background:#fbbf2415;padding:0.35vh"><div style="color:#fbbf24;font-weight:700;font-size:1.4vh">$70,000</div><div style="color:#a16207;font-size:1vh">0.70%×5×$2M</div></td><td style="text-align:center;background:#1a0a0a;padding:0.35vh"><div style="color:#f87171;font-weight:700;font-size:1.4vh">$350,000</div><div style="color:#dc2626;font-size:1vh">1.40%×5×$5M</div></td><td style="text-align:center;background:#1a0a0a;padding:0.35vh"><div style="color:#f87171;font-weight:700;font-size:1.4vh">$1,650,000</div><div style="color:#dc2626;font-size:1vh">3.30%×5×$10M</div></td></tr>
+        <tr><td class="f" style="padding:0.45vh 0.5vw">Silver</td><td style="text-align:center;background:#fbbf2415;padding:0.35vh"><div style="color:#fbbf24;font-weight:700;font-size:1.4vh">$45,000</div><div style="color:#a16207;font-size:1vh">0.45%×5×$2M</div></td><td style="text-align:center;background:#1a0a0a;padding:0.35vh"><div style="color:#f87171;font-weight:700;font-size:1.4vh">$232,500</div><div style="color:#dc2626;font-size:1vh">0.93%×5×$5M</div></td><td style="text-align:center;background:#1a0a0a;padding:0.35vh"><div style="color:#f87171;font-weight:700;font-size:1.4vh">$920,000</div><div style="color:#dc2626;font-size:1vh">1.84%×5×$10M</div></td></tr>
       </table>
     </div>
     <div style="flex:1;background:#1a0010;border:1px solid #9f1239;border-radius:0.6vh;padding:0.6vh 1.2vw;display:flex;flex-direction:column;gap:0.4vh">
       <div style="color:#fb7185;font-weight:700;font-size:1.55vh">💀 Extreme Liquidity Crisis (×100)</div>
-      <div style="color:#fda4af;font-size:1.1vh">Basis: Oct 2025 — 98% order book collapse &nbsp;|&nbsp; All cases exceed margin → <b>full margin wipeout</b></div>
+      <div style="color:#be123c;font-size:1.1vh">Basis: Oct 2025 — 98% order book collapse &nbsp;|&nbsp; All cases exceed margin → <b>full margin wipeout</b></div>
       <table style="font-size:1.45vh;width:100%;border-collapse:collapse;flex:1">
-        <tr><th style="padding:0.4vh 0.5vw">Asset</th><th style="text-align:center;padding:0.4vh;background:#2a0a1a;color:#fda4af">$10M NOP<br><span style="font-weight:400;font-size:1vh">close $2M · cap $400K</span></th><th style="text-align:center;padding:0.4vh;background:#2a0a1a;color:#fda4af">$25M NOP<br><span style="font-weight:400;font-size:1vh">close $5M · cap $1M</span></th><th style="text-align:center;padding:0.4vh;background:#2a0a1a;color:#fda4af">$50M NOP<br><span style="font-weight:400;font-size:1vh">close $10M · cap $2M</span></th></tr>
-        <tr><td class="f" style="padding:0.45vh 0.5vw">NASDAQ</td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#fda4af;font-size:1vh">$560K → cap $400K</div></td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#fda4af;font-size:1vh">$2.25M → cap $1M</div></td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#fda4af;font-size:1vh">$9.3M → cap $2M</div></td></tr>
-        <tr><td class="f" style="padding:0.45vh 0.5vw">S&amp;P 500</td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#fda4af;font-size:1vh">$600K → cap $400K</div></td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#fda4af;font-size:1vh">$3.5M → cap $1M</div></td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#fda4af;font-size:1vh">$16M → cap $2M</div></td></tr>
-        <tr><td class="f" style="padding:0.45vh 0.5vw">Oil</td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#fda4af;font-size:1vh">$1M → cap $400K</div></td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#fda4af;font-size:1vh">$5.65M → cap $1M</div></td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#fda4af;font-size:1vh">$23M → cap $2M</div></td></tr>
-        <tr><td class="f" style="padding:0.45vh 0.5vw">Gold</td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#fda4af;font-size:1vh">$1.4M → cap $400K</div></td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#fda4af;font-size:1vh">$7M → cap $1M</div></td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#fda4af;font-size:1vh">$33M → cap $2M</div></td></tr>
-        <tr><td class="f" style="padding:0.45vh 0.5vw">Silver</td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#fda4af;font-size:1vh">$900K → cap $400K</div></td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#fda4af;font-size:1vh">$4.65M → cap $1M</div></td><td style="text-align:center;background:#2a0e0e;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#fda4af;font-size:1vh">$18.4M → cap $2M</div></td></tr>
+        <tr><th style="padding:0.4vh 0.5vw">Asset</th><th style="text-align:center;padding:0.4vh;background:#1a0010;color:#9f1239">$10M NOP<br><span style="font-weight:400;font-size:1vh">close $2M · cap $400K</span></th><th style="text-align:center;padding:0.4vh;background:#1a0010;color:#9f1239">$25M NOP<br><span style="font-weight:400;font-size:1vh">close $5M · cap $1M</span></th><th style="text-align:center;padding:0.4vh;background:#1a0010;color:#9f1239">$50M NOP<br><span style="font-weight:400;font-size:1vh">close $10M · cap $2M</span></th></tr>
+        <tr><td class="f" style="padding:0.45vh 0.5vw">NASDAQ</td><td style="text-align:center;background:#1a0a0a;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#be123c;font-size:1vh">$560K → cap $400K</div></td><td style="text-align:center;background:#1a0a0a;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#be123c;font-size:1vh">$2.25M → cap $1M</div></td><td style="text-align:center;background:#1a0a0a;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#be123c;font-size:1vh">$9.3M → cap $2M</div></td></tr>
+        <tr><td class="f" style="padding:0.45vh 0.5vw">S&amp;P 500</td><td style="text-align:center;background:#1a0a0a;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#be123c;font-size:1vh">$600K → cap $400K</div></td><td style="text-align:center;background:#1a0a0a;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#be123c;font-size:1vh">$3.5M → cap $1M</div></td><td style="text-align:center;background:#1a0a0a;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#be123c;font-size:1vh">$16M → cap $2M</div></td></tr>
+        <tr><td class="f" style="padding:0.45vh 0.5vw">Oil</td><td style="text-align:center;background:#1a0a0a;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#be123c;font-size:1vh">$1M → cap $400K</div></td><td style="text-align:center;background:#1a0a0a;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#be123c;font-size:1vh">$5.65M → cap $1M</div></td><td style="text-align:center;background:#1a0a0a;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#be123c;font-size:1vh">$23M → cap $2M</div></td></tr>
+        <tr><td class="f" style="padding:0.45vh 0.5vw">Gold</td><td style="text-align:center;background:#1a0a0a;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#be123c;font-size:1vh">$1.4M → cap $400K</div></td><td style="text-align:center;background:#1a0a0a;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#be123c;font-size:1vh">$7M → cap $1M</div></td><td style="text-align:center;background:#1a0a0a;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#be123c;font-size:1vh">$33M → cap $2M</div></td></tr>
+        <tr><td class="f" style="padding:0.45vh 0.5vw">Silver</td><td style="text-align:center;background:#1a0a0a;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#be123c;font-size:1vh">$900K → cap $400K</div></td><td style="text-align:center;background:#1a0a0a;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#be123c;font-size:1vh">$4.65M → cap $1M</div></td><td style="text-align:center;background:#1a0a0a;padding:0.35vh"><div style="color:#fb7185;font-weight:700;font-size:1.4vh">⚠️ Full margin</div><div style="color:#be123c;font-size:1vh">$18.4M → cap $2M</div></td></tr>
       </table>
     </div>
   </div>
-  <div style="background:#0f1f10;border:1px solid #166534;border-radius:0.4vh;padding:0.65vh 1.5vw;flex-shrink:0;display:flex;align-items:center;gap:1.5vw">
+  <div style="background:#0a1f14;border:1px solid #166534;border-radius:0.4vh;padding:0.65vh 1.5vw;flex-shrink:0;display:flex;align-items:center;gap:1.5vw">
     <span style="font-size:2.2vh">💡</span>
     <div><span style="color:#34d399;font-weight:700;font-size:1.45vh">Key Insight: </span><span style="color:#86efac;font-size:1.4vh">Normal: slippage manageable. Stress ×5: material cost, Gold/Oil/Silver $50M reach $1–1.65M. <b>Extreme ×100 (Oct 2025-style)</b>: full margin wipeout on every asset at every NOP size — max loss = <b>20% of closure NOP</b>. TWAP execution and circuit breakers are critical mitigants.</span></div>
   </div>
@@ -535,19 +393,19 @@ render();
  
 <!-- S5: Scenario 2 — 9/14 -->
 <div class="slide" id="s5">
-<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">9 / 14</span></div>
+<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">12 / 13</span></div>
 <div class="ta" style="padding:0.7vh 3vw 0.3vh"><h1 style="font-size:2.8vh">Scenario 2: Fast Market Weekend — Client vs. Hedging Leverage Risk and Slippage Risk</h1><p style="font-size:1.5vh">SL active both sides | Client SL = 50% of investment (= 50% ÷ L_client of NOP) | HC = Client P&amp;L − Hedge P&amp;L | Risk = close-timing diff when hedge liquidates before client SL fires</p></div>
 <div class="body" style="display:flex;flex-direction:column;justify-content:space-between;padding:0.5vh 2.5vw 0.5vh">
   <div style="display:flex;gap:1vw;flex-shrink:0">
-    <div style="flex:1;background:#0a1628;border:1px solid #1e3a5f;border-radius:0.4vh;padding:0.5vh 1vw">
+    <div style="flex:1;background:#0a1628;border:1px solid #334155;border-radius:0.4vh;padding:0.5vh 1vw">
       <div style="color:#60a5fa;font-weight:700;font-size:1.4vh;margin-bottom:0.2vh">Client SL Thresholds (50% of investment ÷ NOP = 50% ÷ L)</div>
       <div style="display:flex;gap:2vw;font-size:1.4vh"><span style="color:#a78bfa">5× → SL at <b>10%</b> drop</span><span style="color:#fb923c">10× → SL at <b>5%</b> drop</span><span style="color:#f87171">20× → SL at <b>2.5%</b> drop</span></div>
     </div>
-    <div style="flex:1;background:#0a1628;border:1px solid #1e3a5f;border-radius:0.4vh;padding:0.5vh 1vw">
+    <div style="flex:1;background:#0a1628;border:1px solid #334155;border-radius:0.4vh;padding:0.5vh 1vw">
       <div style="color:#60a5fa;font-weight:700;font-size:1.4vh;margin-bottom:0.2vh">Hyperliquid Hedge Liquidation Thresholds (1÷L − 2.5%)</div>
       <div style="display:flex;gap:2vw;font-size:1.4vh"><span style="color:#a78bfa">5× → liq at <b>17.5%</b> drop</span><span style="color:#fb923c">10× → liq at <b>7.5%</b> drop</span><span style="color:#f87171">20× → liq at <b>2.5%</b> drop</span></div>
     </div>
-    <div style="flex:0.65;background:#0a1628;border:1px solid #1e3a5f;border-radius:0.4vh;padding:0.5vh 1vw;text-align:center">
+    <div style="flex:0.65;background:#0a1628;border:1px solid #334155;border-radius:0.4vh;padding:0.5vh 1vw;text-align:center">
       <div style="color:#60a5fa;font-weight:700;font-size:1.35vh">HC Formula (Case 1)</div>
       <div style="color:#f87171;font-size:1.3vh;font-weight:600;line-height:1.5">NOP × (Client SL% − Hedge Liq%)</div>
       <div style="color:#34d399;font-size:1.2vh">Case 2: HC ≈ slippage only</div>
@@ -556,102 +414,102 @@ render();
   <div style="display:flex;gap:1.2vw;flex:1;min-height:0">
     <div style="flex:1;background:#1a0a0a;border:1px solid #7f1d1d;border-radius:0.6vh;padding:0.6vh 1.2vw;display:flex;flex-direction:column;gap:0.45vh">
       <div style="color:#f87171;font-weight:700;font-size:1.65vh">⚠️ Case 1 — Client Leverage ≤ Hedge Leverage → Hedge closes first</div>
-      <div style="color:#fca5a5;font-size:1.25vh">Hedge liq threshold &lt; Client SL threshold → unhedged window until client SL fires | HC = NOP × diff</div>
-      <div style="background:#2a0e0e;border-radius:0.3vh;padding:0.35vh 0.8vw;font-size:1.2vh;color:#fdba74">Example: Client <b>5×</b> (SL at 10%) vs Hedge <b>10×</b> (liq at 7.5%) → diff = <b>2.5%</b> &nbsp;|&nbsp; Client <b>5×</b> vs Hedge <b>20×</b> (liq at 2.5%) → diff = <b>7.5%</b></div>
+      <div style="color:#dc2626;font-size:1.25vh">Hedge liq threshold &lt; Client SL threshold → unhedged window until client SL fires | HC = NOP × diff</div>
+      <div style="background:#1a0a0a;border-radius:0.3vh;padding:0.35vh 0.8vw;font-size:1.2vh;color:#fdba74">Example: Client <b>5×</b> (SL at 10%) vs Hedge <b>10×</b> (liq at 7.5%) → diff = <b>2.5%</b> &nbsp;|&nbsp; Client <b>5×</b> vs Hedge <b>20×</b> (liq at 2.5%) → diff = <b>7.5%</b></div>
       <table style="font-size:1.5vh;width:100%;border-collapse:collapse;flex:1">
-        <tr><th style="padding:0.45vh 0.5vw">Asset</th><th style="padding:0.45vh 0.4vw;text-align:center">Drop</th><th style="text-align:center;padding:0.45vh;background:#1f1510;color:#fdba74">Hedge 10×<br><span style="font-weight:400;font-size:1.1vh">diff = 2.5% | $10M/$25M/$50M</span></th><th style="text-align:center;padding:0.45vh;background:#2a0e0e;color:#fca5a5">Hedge 20×<br><span style="font-weight:400;font-size:1.1vh">diff = 7.5% | $10M/$25M/$50M</span></th></tr>
-        <tr><td class="f" style="padding:0.5vh 0.5vw">Oil</td><td style="text-align:center;color:#fbbf24;font-weight:700">−20%</td><td style="text-align:center;background:#2a1a0e;padding:0.4vh"><div style="color:#fbbf24;font-weight:700;font-size:1.45vh">$250K / $625K / $1.25M</div><div style="color:#fde68a;font-size:1.05vh">2.5% × NOP</div></td><td style="text-align:center;background:#2a0e0e;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.45vh">$750K / $1.875M / $3.75M</div><div style="color:#ff9999;font-size:1.05vh">7.5% × NOP</div></td></tr>
-        <tr><td class="f" style="padding:0.5vh 0.5vw">Gold</td><td style="text-align:center;color:#fbbf24;font-weight:700">−10%</td><td style="text-align:center;background:#2a1a0e;padding:0.4vh"><div style="color:#fbbf24;font-weight:700;font-size:1.45vh">$250K / $625K / $1.25M</div><div style="color:#fde68a;font-size:1.05vh">2.5% × NOP</div></td><td style="text-align:center;background:#2a0e0e;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.45vh">$750K / $1.875M / $3.75M</div><div style="color:#ff9999;font-size:1.05vh">7.5% × NOP</div></td></tr>
-        <tr><td class="f" style="padding:0.5vh 0.5vw">Silver</td><td style="text-align:center;color:#fbbf24;font-weight:700">−20%</td><td style="text-align:center;background:#2a1a0e;padding:0.4vh"><div style="color:#fbbf24;font-weight:700;font-size:1.45vh">$250K / $625K / $1.25M</div><div style="color:#fde68a;font-size:1.05vh">2.5% × NOP</div></td><td style="text-align:center;background:#2a0e0e;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.45vh">$750K / $1.875M / $3.75M</div><div style="color:#ff9999;font-size:1.05vh">7.5% × NOP</div></td></tr>
-        <tr><td class="f" style="padding:0.5vh 0.5vw">NASDAQ</td><td style="text-align:center;color:#fbbf24;font-weight:700">−15%</td><td style="text-align:center;background:#2a1a0e;padding:0.4vh"><div style="color:#fbbf24;font-weight:700;font-size:1.45vh">$250K / $625K / $1.25M</div><div style="color:#fde68a;font-size:1.05vh">2.5% × NOP</div></td><td style="text-align:center;background:#2a0e0e;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.45vh">$750K / $1.875M / $3.75M</div><div style="color:#ff9999;font-size:1.05vh">7.5% × NOP</div></td></tr>
-        <tr><td class="f" style="padding:0.5vh 0.5vw">S&amp;P 500</td><td style="text-align:center;color:#fbbf24;font-weight:700">−10%</td><td style="text-align:center;background:#2a1a0e;padding:0.4vh"><div style="color:#fbbf24;font-weight:700;font-size:1.45vh">$250K / $625K / $1.25M</div><div style="color:#fde68a;font-size:1.05vh">2.5% × NOP</div></td><td style="text-align:center;background:#2a0e0e;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.45vh">$750K / $1.875M / $3.75M</div><div style="color:#ff9999;font-size:1.05vh">7.5% × NOP</div></td></tr>
+        <tr><th style="padding:0.45vh 0.5vw">Asset</th><th style="padding:0.45vh 0.4vw;text-align:center">Drop</th><th style="text-align:center;padding:0.45vh;background:#fbbf2415;color:#c2410c">Hedge 10×<br><span style="font-weight:400;font-size:1.1vh">diff = 2.5% | $10M/$25M/$50M</span></th><th style="text-align:center;padding:0.45vh;background:#2a0e0e;color:#fca5a5">Hedge 20×<br><span style="font-weight:400;font-size:1.1vh">diff = 7.5% | $10M/$25M/$50M</span></th></tr>
+        <tr><td class="f" style="padding:0.5vh 0.5vw">Oil</td><td style="text-align:center;color:#fbbf24;font-weight:700">−20%</td><td style="text-align:center;background:#fbbf2415;padding:0.4vh"><div style="color:#fbbf24;font-weight:700;font-size:1.45vh">$250K / $625K / $1.25M</div><div style="color:#a16207;font-size:1.05vh">2.5% × NOP</div></td><td style="text-align:center;background:#1a0a0a;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.45vh">$750K / $1.875M / $3.75M</div><div style="color:#dc2626;font-size:1.05vh">7.5% × NOP</div></td></tr>
+        <tr><td class="f" style="padding:0.5vh 0.5vw">Gold</td><td style="text-align:center;color:#fbbf24;font-weight:700">−10%</td><td style="text-align:center;background:#fbbf2415;padding:0.4vh"><div style="color:#fbbf24;font-weight:700;font-size:1.45vh">$250K / $625K / $1.25M</div><div style="color:#a16207;font-size:1.05vh">2.5% × NOP</div></td><td style="text-align:center;background:#1a0a0a;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.45vh">$750K / $1.875M / $3.75M</div><div style="color:#dc2626;font-size:1.05vh">7.5% × NOP</div></td></tr>
+        <tr><td class="f" style="padding:0.5vh 0.5vw">Silver</td><td style="text-align:center;color:#fbbf24;font-weight:700">−20%</td><td style="text-align:center;background:#fbbf2415;padding:0.4vh"><div style="color:#fbbf24;font-weight:700;font-size:1.45vh">$250K / $625K / $1.25M</div><div style="color:#a16207;font-size:1.05vh">2.5% × NOP</div></td><td style="text-align:center;background:#1a0a0a;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.45vh">$750K / $1.875M / $3.75M</div><div style="color:#dc2626;font-size:1.05vh">7.5% × NOP</div></td></tr>
+        <tr><td class="f" style="padding:0.5vh 0.5vw">NASDAQ</td><td style="text-align:center;color:#fbbf24;font-weight:700">−15%</td><td style="text-align:center;background:#fbbf2415;padding:0.4vh"><div style="color:#fbbf24;font-weight:700;font-size:1.45vh">$250K / $625K / $1.25M</div><div style="color:#a16207;font-size:1.05vh">2.5% × NOP</div></td><td style="text-align:center;background:#1a0a0a;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.45vh">$750K / $1.875M / $3.75M</div><div style="color:#dc2626;font-size:1.05vh">7.5% × NOP</div></td></tr>
+        <tr><td class="f" style="padding:0.5vh 0.5vw">S&amp;P 500</td><td style="text-align:center;color:#fbbf24;font-weight:700">−10%</td><td style="text-align:center;background:#fbbf2415;padding:0.4vh"><div style="color:#fbbf24;font-weight:700;font-size:1.45vh">$250K / $625K / $1.25M</div><div style="color:#a16207;font-size:1.05vh">2.5% × NOP</div></td><td style="text-align:center;background:#1a0a0a;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.45vh">$750K / $1.875M / $3.75M</div><div style="color:#dc2626;font-size:1.05vh">7.5% × NOP</div></td></tr>
       </table>
-      <div style="color:#64748b;font-size:1.1vh">Client 5× assumed. HC = NOP × (Client SL 10% − Hedge Liq). All stress drops ≥ 10% → HC always capped at diff.</div>
+      <div style="color:#94a3b8;font-size:1.1vh">Client 5× assumed. HC = NOP × (Client SL 10% − Hedge Liq). All stress drops ≥ 10% → HC always capped at diff.</div>
     </div>
     <div style="flex:1;background:#0a1f14;border:1px solid #166534;border-radius:0.6vh;padding:0.6vh 1.2vw;display:flex;flex-direction:column;gap:0.45vh">
       <div style="color:#34d399;font-weight:700;font-size:1.65vh">✅ Case 2 — Client Leverage &gt; Hedge Leverage → Client closes first</div>
-      <div style="color:#86efac;font-size:1.25vh">Client SL threshold &lt; Hedge liq threshold → client always exits first → HC = DEX slippage only (stress × 5) &nbsp;|&nbsp; <span style="color:#78716c">Basis: Oct 2025 ×7.5 peak</span></div>
-      <div style="background:#0a2a16;border-radius:0.3vh;padding:0.35vh 0.8vw;font-size:1.2vh;color:#6ee7b7">Example: Client <b>10×</b> (SL at 5%) vs Hedge <b>5×</b> (liq at 17.5%) → client always closes first | HC = DEX slippage only (capped at margin = 20% of NOP)</div>
+      <div style="color:#047857;font-size:1.25vh">Client SL threshold &lt; Hedge liq threshold → client always exits first → HC = DEX slippage only (stress × 5) &nbsp;|&nbsp; <span style="color:#78716c">Basis: Oct 2025 ×7.5 peak</span></div>
+      <div style="background:#0a1f14;border-radius:0.3vh;padding:0.35vh 0.8vw;font-size:1.2vh;color:#059669">Example: Client <b>10×</b> (SL at 5%) vs Hedge <b>5×</b> (liq at 17.5%) → client always closes first | HC = DEX slippage only (capped at margin = 20% of NOP)</div>
       <table style="font-size:1.5vh;width:100%;border-collapse:collapse;flex:1">
         <tr><th style="padding:0.45vh 0.5vw">Asset</th><th style="padding:0.45vh 0.4vw;text-align:center">Drop</th><th style="text-align:center;padding:0.45vh;background:#0a2a16;color:#86efac">$10M NOP<br><span style="font-weight:400;font-size:1vh">margin cap $2M</span></th><th style="text-align:center;padding:0.45vh;background:#0a2a16;color:#86efac">$25M NOP<br><span style="font-weight:400;font-size:1vh">margin cap $5M</span></th><th style="text-align:center;padding:0.45vh;background:#0a2a16;color:#86efac">$50M NOP<br><span style="font-weight:400;font-size:1vh">margin cap $10M</span></th></tr>
         <tr><td class="f" style="padding:0.5vh 0.5vw">Oil</td><td style="text-align:center;color:#fbbf24;font-weight:700">−20%</td>
-          <td style="text-align:center;background:#fbbf2415;padding:0.4vh"><div style="color:#fbbf24;font-weight:700;font-size:1.5vh">$1.15M</div><div style="color:#fde68a;font-size:1.05vh">2.30%×5×$10M</div></td>
-          <td style="text-align:center;background:#2a0e0e;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.5vh">⚠️ Full margin</div><div style="color:#ff9999;font-size:1.05vh">6.00%×5×$25M=$7.5M</div><div style="color:#fca5a5;font-size:1vh">→ cap <b>$5M</b></div></td>
-          <td style="text-align:center;background:#2a0e0e;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.5vh">⚠️ Full margin</div><div style="color:#ff9999;font-size:1.05vh">12.00%×5×$50M=$30M</div><div style="color:#fca5a5;font-size:1vh">→ cap <b>$10M</b></div></td></tr>
+          <td style="text-align:center;background:#fbbf2415;padding:0.4vh"><div style="color:#fbbf24;font-weight:700;font-size:1.5vh">$1.15M</div><div style="color:#a16207;font-size:1.05vh">2.30%×5×$10M</div></td>
+          <td style="text-align:center;background:#1a0a0a;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.5vh">⚠️ Full margin</div><div style="color:#dc2626;font-size:1.05vh">6.00%×5×$25M=$7.5M</div><div style="color:#dc2626;font-size:1vh">→ cap <b>$5M</b></div></td>
+          <td style="text-align:center;background:#1a0a0a;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.5vh">⚠️ Full margin</div><div style="color:#dc2626;font-size:1.05vh">12.00%×5×$50M=$30M</div><div style="color:#dc2626;font-size:1vh">→ cap <b>$10M</b></div></td></tr>
         <tr><td class="f" style="padding:0.5vh 0.5vw">Gold</td><td style="text-align:center;color:#fbbf24;font-weight:700">−10%</td>
-          <td style="text-align:center;background:#fbbf2415;padding:0.4vh"><div style="color:#fbbf24;font-weight:700;font-size:1.5vh">$1.65M</div><div style="color:#fde68a;font-size:1.05vh">3.30%×5×$10M</div></td>
-          <td style="text-align:center;background:#2a0e0e;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.5vh">⚠️ Full margin</div><div style="color:#ff9999;font-size:1.05vh">13.70%×5×$25M=$17.1M</div><div style="color:#fca5a5;font-size:1vh">→ cap <b>$5M</b></div></td>
-          <td style="text-align:center;background:#2a0e0e;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.5vh">⚠️ Full margin</div><div style="color:#ff9999;font-size:1.05vh">27.30%×5×$50M=$68.25M</div><div style="color:#fca5a5;font-size:1vh">→ cap <b>$10M</b></div></td></tr>
+          <td style="text-align:center;background:#fbbf2415;padding:0.4vh"><div style="color:#fbbf24;font-weight:700;font-size:1.5vh">$1.65M</div><div style="color:#a16207;font-size:1.05vh">3.30%×5×$10M</div></td>
+          <td style="text-align:center;background:#1a0a0a;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.5vh">⚠️ Full margin</div><div style="color:#dc2626;font-size:1.05vh">13.70%×5×$25M=$17.1M</div><div style="color:#dc2626;font-size:1vh">→ cap <b>$5M</b></div></td>
+          <td style="text-align:center;background:#1a0a0a;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.5vh">⚠️ Full margin</div><div style="color:#dc2626;font-size:1.05vh">27.30%×5×$50M=$68.25M</div><div style="color:#dc2626;font-size:1vh">→ cap <b>$10M</b></div></td></tr>
         <tr><td class="f" style="padding:0.5vh 0.5vw">Silver</td><td style="text-align:center;color:#fbbf24;font-weight:700">−20%</td>
-          <td style="text-align:center;background:#fbbf2415;padding:0.4vh"><div style="color:#fbbf24;font-weight:700;font-size:1.5vh">$920K</div><div style="color:#fde68a;font-size:1.05vh">1.84%×5×$10M</div></td>
-          <td style="text-align:center;background:#2a0e0e;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.5vh">⚠️ Full margin</div><div style="color:#ff9999;font-size:1.05vh">4.50%×5×$25M=$5.625M</div><div style="color:#fca5a5;font-size:1vh">→ cap <b>$5M</b></div></td>
-          <td style="text-align:center;background:#2a0e0e;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.5vh">⚠️ Full margin</div><div style="color:#ff9999;font-size:1.05vh">10.00%×5×$50M=$25M</div><div style="color:#fca5a5;font-size:1vh">→ cap <b>$10M</b></div></td></tr>
+          <td style="text-align:center;background:#fbbf2415;padding:0.4vh"><div style="color:#fbbf24;font-weight:700;font-size:1.5vh">$920K</div><div style="color:#a16207;font-size:1.05vh">1.84%×5×$10M</div></td>
+          <td style="text-align:center;background:#1a0a0a;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.5vh">⚠️ Full margin</div><div style="color:#dc2626;font-size:1.05vh">4.50%×5×$25M=$5.625M</div><div style="color:#dc2626;font-size:1vh">→ cap <b>$5M</b></div></td>
+          <td style="text-align:center;background:#1a0a0a;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.5vh">⚠️ Full margin</div><div style="color:#dc2626;font-size:1.05vh">10.00%×5×$50M=$25M</div><div style="color:#dc2626;font-size:1vh">→ cap <b>$10M</b></div></td></tr>
         <tr><td class="f" style="padding:0.5vh 0.5vw">NASDAQ</td><td style="text-align:center;color:#fbbf24;font-weight:700">−15%</td>
-          <td style="text-align:center;background:#fbbf2415;padding:0.4vh"><div style="color:#fbbf24;font-weight:700;font-size:1.5vh">$465K</div><div style="color:#fde68a;font-size:1.05vh">0.93%×5×$10M</div></td>
-          <td style="text-align:center;background:#fbbf2415;padding:0.4vh"><div style="color:#fbbf24;font-weight:700;font-size:1.5vh">$4.375M</div><div style="color:#fde68a;font-size:1.05vh">3.50%×5×$25M</div></td>
-          <td style="text-align:center;background:#2a0e0e;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.5vh">⚠️ Full margin</div><div style="color:#ff9999;font-size:1.05vh">7.00%×5×$50M=$17.5M</div><div style="color:#fca5a5;font-size:1vh">→ cap <b>$10M</b></div></td></tr>
+          <td style="text-align:center;background:#fbbf2415;padding:0.4vh"><div style="color:#fbbf24;font-weight:700;font-size:1.5vh">$465K</div><div style="color:#a16207;font-size:1.05vh">0.93%×5×$10M</div></td>
+          <td style="text-align:center;background:#fbbf2415;padding:0.4vh"><div style="color:#fbbf24;font-weight:700;font-size:1.5vh">$4.375M</div><div style="color:#a16207;font-size:1.05vh">3.50%×5×$25M</div></td>
+          <td style="text-align:center;background:#1a0a0a;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.5vh">⚠️ Full margin</div><div style="color:#dc2626;font-size:1.05vh">7.00%×5×$50M=$17.5M</div><div style="color:#dc2626;font-size:1vh">→ cap <b>$10M</b></div></td></tr>
         <tr><td class="f" style="padding:0.5vh 0.5vw">S&amp;P 500</td><td style="text-align:center;color:#fbbf24;font-weight:700">−10%</td>
-          <td style="text-align:center;background:#fbbf2415;padding:0.4vh"><div style="color:#fbbf24;font-weight:700;font-size:1.5vh">$800K</div><div style="color:#fde68a;font-size:1.05vh">1.60%×5×$10M</div></td>
-          <td style="text-align:center;background:#2a0e0e;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.5vh">⚠️ Full margin</div><div style="color:#ff9999;font-size:1.05vh">6.00%×5×$25M=$7.5M</div><div style="color:#fca5a5;font-size:1vh">→ cap <b>$5M</b></div></td>
-          <td style="text-align:center;background:#2a0e0e;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.5vh">⚠️ Full margin</div><div style="color:#ff9999;font-size:1.05vh">12.00%×5×$50M=$30M</div><div style="color:#fca5a5;font-size:1vh">→ cap <b>$10M</b></div></td></tr>
+          <td style="text-align:center;background:#fbbf2415;padding:0.4vh"><div style="color:#fbbf24;font-weight:700;font-size:1.5vh">$800K</div><div style="color:#a16207;font-size:1.05vh">1.60%×5×$10M</div></td>
+          <td style="text-align:center;background:#1a0a0a;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.5vh">⚠️ Full margin</div><div style="color:#dc2626;font-size:1.05vh">6.00%×5×$25M=$7.5M</div><div style="color:#dc2626;font-size:1vh">→ cap <b>$5M</b></div></td>
+          <td style="text-align:center;background:#1a0a0a;padding:0.4vh"><div style="color:#f87171;font-weight:700;font-size:1.5vh">⚠️ Full margin</div><div style="color:#dc2626;font-size:1.05vh">12.00%×5×$50M=$30M</div><div style="color:#dc2626;font-size:1vh">→ cap <b>$10M</b></div></td></tr>
       </table>
-      <div style="color:#64748b;font-size:1.1vh">Slippage % sourced from Hyperliquid Est. Slippage, weekend conditions &nbsp;|&nbsp; Stress ×5 | ⚠️ Full margin = liquidation before slippage fully realized</div>
+      <div style="color:#94a3b8;font-size:1.1vh">Slippage % sourced from Hyperliquid Est. Slippage, weekend conditions &nbsp;|&nbsp; Stress ×5 | ⚠️ Full margin = liquidation before slippage fully realized</div>
     </div>
   </div>
-  <div style="background:#0f1f10;border:1px solid #166534;border-radius:0.4vh;padding:0.7vh 1.5vw;flex-shrink:0;display:flex;align-items:center;gap:1.5vw">
+  <div style="background:#0a1f14;border:1px solid #166534;border-radius:0.4vh;padding:0.7vh 1.5vw;flex-shrink:0;display:flex;align-items:center;gap:1.5vw">
     <span style="font-size:2.2vh">💡</span>
-    <div><span style="color:#34d399;font-weight:700;font-size:1.5vh">Key Insight: </span><span style="color:#86efac;font-size:1.45vh">Keeping hedge leverage <b>lower than</b> client effective average leverage reduces HC by ~95%. Under stress (×5), Case 2 triggers <b>full margin wipeout</b> across Gold, Oil, Silver at $25M–$50M NOP, and NASDAQ/S&amp;P at $50M. Max loss = <b>100% of hedge margin</b>.</span></div>
+    <div><span style="color:#34d399;font-weight:700;font-size:1.5vh">Key Insight: </span><span style="color:#047857;font-size:1.45vh">Keeping hedge leverage <b>lower than</b> client effective average leverage reduces HC by ~95%. Under stress (×5), Case 2 triggers <b>full margin wipeout</b> across Gold, Oil, Silver at $25M–$50M NOP, and NASDAQ/S&amp;P at $50M. Max loss = <b>100% of hedge margin</b>.</span></div>
   </div>
   <div style="background:#0a1628;border:1px solid #334155;border-radius:0.4vh;padding:0.5vh 1.5vw;flex-shrink:0">
     <span style="color:#94a3b8;font-weight:700;font-size:1.3vh">📋 MVP Configuration: </span>
-    <span style="color:#64748b;font-size:1.25vh">Leverage limited to <b style="color:#cbd5e1">10× only</b> &nbsp;|&nbsp; SL/TP active &amp; may trigger on weekends/holidays &nbsp;|&nbsp; Stop Loss fixed at <b style="color:#cbd5e1">75%</b> of investment (= 7.5% price drop at 10×) &nbsp;|&nbsp; Stop Loss <b style="color:#cbd5e1">cannot be edited</b> during weekends</span>
+    <span style="color:#94a3b8;font-size:1.25vh">Leverage limited to <b style="color:#f1f5f9">10× only</b> &nbsp;|&nbsp; SL/TP active &amp; may trigger on weekends/holidays &nbsp;|&nbsp; Stop Loss fixed at <b style="color:#f1f5f9">75%</b> of investment (= 7.5% price drop at 10×) &nbsp;|&nbsp; Stop Loss <b style="color:#f1f5f9">cannot be edited</b> during weekends</span>
   </div>
 </div></div>
  
 <!-- S6: Scenarios 3 & 4 — 10/14 -->
 <div class="slide" id="s6">
-<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">10 / 14</span></div>
+<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">13 / 13</span></div>
 <div class="ta"><h1>Scenarios 3 &amp; 4: ADL and Oracle Failure</h1><p>Client long → we hedge long on DEX. These risks apply at any time, not just weekends.</p></div>
 <div class="body" style="display:flex;flex-direction:column;gap:1.5vh">
-<div style="background:#0a1628;border:1px solid #f8717133;border-radius:0.5vh;padding:1vh 1.5vw;flex:1;display:flex;flex-direction:column;justify-content:center">
+<div style="background:#0a1628;border:1px solid #7f1d1d;border-radius:0.5vh;padding:1vh 1.5vw;flex:1;display:flex;flex-direction:column;justify-content:center">
 <div style="font-size:2.4vh;font-weight:700;color:#f1f5f9;margin-bottom:0.5vh">🔴 Scenario 3: ADL — Forced Hedge Closure</div>
 <div style="display:flex;gap:1vw;margin-bottom:0.6vh">
   <div style="flex:1;background:#0f1f38;border-radius:0.4vh;padding:0.6vh 1vw;border-left:3px solid #60a5fa">
     <div style="color:#60a5fa;font-weight:700;font-size:1.4vh;margin-bottom:0.2vh">① Asset rallies +20%</div>
-    <div style="color:#94a3b8;font-size:1.3vh">Our DEX hedge (long) is profitable → we move to top of ADL queue</div>
+    <div style="color:#f1f5f9;font-size:1.3vh">Our DEX hedge (long) is profitable → we move to top of ADL queue</div>
   </div>
   <div style="flex:1;background:#0f1f38;border-radius:0.4vh;padding:0.6vh 1vw;border-left:3px solid #f87171">
     <div style="color:#f87171;font-weight:700;font-size:1.4vh;margin-bottom:0.2vh">② Insurance fund depletes</div>
-    <div style="color:#94a3b8;font-size:1.3vh">HLP vault exhausted → Hyperliquid <b style="color:#f87171">forcibly closes our hedge at +17%</b> (3% execution loss from peak)</div>
+    <div style="color:#f1f5f9;font-size:1.3vh">HLP vault exhausted → Hyperliquid <b style="color:#f87171">forcibly closes our hedge at +17%</b> (3% execution loss from peak)</div>
   </div>
   <div style="flex:1;background:#0f1f38;border-radius:0.4vh;padding:0.6vh 1vw;border-left:3px solid #fbbf24">
     <div style="color:#fbbf24;font-weight:700;font-size:1.4vh;margin-bottom:0.2vh">③ Asset continues to +25%</div>
-    <div style="color:#94a3b8;font-size:1.3vh">eToro is <b style="color:#fbbf24">fully unhedged</b> for the final +5% move — must pay client in full</div>
+    <div style="color:#f1f5f9;font-size:1.3vh">eToro is <b style="color:#fbbf24">fully unhedged</b> for the final +5% move — must pay client in full</div>
   </div>
   <div style="flex:1;background:#1a0a0a;border-radius:0.4vh;padding:0.6vh 1vw;border-left:3px solid #f87171">
     <div style="color:#f87171;font-weight:700;font-size:1.4vh;margin-bottom:0.2vh">④ Net cost = 13% of NOP</div>
-    <div style="color:#94a3b8;font-size:1.3vh">Owe client 25% − received 17% from hedge + 5% unhedged loss = <b style="color:#f87171">13% × NOP</b></div>
+    <div style="color:#f1f5f9;font-size:1.3vh">Owe client 25% − received 17% from hedge + 5% unhedged loss = <b style="color:#f87171">13% × NOP</b></div>
   </div>
 </div>
 <table style="font-size:1.9vh"><tr><th style="padding:0.7vh 1.2vw">Exposure</th><th style="padding:0.7vh 1.2vw">Owe Client (25%)</th><th style="padding:0.7vh 1.2vw">Hedge Locked (17%)</th><th style="padding:0.7vh 1.2vw">Unhedged (5%)</th><th style="padding:0.7vh 1.2vw">Cost to eToro</th></tr>
-<tr><td style="color:#f1f5f9;font-weight:600;padding:0.65vh 1.2vw">$10M</td><td style="padding:0.65vh 1.2vw">$2.5M</td><td style="padding:0.65vh 1.2vw">+$1.7M</td><td class="vr" style="padding:0.65vh 1.2vw">−$500K</td><td class="vy" style="padding:0.65vh 1.2vw">−$1.3M</td></tr>
-<tr><td style="color:#f1f5f9;font-weight:600;padding:0.65vh 1.2vw">$25M</td><td style="padding:0.65vh 1.2vw">$6.25M</td><td style="padding:0.65vh 1.2vw">+$4.25M</td><td class="vr" style="padding:0.65vh 1.2vw">−$1.25M</td><td class="vy" style="padding:0.65vh 1.2vw">−$3.25M</td></tr>
-<tr><td style="color:#f1f5f9;font-weight:600;padding:0.65vh 1.2vw">$50M</td><td style="padding:0.65vh 1.2vw">$12.5M</td><td style="padding:0.65vh 1.2vw">+$8.5M</td><td class="vr" style="padding:0.65vh 1.2vw">−$2.5M</td><td class="vy" style="padding:0.65vh 1.2vw">−$6.5M</td></tr>
+<tr><td style="color:#f1f5f9;font-weight:600;padding:0.65vh 1.2vw">$10M</td><td style="padding:0.65vh 1.2vw;color:#fff">$2.5M</td><td style="padding:0.65vh 1.2vw;color:#fff">+$1.7M</td><td class="vr" style="padding:0.65vh 1.2vw">−$500K</td><td class="vy" style="padding:0.65vh 1.2vw">−$1.3M</td></tr>
+<tr><td style="color:#f1f5f9;font-weight:600;padding:0.65vh 1.2vw">$25M</td><td style="padding:0.65vh 1.2vw;color:#fff">$6.25M</td><td style="padding:0.65vh 1.2vw;color:#fff">+$4.25M</td><td class="vr" style="padding:0.65vh 1.2vw">−$1.25M</td><td class="vy" style="padding:0.65vh 1.2vw">−$3.25M</td></tr>
+<tr><td style="color:#f1f5f9;font-weight:600;padding:0.65vh 1.2vw">$50M</td><td style="padding:0.65vh 1.2vw;color:#fff">$12.5M</td><td style="padding:0.65vh 1.2vw;color:#fff">+$8.5M</td><td class="vr" style="padding:0.65vh 1.2vw">−$2.5M</td><td class="vy" style="padding:0.65vh 1.2vw">−$6.5M</td></tr>
 </table></div>
-<div style="background:#0a1628;border:1px solid #a78bfa33;border-radius:0.5vh;padding:1vh 1.5vw;flex:1;display:flex;flex-direction:column;justify-content:center">
+<div style="background:#0a1628;border:1px solid #c4b5fd;border-radius:0.5vh;padding:1vh 1.5vw;flex:1;display:flex;flex-direction:column;justify-content:center">
 <div style="font-size:2.4vh;font-weight:700;color:#f1f5f9;margin-bottom:0.2vh">🔮 Scenario 4: Oracle Failure / Manipulation</div>
 <div style="font-size:1.7vh;font-weight:600;color:#a78bfa;margin-bottom:0.2vh">Trigger: Oracle reports incorrect price → wrongful liquidation or protocol exploit</div>
 <div style="font-size:1.6vh;color:#60a5fa;font-style:italic;margin-bottom:0.5vh">Margin = 20% of notional (5x). Oracle spike → full liquidation. Client P&amp;L ≈ 0.</div>
 <table style="font-size:1.9vh"><tr><th style="padding:0.7vh 1.2vw">Exposure</th><th style="padding:0.7vh 1.2vw">Margin (20%)</th><th style="padding:0.7vh 1.2vw">Margin Loss</th><th style="padding:0.7vh 1.2vw">Client P&amp;L</th><th style="padding:0.7vh 1.2vw">Cost to eToro</th></tr>
-<tr><td style="color:#f1f5f9;font-weight:600;padding:0.65vh 1.2vw">$10M</td><td style="padding:0.65vh 1.2vw">$2M</td><td class="vr" style="padding:0.65vh 1.2vw">50–100%</td><td style="padding:0.65vh 1.2vw">~$0</td><td class="vy" style="padding:0.65vh 1.2vw">−$1M to −$2M</td></tr>
-<tr><td style="color:#f1f5f9;font-weight:600;padding:0.65vh 1.2vw">$25M</td><td style="padding:0.65vh 1.2vw">$5M</td><td class="vr" style="padding:0.65vh 1.2vw">50–100%</td><td style="padding:0.65vh 1.2vw">~$0</td><td class="vy" style="padding:0.65vh 1.2vw">−$2.5M to −$5M</td></tr>
-<tr><td style="color:#f1f5f9;font-weight:600;padding:0.65vh 1.2vw">$50M</td><td style="padding:0.65vh 1.2vw">$10M</td><td class="vr" style="padding:0.65vh 1.2vw">50–100%</td><td style="padding:0.65vh 1.2vw">~$0</td><td class="vy" style="padding:0.65vh 1.2vw">−$5M to −$10M</td></tr>
+<tr><td style="color:#f1f5f9;font-weight:600;padding:0.65vh 1.2vw">$10M</td><td style="padding:0.65vh 1.2vw;color:#fff">$2M</td><td class="vr" style="padding:0.65vh 1.2vw">50–100%</td><td style="padding:0.65vh 1.2vw;color:#fff">~$0</td><td class="vy" style="padding:0.65vh 1.2vw">−$1M to −$2M</td></tr>
+<tr><td style="color:#f1f5f9;font-weight:600;padding:0.65vh 1.2vw">$25M</td><td style="padding:0.65vh 1.2vw;color:#fff">$5M</td><td class="vr" style="padding:0.65vh 1.2vw">50–100%</td><td style="padding:0.65vh 1.2vw;color:#fff">~$0</td><td class="vy" style="padding:0.65vh 1.2vw">−$2.5M to −$5M</td></tr>
+<tr><td style="color:#f1f5f9;font-weight:600;padding:0.65vh 1.2vw">$50M</td><td style="padding:0.65vh 1.2vw;color:#fff">$10M</td><td class="vr" style="padding:0.65vh 1.2vw">50–100%</td><td style="padding:0.65vh 1.2vw;color:#fff">~$0</td><td class="vy" style="padding:0.65vh 1.2vw">−$5M to −$10M</td></tr>
 </table></div>
 </div></div>
  
 <!-- S7: History — 11/14 -->
 <div class="slide" id="s7">
-<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">11 / 14</span></div>
+<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">6 / 13</span></div>
 <div class="ta"><h1>Historical DEX Failures &amp; Incidents</h1><p>Selected incidents relevant to perpetual DEX hedging risk</p></div>
 <div class="body"><table style="font-size:1.9vh">
 <tr><th style="width:8%;padding:1.1vh 1.3vw">Date</th><th style="width:11%;padding:1.1vh 1.3vw">Platform</th><th style="width:9%;padding:1.1vh 1.3vw">Type</th><th style="width:8%;padding:1.1vh 1.3vw">Loss</th><th style="padding:1.1vh 1.3vw">Details</th></tr>
@@ -666,16 +524,16 @@ render();
 </table>
 <div style="background:#1a0a0a;border:1px solid #7f1d1d;border-radius:0.8vh;padding:1.5vh 2vw;margin-top:1.2vh">
 <div style="color:#f87171;font-weight:700;font-size:2vh;margin-bottom:0.4vh">⚠️ Key Takeaway</div>
-<div style="color:#fca5a5;font-size:1.85vh;line-height:1.6">DEX perp platforms remain immature. Oct 2025: even Hyperliquid (80% market share) had catastrophic ADL. Oracle exploits are recurring. eToro must treat DEX collateral as at-risk capital and size positions accordingly.</div>
+<div style="color:#dc2626;font-size:1.85vh;line-height:1.6">DEX perp platforms remain immature. Oct 2025: even Hyperliquid (80% market share) had catastrophic ADL. Oracle exploits are recurring. eToro must treat DEX collateral as at-risk capital and size positions accordingly.</div>
 </div></div></div>
  
 <!-- S_REG — 12/14 -->
 <div class="slide" id="s_reg">
-<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">12 / 14</span></div>
+<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">7 / 13</span></div>
 <div class="ta"><h1>Regulatory Risk</h1><p>Risk of regulators classifying the DEX protocol as an unlicensed financial service</p></div>
 <div class="body" style="display:flex;flex-direction:column;gap:1.5vh">
 <div style="display:flex;gap:2vw;flex:1">
-<div style="flex:1;background:#0a1628;border:1px solid #1e3a5f;border-radius:0.8vh;padding:1.5vh 1.5vw;overflow:hidden">
+<div style="flex:1;background:#0a1628;border:1px solid #334155;border-radius:0.8vh;padding:1.5vh 1.5vw;overflow:hidden">
 <div style="color:#60a5fa;font-weight:700;font-size:2.3vh;margin-bottom:0.8vh">Key Risk Drivers</div>
 <table style="font-size:2vh;table-layout:fixed;width:100%"><colgroup><col style="width:22%"><col style="width:78%"></colgroup>
 <tr><th style="padding:0.7vh 1vw">Driver</th><th style="padding:0.7vh 1vw">Description</th></tr>
@@ -687,8 +545,8 @@ render();
 <tr><td style="color:#fb923c;font-weight:600;padding:0.7vh 1vw;vertical-align:top">Business Continuity</td><td class="vg" style="padding:0.7vh 1vw">If the DEX experiences downtime on weekends, eToro has no fallback for hedging, closing positions, or pricing</td></tr>
 </table></div>
 <div style="flex:0.9;display:flex;flex-direction:column;gap:1.5vh">
-<div style="background:#1a0a0a;border:1px solid #7f1d1d;border-radius:0.8vh;padding:1.5vh 1.5vw;flex:1"><div style="color:#f87171;font-weight:700;font-size:2.3vh;margin-bottom:0.8vh">⚠️ Potential Consequences</div><div style="color:#fca5a5;font-size:2vh;line-height:2.1">• Regulatory fines or enforcement actions<br>• License suspension or restriction<br>• Mandatory cessation of DEX-linked activity<br>• Reputational damage with institutional counterparties</div></div>
-<div style="background:#0a1f14;border:1px solid #166534;border-radius:0.8vh;padding:1.5vh 1.5vw;flex:1"><div style="color:#34d399;font-weight:700;font-size:2.3vh;margin-bottom:0.8vh">✅ Mitigating Measures</div><div style="color:#86efac;font-size:2vh;line-height:2.1">• <b style="color:#f1f5f9">Legal opinion</b> — Obtain formal legal opinions / internal documentation — to substantiate how eToro's operating model mitigates regulatory exposure<br>• Maintain clear audit trail of all DEX-related activity<br>• Monitor MiCA / CFTC / FCA guidance continuously</div></div>
+<div style="background:#1a0a0a;border:1px solid #7f1d1d;border-radius:0.8vh;padding:1.5vh 1.5vw;flex:1"><div style="color:#f87171;font-weight:700;font-size:2.3vh;margin-bottom:0.8vh">⚠️ Potential Consequences</div><div style="color:#dc2626;font-size:2vh;line-height:2.1">• Regulatory fines or enforcement actions<br>• License suspension or restriction<br>• Mandatory cessation of DEX-linked activity<br>• Reputational damage with institutional counterparties</div></div>
+<div style="background:#0a1f14;border:1px solid #166534;border-radius:0.8vh;padding:1.5vh 1.5vw;flex:1"><div style="color:#34d399;font-weight:700;font-size:2.3vh;margin-bottom:0.8vh">✅ Mitigating Measures</div><div style="color:#047857;font-size:2vh;line-height:2.1">• <b style="color:#f1f5f9">Legal opinion</b> — Obtain formal legal opinions / internal documentation — to substantiate how eToro's operating model mitigates regulatory exposure<br>• Maintain clear audit trail of all DEX-related activity<br>• Monitor MiCA / CFTC / FCA guidance continuously</div></div>
 </div></div>
 <div style="background:#0a1628;border:1px solid #334155;border-radius:0.4vh;padding:0.9vh 1.5vw;flex-shrink:0;display:flex;align-items:center;gap:1vw">
 <span style="color:#f87171;font-weight:700;font-size:1.7vh">Risk Level:</span><span class="bg bh" style="font-size:1.7vh;padding:0.3vh 1.2vw">High</span>
@@ -697,11 +555,11 @@ render();
  
 <!-- S_AML — 13/14 -->
 <div class="slide" id="s_aml">
-<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">13 / 14</span></div>
+<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">8 / 13</span></div>
 <div class="ta"><h1>AML Risk</h1><p>Anti-Money Laundering exposure from permissionless, pseudonymous DEX activity</p></div>
 <div class="body" style="display:flex;flex-direction:column;gap:1.5vh">
 <div style="display:flex;gap:2vw">
-<div style="flex:1;background:#0a1628;border:1px solid #1e3a5f;border-radius:0.8vh;padding:1.5vh 1.5vw"><div style="color:#60a5fa;font-weight:700;font-size:2.3vh;margin-bottom:0.8vh">Key AML Risk Drivers</div>
+<div style="flex:1;background:#0a1628;border:1px solid #334155;border-radius:0.8vh;padding:1.5vh 1.5vw"><div style="color:#60a5fa;font-weight:700;font-size:2.3vh;margin-bottom:0.8vh">Key AML Risk Drivers</div>
 <table style="font-size:2vh">
 <tr><th style="padding:0.8vh 1vw">Driver</th><th style="padding:0.8vh 1vw">Description</th></tr>
 <tr><td style="color:#f87171;font-weight:600;white-space:nowrap;padding:0.8vh 1vw">Permissionless Access</td><td class="vg" style="padding:0.8vh 1vw">Any wallet interacts without KYC — illicit actors can participate freely</td></tr>
@@ -711,8 +569,8 @@ render();
 <tr><td style="color:#f87171;font-weight:600;white-space:nowrap;padding:0.8vh 1vw">No AML Controls</td><td class="vg" style="padding:0.8vh 1vw">DEXs lack KYC/KYB, sanctions screening, transaction monitoring, or SAR filing capabilities</td></tr>
 </table></div>
 <div style="flex:0.9;display:flex;flex-direction:column;gap:1.5vh">
-<div style="background:#0a1628;border:1px solid #1e3a5f;border-radius:0.8vh;padding:1.5vh 1.5vw;flex:1"><div style="color:#a78bfa;font-weight:700;font-size:2.3vh;margin-bottom:0.8vh">Mitigating Measures</div><div style="color:#c4b5fd;font-size:2vh;line-height:2.1">• <b style="color:#f1f5f9">Legal opinion</b> — eToro does not hold client funds; trades execute via smart contracts<br>• <b style="color:#f1f5f9">Blockchain analytics</b> (e.g., Chainalysis) — screen wallets, monitor flows<br>• <b style="color:#f1f5f9">Internal policies</b> — DEX risk appetite &amp; escalation procedures<br>• <b style="color:#fbbf24">Limitation:</b> commingling reduces screening effectiveness</div></div>
-<div style="background:#1a0a0a;border:1px solid #7f1d1d;border-radius:0.8vh;padding:1.5vh 1.5vw"><div style="color:#f87171;font-weight:700;font-size:2.3vh;margin-bottom:0.5vh">Residual Risk</div><div style="color:#fca5a5;font-size:2vh;line-height:2.1">Counterparty verification: <b>impossible</b><br>Source of funds tracing: <b>structurally limited</b><br>Sanctions screening: <b>partial at best</b><br>Regulatory enforcement exposure: <b>active</b></div></div>
+<div style="background:#0a1628;border:1px solid #334155;border-radius:0.8vh;padding:1.5vh 1.5vw;flex:1"><div style="color:#7c3aed;font-weight:700;font-size:2.3vh;margin-bottom:0.8vh">Mitigating Measures</div><div style="color:#7c3aed;font-size:2vh;line-height:2.1">• <b style="color:#f1f5f9">Legal opinion</b> — eToro does not hold client funds; trades execute via smart contracts<br>• <b style="color:#f1f5f9">Blockchain analytics</b> (e.g., Chainalysis) — screen wallets, monitor flows<br>• <b style="color:#f1f5f9">Internal policies</b> — DEX risk appetite &amp; escalation procedures<br>• <b style="color:#fbbf24">Limitation:</b> commingling reduces screening effectiveness</div></div>
+<div style="background:#1a0a0a;border:1px solid #7f1d1d;border-radius:0.8vh;padding:1.5vh 1.5vw"><div style="color:#f87171;font-weight:700;font-size:2.3vh;margin-bottom:0.5vh">Residual Risk</div><div style="color:#dc2626;font-size:2vh;line-height:2.1">Counterparty verification: <b>impossible</b><br>Source of funds tracing: <b>structurally limited</b><br>Sanctions screening: <b>partial at best</b><br>Regulatory enforcement exposure: <b>active</b></div></div>
 </div></div>
 <div style="background:#1a0a0a;border:1px solid #7f1d1d;border-radius:0.4vh;padding:0.9vh 1.5vw;flex-shrink:0;display:flex;align-items:center;gap:1vw">
 <span style="color:#f87171;font-weight:700;font-size:1.7vh">AML Risk Level:</span><span class="bg bc" style="font-size:1.7vh;padding:0.3vh 1.2vw">High — Inherent</span>
@@ -721,11 +579,11 @@ render();
  
 <!-- S_MANIP — 14/14 -->
 <div class="slide" id="s_manip">
-<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">14 / 14</span></div>
+<div class="hdr"><div style="display:flex;align-items:center;gap:1vw"><span class="logo">eToro</span><span class="hs">Risk Management — Senior Leadership Briefing</span></div><span class="hp">9 / 13</span></div>
 <div class="ta"><h1>Market Manipulation Risk</h1><p>Potential for traders to manipulate asset prices or trading activity on the DEX</p></div>
 <div class="body" style="display:flex;flex-direction:column;gap:1.5vh">
 <div style="display:flex;gap:2vw;flex:1">
-<div style="flex:1;background:#0a1628;border:1px solid #1e3a5f;border-radius:0.8vh;padding:1.5vh 1.5vw"><div style="color:#60a5fa;font-weight:700;font-size:2.3vh;margin-bottom:0.8vh">Manipulation Vectors</div>
+<div style="flex:1;background:#0a1628;border:1px solid #334155;border-radius:0.8vh;padding:1.5vh 1.5vw"><div style="color:#60a5fa;font-weight:700;font-size:2.3vh;margin-bottom:0.8vh">Manipulation Vectors</div>
 <table style="font-size:2vh">
 <tr><th style="padding:0.8vh 1vw">Type</th><th style="padding:0.8vh 1vw">Mechanism</th><th style="text-align:center;padding:0.8vh 1vw">Impact</th></tr>
 <tr><td style="color:#f87171;font-weight:600;padding:0.9vh 1vw">Oracle Manipulation</td><td class="vg" style="padding:0.9vh 1vw">Attacker moves spot price on low-liquidity DEX → oracle reports false price → wrongful liquidation of eToro hedge</td><td style="text-align:center;padding:0.9vh 1vw"><span class="bg bc" style="font-size:1.5vh;padding:0.2vh 0.6vw">Critical</span></td></tr>
@@ -735,8 +593,8 @@ render();
 <tr><td style="color:#f87171;font-weight:600;padding:0.9vh 1vw">Pump &amp; Dump on Perp</td><td class="vg" style="padding:0.9vh 1vw">Coordinated price spike depletes DEX insurance fund → triggers ADL, forcibly closes eToro's hedge</td><td style="text-align:center;padding:0.9vh 1vw"><span class="bg bc" style="font-size:1.5vh;padding:0.2vh 0.6vw">Critical</span></td></tr>
 </table></div>
 <div style="flex:0.85;display:flex;flex-direction:column;gap:1.5vh">
-<div style="background:#1a0a0a;border:1px solid #7f1d1d;border-radius:0.8vh;padding:1.5vh 1.5vw;flex:1"><div style="color:#f87171;font-weight:700;font-size:2.3vh;margin-bottom:0.8vh">Why DEXs Are Particularly Vulnerable</div><div style="color:#fca5a5;font-size:2vh;line-height:2.1">• <b style="color:#f1f5f9">No surveillance</b> — no manipulation detection<br>• <b style="color:#f1f5f9">Transparent mempool</b> — orders visible to MEV bots<br>• <b style="color:#f1f5f9">Thin order books</b> — small capital moves prices<br>• <b style="color:#f1f5f9">No recourse</b> — on-chain transactions are irreversible</div></div>
-<div style="background:#0a1f14;border:1px solid #166534;border-radius:0.8vh;padding:1.5vh 1.5vw;flex:1"><div style="color:#34d399;font-weight:700;font-size:2.3vh;margin-bottom:0.8vh">✅ Mitigating Measures</div><div style="color:#86efac;font-size:2vh;line-height:2.1">• TWAP execution to reduce MEV exposure and limits manipulation risk<br>• Multi-venue hedging to avoid single manipulation point<br>• Real-time oracle health monitoring<br>• Position size limits relative to DEX OI<br>• Apply internal circuit breakers — halt client trading and suspend DEX hedging under extreme market conditions</div></div>
+<div style="background:#1a0a0a;border:1px solid #7f1d1d;border-radius:0.8vh;padding:1.5vh 1.5vw;flex:1"><div style="color:#f87171;font-weight:700;font-size:2.3vh;margin-bottom:0.8vh">Why DEXs Are Particularly Vulnerable</div><div style="color:#dc2626;font-size:2vh;line-height:2.1">• <b style="color:#f1f5f9">No surveillance</b> — no manipulation detection<br>• <b style="color:#f1f5f9">Transparent mempool</b> — orders visible to MEV bots<br>• <b style="color:#f1f5f9">Thin order books</b> — small capital moves prices<br>• <b style="color:#f1f5f9">No recourse</b> — on-chain transactions are irreversible</div></div>
+<div style="background:#0a1f14;border:1px solid #166534;border-radius:0.8vh;padding:1.5vh 1.5vw;flex:1"><div style="color:#34d399;font-weight:700;font-size:2.3vh;margin-bottom:0.8vh">✅ Mitigating Measures</div><div style="color:#047857;font-size:2vh;line-height:2.1">• TWAP execution to reduce MEV exposure and limits manipulation risk<br>• Multi-venue hedging to avoid single manipulation point<br>• Real-time oracle health monitoring<br>• Position size limits relative to DEX OI<br>• Apply internal circuit breakers — halt client trading and suspend DEX hedging under extreme market conditions</div></div>
 </div></div>
 <div style="background:#0a1628;border:1px solid #334155;border-radius:0.4vh;padding:0.9vh 1.5vw;flex-shrink:0;display:flex;align-items:center;gap:1vw">
 <span style="color:#f87171;font-weight:700;font-size:1.7vh">Risk Level:</span><span class="bg bh" style="font-size:1.7vh;padding:0.3vh 1.2vw">High</span>
@@ -752,7 +610,7 @@ render();
  
 <script>
 var cur=0;
-var slides=['s0','s4','s_summary','s1','s2','s3','s4b','s_sc1','s5','s6','s7','s_reg','s_aml','s_manip'];
+var slides=['s0','s1','s2','s4','s_summary','s7','s_reg','s_aml','s_manip','s3','s_sc1','s5','s6'];
 var total=slides.length;
 function goTo(n){
   document.getElementById(slides[cur]).classList.remove('active');
